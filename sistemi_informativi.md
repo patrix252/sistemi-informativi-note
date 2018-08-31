@@ -161,7 +161,7 @@ BPR (Business Process Rengineering) introduce innovazione agendo pricipalmente s
 
 ### L'impatto macroeconomico dell'IT, la sua evoluzione storica e i cambiamenti organizzativi generati
 
-<img src="./images/evoluzione_storica_dei_sistemi.png" width="600" alt="Evoluzione storica dei sistemi">
+<img src="./images/evoluzione_storica_dei_sistemi.png" width="700" alt="Evoluzione storica dei sistemi">
 
 Nel 2010 la spesa per l'IT è stata 1,2% del PIL
 
@@ -191,7 +191,7 @@ L'Esigenza informativa dipende dal tipo di attività da compiere in azineda:
 ### Schema di Anthony
 I livelli operativi hanno bisogno di informaizoine dettagliata e attuale; **man mano che si sale ai libelli decisionali l'informazione richiesta è sempre più sintetitca**, costituita da indicatori sull'andamento delle attività e sullo stato dell'azienda otenuti elaborando dati relativi a eventi elementari.
 
--><img src="./images/schema_di_anthony.png" width="300" alt="Schema di Anthony"><-
+<img src="./images/schema_di_anthony.png" width="300" alt="Schema di Anthony">
 
 
 Una rappresentazione efficace della classificazione dell'esigenza informativa è la piramide di Anthony: man mano che si sale nel livello decisionale, la necessità di molte informazioni dettagliate decresce, mentre cresce l'esigenza di avere poche informazioni sintetiche di qualità che permettano l'adozione di decisioni strategiche correntte.
@@ -331,11 +331,11 @@ Le figure professionali "informatiche" che operano all'interno dell'azienda si p
     + **L'assistenza applicativa**: supporta gli utenti nella normale operatività e nell'uso delle procedure
     + Lo **sviluppo di nuove applicazioni** che si occupa di predisporre nuove procedure software e nuovi sottosistemi di gestione è sempre prensente in una logica *Make*, mentre in una logica *Buy* o *Outsource* questa funzione viene risolta fra l'EDP e l'assistenza applicativa, visto he viene demandata operativamente all'esterno e all'interno resta solo l'eventuale gestione.
 
-![Livello 2](./images/livello2.jpg "Livello2")
+<img src="./images/livello2.jpg" width="300" alt="Livello2">
 
 - **Livello 3**: Viene riconosciuta una propria **Direzione** che quindi assume un ruolo strategico nei progetti d'azienda. Oltre al blocco più operativo (come capo EDP), si crea una nuova **sezione che studia l'applicazione delle nuove teconologie** nei vari ambiti dell'azienda.
 
-![Livello 3](./images/livello3.jpg "Livello3")
+<img src="./images/livello3.jpg" width="500" alt="Livello3">
 
 - **Livello 4**: Rappresenta il massimo livello. **Il settore viene riconosciuto come un'entità** che svolge attività per il resto dell'azienda e quindi si introducono esplicitamente altre funzioni in staff alla Direzione, quali per esempio:
     + **segreteria**
