@@ -331,11 +331,11 @@ Le figure professionali "informatiche" che operano all'interno dell'azienda si p
     + **L'assistenza applicativa**: supporta gli utenti nella normale operatività e nell'uso delle procedure
     + Lo **sviluppo di nuove applicazioni** che si occupa di predisporre nuove procedure software e nuovi sottosistemi di gestione è sempre prensente in una logica *Make*, mentre in una logica *Buy* o *Outsource* questa funzione viene risolta fra l'EDP e l'assistenza applicativa, visto he viene demandata operativamente all'esterno e all'interno resta solo l'eventuale gestione.
 
-<img src="./images/livello2.jpg" width="300" alt="Livello2">
+<img src="./images/livello2.jpg" width="500" alt="Livello2">
 
 - **Livello 3**: Viene riconosciuta una propria **Direzione** che quindi assume un ruolo strategico nei progetti d'azienda. Oltre al blocco più operativo (come capo EDP), si crea una nuova **sezione che studia l'applicazione delle nuove teconologie** nei vari ambiti dell'azienda.
 
-<img src="./images/livello3.jpg" width="500" alt="Livello3">
+<img src="./images/livello3.jpg" width="700" alt="Livello3">
 
 - **Livello 4**: Rappresenta il massimo livello. **Il settore viene riconosciuto come un'entità** che svolge attività per il resto dell'azienda e quindi si introducono esplicitamente altre funzioni in staff alla Direzione, quali per esempio:
     + **segreteria**
@@ -462,7 +462,26 @@ L'insieme delle applicazini dei sistemi informativi operazionali all'azienda pu�
 Contiene le applicazioni informatiche realizzate a sostegno delle attività che nello schema sono classificate come secondarie. 
 Una buona parte di queste attività presenta un'elevata attrattiva informatica, perchè regolata a norma di legge, o comunque soggetta a forte prceduralità, ripetitività e caratterizzata da semplicità di elaborazione. Altra attività, com ela gestion delle risorse, dell'infrastruttura e delle finanze, sebbene non soggette a norme di legge o non particolamente semplici, sono relativamente omogenee al variare dell'azienda e non risentono della natura del prodotto o del servizio fornito. La loro informatizzazione risulta semplificata dalla preenza sul meracato di numerose soluzioni standardizzate.
 
-`da scrivere lo schema a mano`
+```
+Infrastrutture
+    Contabilità
+        Contabilità ordinaria
+        Contabilità IVA
+        Beni ammortizzabili
+        compensi a terzi
+    Finanziaria
+        Scadenzario clienti/fornitori
+        Rapporti con le banche
+    Previsioni e controllo
+        Budget
+        Contabilità analitica
+        Controllo di gensione
+Gestione risorse
+    Personale
+        Retribuzioni
+        Rilevamento presenze
+        Piani di formazione
+```
 
 **Portafoglio operativo**
 Il portafoglio operativo è composto dalle applicazioni informatiche legate ai processi primari. Qui assistamo a precssi di verticalizzazione del software, con elevata specilizzazione settiorale delle soluzioni proposte. Il nostro interesse verte principalmente alle PMI.
@@ -470,4 +489,29 @@ Le applicazioni infromatiche a support delle attività primarie sono molte ed es
 Oltre all'estensione, il portafoglio operativo rispecchia ance lamodalitaà con cui opera il processo produttivo: troviamo aziende che producono su commessa artocoli personalizzati per il cliente e altre che producono lotti di articoli di elevata standardizzazione;
 Il portafoglio operativo di un'azienda dipende quindi dall'attrattiva informatica che ognuno dei processi ha nell'ambito aziendale; a parità di processi informatizzati, le procedure adottate da aziende operanti in settori merceologici diversi possono variare, rispecchiando le pculirità dei prodotti. 
 
-`da scrivere lo schema a mano`
+```
+Logica in entrata
+    Programmaizone acquisiti
+    Ordini fornitore
+    Ricezione merce
+    Controllo qualità
+
+Attività operative
+    Analisi dei fabbisogni
+    Programmazione produzione
+    Avanzamento lavorazioni interne
+    Avanzamento lavorazioni esterne
+    Magazzino
+
+Logistica in uscita
+    Programmazione spedizioni
+    Documenti di trasporto
+
+Marketing e vendite
+    Programmazione vendite
+    Listini di vendita e condizioni commerciali
+    Ordini cliente
+
+Servizi postvendita
+    Assistenza clienti
+```
