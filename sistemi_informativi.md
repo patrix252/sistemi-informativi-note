@@ -27,11 +27,10 @@ valore lineare.
 valore quadratico
         + Comunità, social network ecc -> valore esponenziale
 
-<img src="./images/hype_cycle_di_gartner.png" width="500">
+<img src="./images/hype_cycle_di_gartner.png" width="600">
 
-<img src="./images/hype_cycle_di_gartner2.png" width="500" alt="Hype Cycle di Gartner">
-![](./images/hype_cycle_di_gartner.png =100x)
-![Hype Cycle di Gartner](./images/hype_cycle_di_gartner2.png "Hype Cycle di Gartner")
+<img src="./images/hype_cycle_di_gartner2.png" width="600" alt="Hype Cycle di Gartner">
+
 - **Scintilla Tecnologica** innesca un potenziale di innovazione tecnologia.
 Le prime storie, Proof-of-concept e l’interesse dei media scatenano
 pubblicità significativa. Spesso non esistono prodotti utilizzabili e la
@@ -107,7 +106,7 @@ dati nell'intento di:
 
 - **Informatica aziendale**: disciplina che studia l'applicazione dell'informatica alle aziende e l'influenza dell'informatica sulle diverse categorie di elementi costituenti il sistema aziendale.
 
-![Sistema aziendale](./images/sistema_aziendale.png "Sistema aziendale")
+<img src="./images/sistema_aziendale.png" width="300" alt="Sistema aziendale">
 
 - Esigenze di business - Marcroaree di influenza:
     + **Operativa**: supportare, guidare e facilitare i compiti esecutivi
@@ -162,7 +161,7 @@ BPR (Business Process Rengineering) introduce innovazione agendo pricipalmente s
 
 ### L'impatto macroeconomico dell'IT, la sua evoluzione storica e i cambiamenti organizzativi generati
 
-![Evoluzione storica dei sistemi](./images/evoluzione_storica_dei_sistemi.png "Evoluzione storica dei sistemi")
+<img src="./images/evoluzione_storica_dei_sistemi.png" width="600" alt="Evoluzione storica dei sistemi">
 
 Nel 2010 la spesa per l'IT è stata 1,2% del PIL
 
@@ -192,7 +191,8 @@ L'Esigenza informativa dipende dal tipo di attività da compiere in azineda:
 ### Schema di Anthony
 I livelli operativi hanno bisogno di informaizoine dettagliata e attuale; **man mano che si sale ai libelli decisionali l'informazione richiesta è sempre più sintetitca**, costituita da indicatori sull'andamento delle attività e sullo stato dell'azienda otenuti elaborando dati relativi a eventi elementari.
 
-![Schema di Anthony](./images/schema_di_anthony.png "Schema di Anthony")
+-><img src="./images/schema_di_anthony.png" width="600" alt="Schema di Anthony"><-
+
 
 Una rappresentazione efficace della classificazione dell'esigenza informativa è la piramide di Anthony: man mano che si sale nel livello decisionale, la necessità di molte informazioni dettagliate decresce, mentre cresce l'esigenza di avere poche informazioni sintetiche di qualità che permettano l'adozione di decisioni strategiche correntte.
 
