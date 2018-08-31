@@ -27,10 +27,8 @@ valore lineare.
 valore quadratico
         + Comunità, social network ecc -> valore esponenziale
 
-<img src="./images/hype_cycle_di_gartner.png" height="100">
-
-![](./images/hype_cycle_di_gartner.png =100x)
-![Hype Cycle di Gartner](./images/hype_cycle_di_gartner2.png "Hype Cycle di Gartner")
+![](./images/hype_cycle_di_gartner.png =500x)
+![Hype Cycle di Gartner](./images/hype_cycle_di_gartner2.png =500x)
 - **Scintilla Tecnologica** innesca un potenziale di innovazione tecnologia.
 Le prime storie, Proof-of-concept e l’interesse dei media scatenano
 pubblicità significativa. Spesso non esistono prodotti utilizzabili e la
