@@ -191,7 +191,7 @@ L'Esigenza informativa dipende dal tipo di attività da compiere in azineda:
 ### Schema di Anthony
 I livelli operativi hanno bisogno di informaizoine dettagliata e attuale; **man mano che si sale ai libelli decisionali l'informazione richiesta è sempre più sintetitca**, costituita da indicatori sull'andamento delle attività e sullo stato dell'azienda otenuti elaborando dati relativi a eventi elementari.
 
--><img src="./images/schema_di_anthony.png" width="600" alt="Schema di Anthony"><-
+-><img src="./images/schema_di_anthony.png" width="300" alt="Schema di Anthony"><-
 
 
 Una rappresentazione efficace della classificazione dell'esigenza informativa è la piramide di Anthony: man mano che si sale nel livello decisionale, la necessità di molte informazioni dettagliate decresce, mentre cresce l'esigenza di avere poche informazioni sintetiche di qualità che permettano l'adozione di decisioni strategiche correntte.
