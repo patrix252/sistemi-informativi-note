@@ -27,9 +27,9 @@ valore lineare.
 valore quadratico
         + Comunità, social network ecc -> valore esponenziale
 
-<img src="./images/hype_cycle_di_gartner.png" width="600">
+<p align="center"><img src="./images/hype_cycle_di_gartner.png" width="600"></p>
 
-<img src="./images/hype_cycle_di_gartner2.png" width="600" alt="Hype Cycle di Gartner">
+<p align="center"><img src="./images/hype_cycle_di_gartner2.png" width="600" alt="Hype Cycle di Gartner"></p>
 **Hype Cycle di Gartner**
 
 - **Scintilla Tecnologica** innesca un potenziale di innovazione tecnologia.
@@ -108,7 +108,7 @@ dati nell'intento di:
 
 - **Informatica aziendale**: disciplina che **studia l'applicazione dell'informatica alle aziende** e l'influenza dell'informatica sulle diverse categorie di elementi costituenti il sistema aziendale.
 
-<img src="./images/sistema_aziendale.png" width="300" alt="Sistema aziendale">
+<p align="center"><img src="./images/sistema_aziendale.png" width="300" alt="Sistema aziendale"></p>
 
 - Esigenze di business - Marcroaree di influenza:
     + **Operativa**: supportare, guidare e facilitare i compiti esecutivi
@@ -163,7 +163,7 @@ BPR (Business Process Rengineering) introduce innovazione agendo pricipalmente s
 
 ### L'impatto macroeconomico dell'IT, la sua evoluzione storica e i cambiamenti organizzativi generati
 
-<img src="./images/evoluzione_storica_dei_sistemi.png" width="700" alt="Evoluzione storica dei sistemi">
+<p align="center"><img src="./images/evoluzione_storica_dei_sistemi.png" width="700" alt="Evoluzione storica dei sistemi"></p>
 
 Nel 2010 la spesa per l'IT è stata 1,2% del PIL in Italia
 
@@ -193,7 +193,7 @@ L'Esigenza informativa dipende dal tipo di attività da compiere in azineda:
 ### Schema di Anthony
 I livelli operativi hanno bisogno di informaizoine dettagliata e attuale; **man mano che si sale ai libelli decisionali l'informazione richiesta è sempre più sintetitca**, costituita da indicatori sull'andamento delle attività e sullo stato dell'azienda otenuti elaborando dati relativi a eventi elementari.
 
-<img src="./images/schema_di_anthony.png" width="300" alt="Schema di Anthony">
+<p align="center"><img src="./images/schema_di_anthony.png" width="300" alt="Schema di Anthony"></p>
 
 
 Una rappresentazione efficace della classificazione dell'esigenza informativa è la piramide di Anthony: man mano che si sale nel livello decisionale, la necessità di molte informazioni dettagliate decresce, mentre cresce l'esigenza di avere poche informazioni sintetiche di qualità che permettano l'adozione di decisioni strategiche correntte.
@@ -333,11 +333,11 @@ Le figure professionali "informatiche" che operano all'interno dell'azienda si p
     + **L'assistenza applicativa**: supporta gli utenti nella normale operatività e nell'uso delle procedure
     + Lo **sviluppo di nuove applicazioni** che si occupa di predisporre nuove procedure software e nuovi sottosistemi di gestione è sempre prensente in una logica *Make*, mentre in una logica *Buy* o *Outsource* questa funzione viene risolta fra l'EDP e l'assistenza applicativa, visto he viene demandata operativamente all'esterno e all'interno resta solo l'eventuale gestione.
 
-<img src="./images/livello2.jpg" width="500" alt="Livello2">
+<p align="center"><img src="./images/livello2.jpg" width="500" alt="Livello2"></p>
 
 - **Livello 3**: Viene riconosciuta una propria **Direzione** che quindi assume un ruolo strategico nei progetti d'azienda. Oltre al blocco più operativo (come capo EDP), si crea una nuova **sezione che studia l'applicazione delle nuove teconologie** nei vari ambiti dell'azienda.
 
-<img src="./images/livello3.jpg" width="700" alt="Livello3">
+<p align="center"><img src="./images/livello3.jpg" width="700" alt="Livello3"></p>
 
 - **Livello 4**: Rappresenta il massimo livello. **Il settore viene riconosciuto come un'entità** che svolge attività per il resto dell'azienda e quindi si introducono esplicitamente altre funzioni in staff alla Direzione, quali per esempio:
     + **segreteria**
@@ -740,9 +740,38 @@ Requisiti ideali di leggibilità per un DSS sono:
 - semplificazione della query a causa dei metadati
 
 ### Il modello multidimensionale e le operazioni principali
-- modello monodimensionale: i campi si riferiscono ad un solo record
-- modello bidimensionale: semplicemente una matrice di righe e colonne (tabella) 
+I sistemi informazionali si basano su una struttura dei dati particolarmente adatta all'analisi: **la struttura multidimensionale che è intuitiva, facilmente interpretabile dall'utente, e partcolarmente efficiente nelle ricerche** e nelle operazioni di aggregazione di disaggregazione dei dati. Il principio su cui si fonda questa modellazione è che **il processo di analisi** non **si articola** intorno alle attività operative, ma **intorno a temi descritti da soggetti e da relazioni quantificabili tra i soggetti**.
 
-poi il prof suggerisce di rappresentare i dati in forma n-dimensionale cosi da agevolare le operazioni di riorganizzazione e lettura dei dati, interpretanto all'occorenza la struttura dati nel modo più adeguata. 
+esempi:
+- le abitudini d'acquisto dei clienti (il soggetto è il cliente)
+- i margini di redditività degli articoli (il soggetto è l'articolo)
+- l'efficienza della catena di distribuzione per linee di prodotto (i soggetti sono gli agenti e gli articoli)
+
+L'analisi viene effettuata valutando in chemisura il soggetto partecipa a eventi trattati dall'azienda. Uno stesso evento può quindi essere analizzato mettendolo in relazione con diversi soggetti.
+
+Da questa visione nasce spontaneamente la modellazione dello spazio delle informazioni dei sistemi di supporto alle decisioni con matrici multidimensionali. **In cui la misura di ogni evento è descritta da un insieme di coordinate ognuna delle quali rappresenta un soggetto di interesse** per le analisi d condurre su quell'eveneto. Esempio, se l'evento è la vendita, possibili dimensioni di analisi sono l'articolo, il cliente, la daa in cui la vendita è avvenua e l'agente che ha promosso la vendita.
+
+Nei sistemi informazionali il modello standard de facto per la rappresentazione dei dati è l'ipercubo, una matrice multidimensionale che permette di memorizzare e di estrarre facilmente i dati relativi a una classe di eventi.
+- **Fatto elementare**: l'elemento ottenuto specificando un valore per ogni possibile coordinata
+- **Misure**: valori numerici che quantificano il fatto elementare
+- **Dimensioni**: coordinate di ciascun elemento che costituiscono l'analisi dei fatti.
+
+Esempio:
+In un'analisi economica:
+- Fatto: vendita di un prodotto
+- Misure: quantità e l'importo della vendita
+- Dimensioni: cliente che ha acquistato il prodotto, l'articolo venduto e la data di vendita
+
+con un modello così costituito possiamo rispondere a domande tipo:
+- quanti prodotti di un certo tipo ho venduto in un certo periodo?
+- quali sono i clienti che mi portano il maggior fatturato?
+- quali sono gli articoli che mi portano il maggior fatturato?
+- quali sono i principali acquirenti di un certo articolo?
+
+<p align="center"><img src="./images/struttura-ipercubo.jpg" width="500" alt="Struttura ipercubo"></p>
+
+
+
+
 
 ### Caratteristiche e modelli logici OLAP
