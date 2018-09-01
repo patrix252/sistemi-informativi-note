@@ -545,3 +545,26 @@ I moderni ERP sono sviluppati come sistemi altamente configurabili, svincolati i
 
 <p align="center"><img src="./images/classico-vs-erp.jpg" width="500" alt="Sistema classico vs ERP"></p>
 
+La flessibilità è garantita anche dal fatto che questi sono solitamente articolati in moduli indipendenti, ognno dei quali copre uno specifico ambito aziendale. L'organizzazione può cosi acquistare a ttivare i vari moduli separataemente.
+
+Per l'attivazione di un sistema ERP in azienda richiede un impegno che comporta un periodo di avviamento durante il quale vengono analizzati, e se necessario ridefinit, i porcessi aziendali che il sistema deve sviluppare. Segue l'effettiva parametrizzazione e configurazione del sistema.
+
+L'introduzione di un sistema EPR può avere un elevato impatto a livello culturale e organizzativo: aziende possono incontrare grandi difficoltà o addirittura rinunciare a introdure un'innovazione tecnologica. Per venire in contro a queste aziende molti fornitori propongono soluzioni standardizzate per particolari settori merceologici, con schemi di processi aziendali preconfigurati adattabili in breve tempo alla singola azienda.
+
+**Ambiti applicativi**
+Oltre ad una macrodifferenziazione, all'interno di uno stesso abito le soluzini ERP per i porcessi primari possono essere specializzate o verticalizzate. 
+
+Un sistema ERP è comunemente somposto in sistemi di base che sono:
+- **Amministrazione**: procedure ben definite e articolate. Regolano ile procedure di contabilità generale. Sottoinsiemi
+    + Contabilità finanziaria
+    + Compensi a terzi
+    + Cespiti: beni ammortizzabili
+    + Contabilità analitica
+    + Budget
+    + Controlle di gestione
+
+<p align="center"><img src="./images/amministrazione.jpg" width="500" alt="Amministrazione"></p>
+
+
+
+
