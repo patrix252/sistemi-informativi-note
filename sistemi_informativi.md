@@ -900,3 +900,143 @@ Qualcosa lo schema sia complesso (specialmente il constellation schema), il banc
 - Schema a stella:
     + più efficace per la visualizzazione di cubi di dati (meno join): può influenzare le prestazioni
 
+## Capitolo 13 - DataWarehouse e Datamart
+**Datawarehouse**: L'insieme delle strutture dati e dei tool necessari per ottenere, a partire dai dati operazionali utilizzati e creati dal sistema informativo aziendale, informazioni che aiutino i manager nella valutazione tecnico-economica dell'andamento aziendale
+
+**Non è un programma ma un porcesso** che serve ad estrarre informazioni utili al processo decisionale a partire:
+- dai dati operazionali
+- da fonti dati esterne
+
+La costruzione di DW è un processo incrementale che non comporta l'inserimento di nuove informazioni bensì la riorganizzazione di quelle esistenti e implica l'esistenza di un sistema informativo.
+Si basa su principi spesso in contrasto con quelli utilizzati per i convenzionali sistemi informativi.
+
+Un processo di DW è un complesso di attività che consente di trasformare dati operazionali in dati a supporto di processi decisionali.
+I requisiti di un processo di DW sono:
+- Accessibilità
+- Integrazione
+- Flessibilità
+- Sintesi
+- Rappresentazione multidimensionale
+- Correttezza
+- Compatezza
+
+La persistenza dei dati è quindi:
+- **subject oriented**:
+    + orientato alle aree di interesse per l'analisi aziendali, create nel modello dei dati sottostante. es. dirigente aziendale
+- **integrato**: aziendale e non dipartimentale
+    + quando i dati sono messi nel DW, il tutto deve essere integrato e convertito, riconciliando le eterogeneità delle diverse rappresentazioni
+        * nome
+        * struttura
+        * codifica
+        * rappresentazione multipla
+- **usualmente aggregata**: al fine si effettura stime e valutazioni
+- **non volatile**:
+    + i dati del DW sono caricati e acceduti: l'aggiornamento non avviene nell'ambiente DW
+- **temporalmente corretto**:
+    + la struttura del DW contiene sempre un asse temporale
+    + i dati sono una serie sofisticata di snapshots, presi a determinati istanti periodici della vita aziendale
+- **separato dal mondo OLTP**, per diversi motivi
+    + non esiste un'unica base di dati operazionale che contiene tutti i dati di interesse
+    + la base di dati deve essere integrata
+    + non è tecnincamente possibile fare l'integrazione in linea
+    + i dati di interesse sarebbero comunque diversi poiché devono essere mantenuti dati storici e aggregati
+    + l'analisi dei dati richiede per i dati organizzazioni speciali e metodi di accesso specifici
+    + degrado generale delle prestazioni senza la separazione
+
+<p align="center"><img src="./images/separazione-dw.jpg" width="400" alt="Separazione DW"></p>
+
+I solitamente nalla data warehouse vengono effettuate le **operazioni di accesso e interrogazione durante il giorno** e le **ore notture vengono effettuate le operazioni di caricamento e aggiornamento**.
+
+In base all'obiettivo si usano diverse tecniche di progettazione
+- Obiettivo: query/reporting
+    + Tecnica di progettazione: ER
+- Obiettivo: analisi multidimensionale
+    + Tecnica di progettazione: modello dimensionale (data cube)
+- Obiettivo: data mining
+    + Tecnica di progettazione: discovery analysis 
+
+**Data Mart**
+E' un sottoinsieme (in replica) del datawarehouse contente l'insieme delle informazioni rilevanti per un particolare problema.
+
+E' un data warehouse tematico, derivato dal data warehouse aziendale
+- comprende i soli fatti che riguardano una certa area d'indagine
+- è un estensione temporale ridotta
+- ha una granualirità minore nei fatti rappresentati
+
+<p align="center"><img src="./images/data-mart.jpg" width="300" alt="Data Mart"></p>
+
+Le caratteristiche di un Data Mart sono:
+- implementazione veloce e semplice
+- costo di implementazione inferiore
+- necessità di una specifica funzionale
+- protezione delle informazioni sensibili memorizzate altrimenti nel DW
+- tempi di risposta più veloci dovuti ad un volume di dati inferiore
+- possibiltà di distribuire il data mart alle organizzazioni degli utenti
+- costruito dal basso
+
+Le motivazioni per un Data Mart sono:
+- non appena il datawarehouse cresce, la motivazione per creare i data mart cresce
+- al crescere del data warehouse
+    + la competizione per entrare nel DW diventa critica
+    + sempre più elaborazione DSS viene fatta nel DW e quindi le risorse divantno limitate e in competizione
+    + diventa difficle customizzare i dati in un DW esteso
+    + il costo di effettuare elaborazioni nel DW cresce al crescere del volume dei dati
+- il reparto può customizzare il proprio DM mano a mano che i dati affluiscono nel DW senza essere influenzato da altri
+- l'ammontare di dati storici necessari è funzione del reparto non dell'azienda, quindi sono necessari molti meno dati
+- le elaborazioni possono essere fatte dal reparto senza impatti sull'utilizzo delle risorse del sistema
+- il reparto può usare software customizzato sulle proprie esigenze senza condizionare o essere condizionato dal resto dell'azienda
+- il costo unitario di elaborazione e di momorizzazione è significativamente inferiore al rispettivo costo della macchina per il DW
+
+In generale, un DW è troppo difficile, troppo costoso, troppo impolitico, richiede tempi di sviluppo troppo lunghi. DM è specifico, limitato, contestuale, orientato all'utente e focalizzato
+
+**Fasi di costruzione** di un Data Mart:
+- **Analisi delle sorgenti**
+    + descrizione dei dati disponibili
+    + verifica della compatibilità con i requisiti dell'utente
+    + creazione schema concettuale unico e uniforme
+- **Progettazione concettuale** degli schemi di fatto
+    + uso di schemi a stella o a fiocco di neve, costruzione di viste materializzate o di ipercubi ad alto livello di aggregazione
+- **Progettazione dell'alimentazione**
+    + definizione delle procedure di popolamento del fata warehouse a partire dalle sorgenti
+
+Ovviamente i prodotti creati devono sfruttare il web per offrire accesso ai dati sempre e ovunque
+
+### Architettura di un DW
+Le caratteristiche di un'architettura per il data warehousing sono:
+- Sparazione
+- Scalabilità
+- Estendibiltà
+- Sicurezza
+- Amministrabilità
+
+Il sistema di data warehousing è costituito da basi di dati poste a livelli distinti per finalità, struttura e tipologia di dati contenuti
+- Sorgenti: basi di dati origine (operazionali o esterne)
+- Staging Area (opzionale): area intermedia utilizzata come appoggio per le procedure di trasformazione dei dati
+- Data warehouse: Repository che contiene tutti i dati per l'analisi, articolati su un modello unificato concettualmente multidimensionale
+- Data mart (opzionale ma frequente): basi di dati multidimensionali settoriali su cui si appoggia l'analisi
+
+
+<p align="center"><img src="./images/architettura-dw.jpg" width="600" alt="Architettura DW"></p>
+
+4 livelli descrivono il flusso dei dati:
+- **livello delle sorgenti**: fonti eterogenee, anche esterne
+- **livello dell'alimentazione**: ETL trasforma, ripulisce, valida, filtra e carica dati dalle sorgenti ad DW
+- **livello del DW**: dove le infromazioni sono raccolte, esigenza di metadati
+- **livello di analisi**: creazione del Data Mart, report, analisi, simulazione
+
+<p align="center"><img src="./images/architettura-dw2.jpg" width="600" alt="Architettura DW 2"></p>
+
+**Ciclo di vita dei sistemi di data warehousing**
+La costruzione avviene con un approccio iterativo
+- Costruizione del pirmo ipercubo relativamente al fatto più significativo
+- Integrazione progressiva degli altri fatti
+- Rilascio di data mart
+
+<p align="center"><img src="./images/ciclo-dw.png" width="200" alt="Ciclo DW"></p>
+
+Vantaggi:
+- Primi rislutati disponibili in breve tempo
+- Invesitmenti diluiti
+- Possibilità di tarare e di viluppare il modello sulla base delle indicazioni emerse dall'uso effettivo
+
+
