@@ -543,4 +543,4 @@ Uno dei grandi problemi dei primi sistemi gestionali è stata l'elevata rigidit�
 
 I moderni ERP sono sviluppati come sistemi altamente configurabili, svincolati il più possibile dall'organizzazione aziendale
 
-<img src="./images/calssico-vs-erp.jpg" width="500" alt="Sistema classico vs ERP">
+<img src="./images/classico-vs-erp.jpg" width="500" alt="Sistema classico vs ERP">
