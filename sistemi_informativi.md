@@ -565,7 +565,37 @@ Un sistema ERP è comunemente somposto in sistemi di base che sono:
 
 <p align="center"><img src="./images/amministrazione.jpg" width="500" alt="Amministrazione"></p>
 
+- **Logistica**: si occupa del trattamnto dei materiali: la loro definizione, la loro movimentazione all'interno dell'azienda, l'analisi dei costi e delle valorizzazione a essi riconducibili.
+    + Defnizione dell'anagrafica degli articoli
+    + Definizione del layout aziendale
+    + Movimentazione
+    + Valutazione dei costi dell'articolo
+    + Valutazioni inventariali
 
+- **Vendite**: procedure del flusso attivo costruiscono la catena di processi che permette all'azienda di interagire con il cliente: coprono attività che vanno dalla presentazione dell'offerta alla fatturaione, passando per l'acquisizione dell'ordine e la sua evasione con la consegna al cliente.
+    + Definizione delle condizioni commerciali: prezzo, sconto, agente
+    + Processi di gestione dell'ordine cliente:
+        * Ricezione
+        * Elaborazione
+        * Evasione
+        * Analisi
+
+- **Acquisti**: procedure del flusso passivo costruiscono la catena di processi che permette all'azienda l'interazione con i propri **fornitori** per l'approvigionamento di materiali o per la richiesta di lavorazioni o servizi esterni.
+    + Deinizione delle condizioni commerciali
+    + Procesi di gestione dell'ordine fornitore
+        * Raccolta delle richieste
+        * Emissione dell'ordine fornitore
+        * Evasione
+
+- **Produzione**: uno dei sottosistemi più articolati, fortemente dipendente dal settore merceologico. Aree in comune
+    + Definizione dei dati tecnici
+        * Descrizione della struttura di prodotto
+        * Descrizione delle risorse utilizzate
+        * Descrizione del processo produttivo
+    + Pianificazione della produzione
+        * Richieste di produzione
+        * Disponibiltà di magazzino
+        * Disponibilità di risorse interne ed esterne
 
 
 
