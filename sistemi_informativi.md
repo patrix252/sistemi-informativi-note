@@ -1001,7 +1001,7 @@ In generale, un DW è troppo difficile, troppo costoso, troppo impolitico, richi
 
 Ovviamente i prodotti creati devono sfruttare il web per offrire accesso ai dati sempre e ovunque
 
-### Architettura di un DW
+### Architetture e modelli di DW
 Le caratteristiche di un'architettura per il data warehousing sono:
 - Sparazione
 - Scalabilità
@@ -1040,3 +1040,80 @@ Vantaggi:
 - Possibilità di tarare e di viluppare il modello sulla base delle indicazioni emerse dall'uso effettivo
 
 
+**Architettura a un livello**
+Ha come obiettivo quello di minimizzazione dei dati memorizzati, si crea con un DW virtuale e non c'è nessuna separazione tra OLTP e OLAP. 
+Il livello di storicizzazione è complesso da gestire
+
+**Architettura a due livelli**
+Sorgenti, Data warehouse e Data Mart. Comprendono anche l'area di trasformazione dei dati (staging area), le procedure per il trasferimento dei dati tra le diverse basi di dati e gli strumenti per l'analisi dei dati
+
+Vantaggi:
+- C'è qualità d'informazione anche in mancanda dei dati originari grazie alle ETL
+- L'interrogazione OLAP non iterferisce con i dati OLTP
+- C'è una discordanza temporale tra dati OLTP e dati OLAP
+- Si possono applicare nel DW tecniche speciali di ottimizzazione per analisi e reportistica
+
+**Architettura a tre livelli**
+Aggiunge un il livello dei dati riconciliati dove i dati sono integrati, consistenti, corretti, voltatili, correnti e dettagliati. Il nuovo livello viene caricato nel DW creando così un modello comune e di riferimento per l'intera azienda e una netta separazione tra ETL e DW
+
+
+**ETL**
+Sono strumenti necessari ad alimentare una data warehouse
+
+<p align="center"><img src="./images/etl.png" width="600" alt="ETL"></p>
+
+- **Estrazione** (Extraction): accesso ai dati nelle sorgenti
+    + estrazione dei dati dai sistemi sorgente
+    + copia di parte di essi nell'area data staging
+    + si può fare con 2 diversi approcci
+        * Transazione evento: vengono usati timestamp, si identificano e si aggiornano solo i record modificati
+        * Rimpiazzamento completo: si ricercano completamente i dati, utile per DW di piccole dimensioni, in ogni caso, almeno 3 volte
+    + tipo di estrazione:
+        * statica: tratta tutti i dati presenti nelle sorgenti
+        * incrementale: tratta i soli dati inseriti o alterati dalla data dell'ultimo popolamento del data warehouse, identificandoli tramite diverse tipologie
+- **Trasformazione** (Transformation): trasformazione di formato, correlazione con oggetti in sorgenti diverse.
+    + riporta i dati estratti al modello aziendale
+    + le fasi di integrazione e trasformazione
+        * riconciliazione dei dati provenienti da fonti diverse riferite allo stesso soggetto
+        * riconoscimento di duplicati
+        * trasformazione di dati continui utilizzati come dimensioni in parametrizzazioni discrete
+        * standardizzazione del formato, delle convenzioni, delle codifiche
+    + identificazione dimensioni che cambiano lentamente e generazione chiavi
+    + check di integrità referenziale
+    + denormalizzazione
+    + conversione di tipo di dato e valori nulli
+    + generazione di dati aggregati (spesso esternamente al DBMS)
+    + trasformazioni dipendenti dal tool che si intende utilizzare
+- *Pulizia* (Cleaning): rilevazione e correzione di errori e inconsistenze nei dati estratti
+    + innalzamento del livello di qualità dei dati
+    + non è necessariamente successiva alla integrazione
+    + tipologie di errori trattati
+        * dati incompleti
+        * dati errati o incomprensibli
+        * dati inconsistenti
+    + strumenti utilizzati per il riconosciemnto e la correzione
+        * dizionari
+        * regole
+        * classificatori, predittori
+- **Caricamento** (Loading): con introduzione di informazioni temporali e generazione dei dati aggregati
+    + caricamento vero e proprio dei dati sul data warehouse
+    + aggiornamento dall'esterno (dimensioni più esterne) all'interno (fatti), con applicazione delle politiche di aggiornamento agli elementi già esistenti
+    + aggiornamento dei fatti
+    + copia dei dati trasformati nei vari data marts in modalità batch
+    + idicizzazione dei nuovi dati
+- *Servizi di controllo*
+        * controlla l'intero processo e genera statistiche (metadati)
+        * definizione dei processi, schedulazione dei processi, monitoraggio, trattamneto errori, notifica
+        * controllo qualità: verifica consistenza dei dati caricati
+        * tecniche applicabili:
+            - controllo totali con sistemi di produzione
+            - confronti unità periodo precedente e attuale (ad esempio, si contano i magazzini e si aggiunge una piccola variazione addittiva)
+
+I metadati sono informazioni mantenute a supporto di queste attività.
+
+**Modelli di DW**
+Quattro architetture principali per i sistemi di data warehouse
+- **Central Data Warehouse** (Enterprise Data Warehouse): contiene un enorme data warehouse con dati provenienti tipicamente da diversi e vari database operativi e computer con molti utenti
+- **Distributed System**: Il DW è distribuito su piattaforme multiple, spesso su computer remoti tra loro
+- **Data Warehouse + Data Marts**: I dati vengono estratti da un DW centrale, trasformati e caricati in un sistema più piccolo, consolidato: il Data Mart, ognuno disegnato per risolvere problemi specifici di sottoinsiemi di utenti
+- **Single Warehouse or Data Mart**: Singola fonte di dati operazionali, orientati a servire pochi utenti di solito di un dipartimento/reparto
