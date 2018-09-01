@@ -1117,3 +1117,39 @@ Quattro architetture principali per i sistemi di data warehouse
 - **Distributed System**: Il DW è distribuito su piattaforme multiple, spesso su computer remoti tra loro
 - **Data Warehouse + Data Marts**: I dati vengono estratti da un DW centrale, trasformati e caricati in un sistema più piccolo, consolidato: il Data Mart, ognuno disegnato per risolvere problemi specifici di sottoinsiemi di utenti
 - **Single Warehouse or Data Mart**: Singola fonte di dati operazionali, orientati a servire pochi utenti di solito di un dipartimento/reparto
+
+### Vantaggi e svantaggi di un DW
+**Vantaggi**:
+- **Semplicità**: una sola immagine integrata dei dati, consentono ai legacy systems esistenti di continuare ad operare anche se mantenendo una distribuzione client/server locale, inoltre unificano dati a livello company-wide incrementando la comunicazione aziendale.
+- **Migliore qualità dei dati**: rivisitazione degli schemi dei DB/files, de/normalizzazione consistenza, accuratezza, documentazione, DSS via OLAP e analisi DM
+- **Accesso rapido**: Il lavoro dell'ambiente operazionale e del reparto IS è ridotto, i tempi di risposta non sono influenzati dall'ambiente operazionale
+- **Separazione ambiente operativo dall'ambiente DSS**: In questo modo, managers e analisti possono usare dati storici senza invluenzare e senza essere influenzati nei tempi di risposta e nei concetti
+- **Vantaggio competitivo**: La conoscenza presente nel DB operazionale viene usata meglio, e questo porta ad una migliore comprensione della clientela, in una più rapida risposta al mercato ecc. Questo ammortizza i costi di un DW
+- **Creazione di un DB distribuito**: DW raccoglie informazioni da fonti disparate e luoghi potenzialmente incompatibili attraverso l'utilizzo i middleware, sw per data transfer e altri client/server tools
+- **Costo operativo**: DW elimina archivi storici cartacei, ad investimento iniziale coperto, le risorse IT necessarie sono generalemnte inferiori
+- **Gestione del flusso informativo**: DW aiuta un raffinamento incrementale dei sistemi che devono monitorare i dati di produzione
+- **Supporto all'elaborazione parallela**: Le query utente sono troppo computer-intensive per i sistemi operazionali. Il DW può essere creato su ambienti client/server, più portenti, scalabili, con migliori rapporti prezzo/performance
+- **Downsizing**: Possibilità di portare la decisione lontano da DB sui desktop 
+dei decision makers, senza dipendere dai manager IT
+- **Indipendenza della piattaforma**: DW può essere costruito partendo da un PC fino ad un mainframe, sebbene molti sistemi vadano su server Unix e ambienti client/server environment.
+- **L'infrastruttura di elaborazione**: DW aiuta l'azienda a creare una infrastruttura di elaborazione moderna ed integrata
+- **Benchmarking realistico**: DW fornisce metriche necessarie a stabilire processi aziendali basati su dati storici
+- **Sicurezza**: Non si lavora direttamente sull'ambiente di produzione
+
+**Svantaggi**
+- **Complessità nello sviluppo**. Un DW non si compra, si costruisce: ogni DW ha una architettura unica e un set di richieste unico.
+    + IT deve ascoltare molte richieste di diverso tipo, con capacità di anticipare future esigenze non ancora sentite per la raccolta dati
+    + continui cambiamenti nel business aziendale
+    + complessità della sincronizzazione DW e OLTP
+    + problema della scalabilità del sistema rispetto alla domanda dell'utenza e alla complessità del DW
+    + sclta del prodotto di sviluppo e della piattaforma HW
+    + **conoscenza di tutti gli schemi DB coinvolti nel proesso**
+    + lavorando sul core-business aziendale, presneza di forti resistenze interne di vario tipo e livello, da impiegati a dirigenti
+- **Lunghi tempi di creazione** (1-2 anni): In mancanza di forti sponsor interni, le lunghezze di un progetto di DW + le ingenti spese possono causare problemi al progetto
+- **Dispendioso** (range di M€): lo scambio dati dall'ambito operazionale al DW è fatto spesso con operazioni manuali, ambienti vecchi e poco conosciuti
+- **Mancanza di API**: il software DW manca ancora di (API) o altri standard che aiutino il processi di DW, come ad sempio ODBC
+- **End-user training**: CAmbiamenti radicali nella mentalitaà degli utenti finali di un DW, quindi training intensivo e soprattutto non solo tecnico
+- **Complessità nello sfruttare SMP/MPP di DW**: sviluppare un prodotto che sfrutti capacità multiprocessing simmetrico o parallelo è difficoltoso
+- **Difficoltà nel creare un ambiente DBMS distribuito**: Il DW è centralizzato per natura, renderlo distribuito è complesso e costoso
+- **Time-lag tra DW e operazionale**: un DW real-time è un sogno, visto che è impossibile avere una replicazione real-time dei dati operativi per un full-scale DW
+- **Livello di fedeltà dei dati**: il DW memorizza una fetta di dati che è sempre fuori rilevanza fino a quando non sarà sostituita da dati freschi
