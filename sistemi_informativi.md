@@ -515,3 +515,32 @@ Marketing e vendite
 Servizi postvendita
     Assistenza clienti
 ```
+
+
+## Capitolo 5 - Il sistema ERP e le sue scomposizioni per sistemi di base
+Fino ai primi anni 90 i sistemi informativi nelle grandi aziende erano articolati in isole informatiche autonome. Con questi sistema rifletteva bene:
+- lo sviluppo incrementale del sistema informativo aziendale: di norma tende a procedere per aree
+- relativa rigidità delle organizzazioni aziendali
+- la grande specializzazione dei produttori software
+
+ma questi sistemi possono portare a problemi consistenti nell'ottica complessiva dell'azienda. I principali punti deboli sono:
+- eterogeneità dei sistemi: diversi fornitori con differenti convenzioni
+- separazione: notevole sforzo nell'integrazione dei sistemi
+- autonomia dei sottosistemi: molte informazioni devo essere salvate più volte su archivi diversi
+- etererogeneità e separazione rendono difficile la visione d'insieme
+
+La complessità dei ssitemi informativi a *isole* ha favorito la rapida diffusione dei sistemi ERP, sistemi informativi operazionali nativamente integrati. 
+**ERP: Enterprise Resource Planning, pianificazione delle risorse dell'azienda.**
+La copertura funzionale dei sistemi ERP si estende dalla definizione della base di dati comune alla realizzazione dei processi gestionali aziendali, lavora soprattutto su:
+- attivitò routinarie e gestionali: l'avanzamento della produzione è parte di un sistema ERP, mentre non lo è la progettazione;
+- attività interne all'azienda: eventi che hanno ripercussione sulla struttura interna, mentre quelli esterni sono delegate ad altri sistemi.
+
+I sistemi **ERP sono composti da sottosistemi nativamente integrati**: sviluppati da un'unica software house, condividono una base di dati comune e le procedure sono progettate per inteagire e cooperare. Oltre a questa funzione unificante, gli ERP si propongono anche come sistemi informativi flessibili, in grado di assecondare l'azienda nei suoi porcessi di evoluzione e di crescita. 
+
+Uno dei grandi problemi dei primi sistemi gestionali è stata l'elevata rigidità che si manifestava:
+- nei confronti dell'organizzazione aziendale: congelavano l'organizzazione aziendale corente
+- nei confronti della piattaforma tecnologica: una volta installato il sistema, cambiare piattaforma hardware o sistema operativo era impossibile se non prendendo in considerazione anche una radicale revisione delle procedure gestionali.
+
+I moderni ERP sono sviluppati come sistemi altamente configurabili, svincolati il più possibile dall'organizzazione aziendale
+
+<img src="./images/calssico-vs-erp.jpg" width="500" alt="Sistema classico vs ERP">
