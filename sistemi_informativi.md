@@ -30,6 +30,7 @@ valore quadratico
 <img src="./images/hype_cycle_di_gartner.png" width="600">
 
 <img src="./images/hype_cycle_di_gartner2.png" width="600" alt="Hype Cycle di Gartner">
+**Hype Cycle di Gartner**
 
 - **Scintilla Tecnologica** innesca un potenziale di innovazione tecnologia.
 Le prime storie, Proof-of-concept e l’interesse dei media scatenano
@@ -71,6 +72,7 @@ consolidati.
 - **Sistema Organizzativo**: risorse/regole d'utilizzo coordinato di tali risorse, utilizzate per il perseguimento dei propri obiettivi
 - **Sistema Informatico**: parte del s.i. in cui informazioni sono raccolte, elaborate archiviate, scambiate mediante l'uso delle ICT
 
+
 - **Risorsa**: tutto ciò con cui l'organizzazione opera, sia materiale che immateriale, per perseguire i soi obiettivi
 - **Processo**: insieme attività (sequenze di decisioni e azioni) che l'organizzazione svolge per gestire il ciclo di vita di una risorsa o di un gruppo omogeneo di risorse
 
@@ -83,10 +85,10 @@ consolidati.
 
 ### Informatica, Informatica aziendale e Sistemi informativi aziendali
 **Informatica**: Informazione + automatica
-    + la scienza che studia i principi di rappresentazione ed elaborazione elettronica dell'informazione
-    + l'insieme delle strutture tecnologiche hardware e software utilizzate per la raccolta, l'archiviazione, l'elaborazione dei dati e la produzione di informazioni.
+- la scienza che studia i principi di rappresentazione ed elaborazione elettronica dell'informazione
+- l'insieme delle strutture tecnologiche hardware e software utilizzate per la raccolta, l'archiviazione, l'elaborazione dei dati e la produzione di informazioni.
     
-**Sistema informativo**: l'insieme delle procedure e delle infrastrutture che definiscono e supportano il fluire delle informazioni all'interno di una struttra organizzativa. 
+**Sistema informativo**: **l'insieme delle procedure e delle infrastrutture** che definiscono e supportano il fluire delle informazioni all'interno di una **struttra organizzativa**. 
 Si può definire come quel complesso di elementi interconnessi che:
 - Raccolgono
 - Catalogano
@@ -104,7 +106,7 @@ dati nell'intento di:
     + IT Information Technology
     + TLC Telecommunication
 
-- **Informatica aziendale**: disciplina che studia l'applicazione dell'informatica alle aziende e l'influenza dell'informatica sulle diverse categorie di elementi costituenti il sistema aziendale.
+- **Informatica aziendale**: disciplina che **studia l'applicazione dell'informatica alle aziende** e l'influenza dell'informatica sulle diverse categorie di elementi costituenti il sistema aziendale.
 
 <img src="./images/sistema_aziendale.png" width="300" alt="Sistema aziendale">
 
@@ -122,7 +124,7 @@ dati nell'intento di:
     + *Incompatibilità tra soluzione e processi / relazioni aziendali*
 
 
-- **Sistemi informativi aziendali**: hanno come obiettivo finale la distribuzione di informazioni alle persone che operano all'interno dell'azienda nel momento in cui l'informazione è necessaria.
+- **Sistemi informativi aziendali**: hanno come obiettivo finale la **distribuzione di informazioni alle persone** che operano all'interno dell'azienda nel momento in cui l'informazione è necessaria.
 - La costruzione è pilotata da:
     + Identificazione dei fenomeni, interni o esterni, che l'azienda ha interesse a rappresentare.
     + Dalle modalità attraverso cui rappresentare i fenomeni
@@ -137,14 +139,14 @@ dati nell'intento di:
     + **Mezzi e strumenti** per il trattamento e il trasferimento delle infromazioni
 
 ### L'impatto dell'informatica nelle aziende
-I sistemi infromativi sono strumetni per diffondere la conoscenza all'interno dell'azienda.
+I sistemi infromativi sono strumenti per diffondere la conoscenza all'interno dell'azienda.
 Le necessità di un'azienda si differenziano in base a diversi fattori
 - **Livello di astrazione**: il grado di sintesi delle informazioni richieste.
 - **Tempempesitività**: assere informati su azenti aziendali all'occorrenza
 - **Livello di copertura**: l'attenzione deve essere concetrata su un'area particolare e un certo periodo di tempo.
 
 Le informazioni all'interno di un'azienda fluisce in due diverse direzioni
-- Orizzontalmente: definendo e sincronizzando i processi operativi azinedali
+- Orizzontalmente: definendo e sincronizzando i processi operativi aziendali
 - Verticalmente: in flussi che riorganizzano ed elaborano i dati oprativi raccolti delle procedure, estrendone informazioni diverse per i diversi livelli
 
 Il ruolo principale dell'informatica all'interno dei **processi classici** è quello di:
@@ -163,11 +165,11 @@ BPR (Business Process Rengineering) introduce innovazione agendo pricipalmente s
 
 <img src="./images/evoluzione_storica_dei_sistemi.png" width="700" alt="Evoluzione storica dei sistemi">
 
-Nel 2010 la spesa per l'IT è stata 1,2% del PIL
+Nel 2010 la spesa per l'IT è stata 1,2% del PIL in Italia
 
-Epoca dei mainframe: anni 60
-Epoca dei minicomputer: anni 70 (ArpaNet)
-Epoca dei PC: anni 80
+- Epoca dei mainframe: anni 60
+- Epoca dei minicomputer: anni 70 (ArpaNet)
+- Epoca dei PC: anni 80
 
 Cambiamenti a livello interno alle aziende:
 - Riduzione dei ruoli impiegatizi
@@ -597,5 +599,150 @@ Un sistema ERP è comunemente somposto in sistemi di base che sono:
         * Disponibiltà di magazzino
         * Disponibilità di risorse interne ed esterne
 
+## Capitoli 7-11
+TODO
 
+## Capitolo 12 - Sistemi informazionali
 
+### Presupposti per l'analisi dei dati
+I dati incorporano anche **conoscenza aziendale** consolidata negli anni e trsformare questo *know-how* in sistem moderni risulta molto difficile.
+In assenza di sistemi di analisi, i servizi ICT sviluppano programmi apposti per estrarre dati o report, con:
+- costi di sviluppo enormi
+- manutenzione dei programmi difficoltosa
+- frequenza di utilizzo scarsa (una volta o poco più)
+L'avvento dei PC ha accelerato il "prurito" degli utenti di avere software di analisi facili da usare.
+
+**DSS** Decision Support Systems: Tecnologia che suporta la dirigenza aziendale nel prendere decisioni tattico-strategiche in modo migliore e più veloce.
+
+<p align="center"><img src="./images/databerg.png" width="500" alt="DataBerg"></p>
+*ROT*: redundant, outdated, trivial information
+
+**Sistemi di business intelligence**
+costituiscono la tecnologia che **supporta la dirigenza aziendale** nel **prendere decisioni** operative, tattiche, strategiche in modo efficace e veloce medianti particolari tipologie di elaborazione dette "analitiche" che usano in maniera integrata i dati dell'organizzazione combinati con eventuali dati esterni.
+
+Problemi con il data managment: Qualità vs Quantità
+- Garbage in, Garbage out
+    + il volume dei dati aumenta in modo esponenziale
+    + i dati devono essere conservati per molto temp
+    + nuovi dati vengono aggiunti rapidamente
+    + sono porzion di dati sono rilevanti per le decisioni
+    + dati raccoldi da persone diverse da fonti diverse
+    + sono necessari anche dati esterni per prendere decisioni
+    + Sicurezza dei dati, privac, qualità, integrità
+    + requisiti legali
+
+**Tipi di dati aziendali**
+- Dati critici aziendali
+    + dati considerati vitali per il successo operativo della società
+    + da gestire e proteggere proattivamente in real-time da parte di specialisti con specifiche responsabilità assegnato dal CIO
+- Dati ROT 
+    + mantenerne sempre il livello minimo, eliminati periodicamente
+- Dati oscuri
+    + dati da cui il valore ancora non è stato chiaramente indentificato
+    + includono dati scritici a livello aziendale, dati ROT o più importanti, tutti i dati illegali o non conformi che creano un rischio invisibile nel sistema IT aziendale. 
+
+Gli **obiettivi** dell'analisi di dati e dei sistemi informazionali
+- Sfruttare il partimonio dei dati operazionali per l'estrazione di informazioni utili nel processo decisionale
+- Superare i limiti dei primi strumetni di DSS
+    + Reporting
+    + Fogli di calcolo
+- Fornire strumetni per trasformare i dati grezzi in informazione e/o conoscenza aziendale di qualità a supporto:
+    + attività operative
+    + attività decisionali
+- basi per il data management
+    + profilatura
+    + gestione
+    + integrazione
+    + miglioramento
+
+### Sitemi OLTP e OLAP
+**OLTP** OnLine Transaction Processing: Ambiente che facilita la raccolta e l'elaborazione transazionale dei dati
+- tradizionalmente basatao su elaborazione di transazioni, che realizzano i processi operativi dell'organizzazione
+    + operazioni predefinite, brevi e relativamente semplici
+    + ogni operazione coinvolge "pochi" dato
+    + dati di dettaglio, aggioranti
+    + propriertà "ACID": atomicità, correttezza, isolamento, durabilità. sono essenziali
+
+**OLAP** OnLine Analytical Processing: ambiente che facilita l'analisi dei dati
+- Dati di partenza
+    + basati su modello intuitivo per l'utente ad efficiente per l'anlisi
+    + provenienza: db operazionale, db specialistici, fonti esterne
+    + aggiornamento solo in append
+- Strumenti di analisi dei dati
+    + reporting
+    + analisi interattiva
+    + data mining
+
+**Caratteristiche dei sistemi informazionali**
+- Finalità
+    + fornire il substrato informativo per la conoscenza dell'azienda
+    + descrivere il passato, aiutare ad indentificare i problemi e le loro cause
+    + suggerire i cambiamenti da apportare, fornire anticipazioni su scenari futuri
+- Struttura: dati articolati intorno ad entità di cui si vuol conoscere l'apporto alla vita aziendale
+- Utenza: decisori, manager con visione e conoscenza ampia dell'azienda
+
+**Terminologia**
+- Data Warehousing: strumenti e tecninche di definizione, costruzione, mantenimento del data warehouse
+- Decision Support System: sistemi informatici usati nel processo decisionale com esupporto all'estrazione delle informazioni da basi di dati organizzate
+- Data Mining: strumenti e tecniche per l'estrazione dei dati di informazioni "nascoste"
+- Business Intelligence: attività di estrazione di informazione dai dati di business generati dai processi operatvii aziendali
+- Knowledge Managment: trattamento informatizzato della conoscenza aziendale in senso ampio (include sorgenti dati struturate, semi-strutturate, non struttrate)
+
+**OLTP vs OLAP**
+<p align="center"><img src="./images/oltp-vs-olap.png" width="500" alt="DataBerg"></p>
+
+**OLTP vs OLAP persistenza**
+<p align="center"><img src="./images/oltp-vs-olap-persistenza.png" width="500" alt="DataBerg"></p>
+
+**Tecniche di progettazione di soluzioni OLAP**
+Sono vari gli approcci per progettare e modellare soluzioni adatta per il mondo anlitico:
+- ER modeling
+- dimensional modeling
+
+La soluzione più ovvia passa per il mondo relazionale ER e al sua implementazione nelgi RDBMS, ma questo mondo non si relva adatto, anzi spesso controproducente creando problemi concettuali sostanziali che differenziano il modello relazionale da modello multidimenisonale. Le soluzioni:
+- applicazioni a forte contenuto multimediale -> BLOBa
+- applicazioni con caratteristiche orientate agli OODBMS
+- applicazioni Column-oriented DB o NOSQL: es. DMS
+- reasoning, machine learning, rappresentazione a grafo, semantica...
+- applicazioni riguardanti l'analisi dei dati on-line 
+
+### RDMB, mondo analitico e performance
+**TCP** Transaction Processing Preformance Council: organismo internazionale che disegna benchmark standard e ne omologa i risultati. O benchmark del TPC sono ritenuti i più importanti e significativi per la valutazione delle prestanzioni dei sistemi che ospitano DBMS.
+
+I DBMS relazioni e i tools di front-end relativi presentano molte limitazioni quando vengono usati in attività di analisi on-line:
+- **gestione inefficiente delle relazioni multi-dimensionali**
+- **il problema delle normalizzazioni**
+- **possibilità di operazioni analitiche molto limitate**
+- **modalità di consolidamento dei dati poco efficiente**
+
+**Gestione inefficiente delle relazioni multi-dimensionali**
+**Le strutture bidimensionali (tabelle/relazioni) non sono adatte a maneggiare strutture multidimensionali**, i dati vengono memorizzati in tabelle bidimensionali relazionate tra loro, appiattendo così la potenziale multimensionalità di una vista. Collegare schemi bidimensiali per creare un modello MD è complesso, rischioso e richiede molte risorse.
+L'utente finale percepisce confusione con l'uso di SQL e l'uso di join multiple causano performance pessime.
+
+Una soluzione potrebbe essere quella di creare DB denormalizzati per DSS ma questo crea una serie di svantaggi come calo di performance e quindi un aumentare dei tempi di risposta.
+L'approccio brute force con l'uso di Parallel Query Processing, potrebbe migliorare la situazione, ma è adatta solo a certi tipi di query e richiede l'uso di hw e sw molto costoso.
+
+L'uso di database normalizzati invece porta vantaggi all'integrità dei dati ma lavora pesantemente contro la data legibility di un ambiente DSS. I svantaggi sono: 
+- Molte tabelle con molte relazioni
+- uno schema concettuale complesso (anche se tecnicamente perfetto)
+- chiavi esterne da conoscere e interpretare
+- percorsi tra tabelle non direttamente connesse
+- naming conventions criptiche
+
+oltretutto l'uso di questa tecnica rende il lavoro dell'analista OLAP più difficile dato che non ha le base tecniche per comprendere la struttura. 
+
+Requisiti ideali di leggibilità per un DSS sono:
+- chiarezza schema DW
+- dati leggibili (invece che creati/gestiti dai DBA e personale IT)
+- dati puliti
+- dati navigabili dagli analisti 
+- consistenza tra presentazione dei dati e business model dell'utente
+- semplificazione della query a causa dei metadati
+
+### Il modello multidimensionale e le operazioni principali
+- modello monodimensionale: i campi si riferiscono ad un solo record
+- modello bidimensionale: semplicemente una matrice di righe e colonne (tabella) 
+
+poi il prof suggerisce di rappresentare i dati in forma n-dimensionale cosi da agevolare le operazioni di riorganizzazione e lettura dei dati, interpretanto all'occorenza la struttura dati nel modo più adeguata. 
+
+### Caratteristiche e modelli logici OLAP
