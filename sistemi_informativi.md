@@ -770,8 +770,133 @@ con un modello così costituito possiamo rispondere a domande tipo:
 
 <p align="center"><img src="./images/struttura-ipercubo.jpg" width="500" alt="Struttura ipercubo"></p>
 
-
-
+**Operazioni sui dati multidimensionali**
+- **Drill down**: disggrega i dati
+    + dettaglia i dati scendendo lungo la gerarchia
+    + dettaglia i dati aggiungendo una dimensione di analisi
+- **Roll up**: aggrega i dati
+    + sintetizza i dati percorrendo le gerarchie nella direzione di maggior aggregazione
+    + sintetizza i dati eliminando una delle dimensioni di analisi
+- **Slice & Dice**: seleziona e proietta
+    + Slice: fissa il valore di una delle dimensioni base per analizzare la prozione di dati filtrati così ottenuta
+    + Dice: Filtra i fatti elementari considerati nell'analisi fissando valori per coordinate dimensionali di qualisasi livello
+- **Pivot**: riorienta il cubo
+    + Inverte la relazione tra le dimensioni, realizzando una rotazione del cubo nell'analisi
+    + Particolarmente utile nell'analisi di dati presentati in forma tabellare
 
 
 ### Caratteristiche e modelli logici OLAP
+- **ROLAP**: la struttura intrinsecamente multidimensionale dei fatti viene realizzata completamente su database relazioni. Gli strumenti di interrograzione agiscono tramite query SQL standard, con opportune funzioni di aggregazione.
+    + Vantaggi:
+        * minima occupazione di spazio
+        * elevata conoscenza degli strumenti relazioni da parte degli operatori
+    + Svantaggi:
+        * esecuzione di query poco efficiente
+        * le soluzioni per il miglioramento della velocità di risposta (denormalizzazione, materializzazione delle viste) implicano un aumento della complessità e dell'occupazione di spazio
+- **MOLAP**: memorizza i dati usando strutture intrinsecamente multidimensionali: i fati vengon ofisicamente memorizzati in vettori e l'accesso è di tipo posizionale. Il sistema alloca una cella per ogni possibile combinazione dei valori delle dimensioni e l'accesso a un fatto avviene in modo diretto, sulla base delle coordinate fornite. Le interrogazioni sono ottimizzate tramite strumenti di query proprietari
+    + Vantaggi:
+        * elevata efficienza nell'esecuzione delle query complesse
+        * stretta adereza al modello concettuale
+    + Svantaggi:
+        * elevata occupazione di spazio (viene allocato lo spazio per ogni possibile ennupla dimensionale)
+        * mancanza di standard, sia di rappresentazione dei dati che di interrogazione
+        * scarsa familiarità con il modello da parte degli operatori
+- **HOLAP**: soluzione intermedia che combina i vantaggi di MOLAP e ROLAP.
+    + Data warehouse: realizzato su base relazionale
+        * semplicità di sviluppo e di manutenzione delle procedure di popolamento dei fatti
+        * scalabilità del sistema
+    + Data mart: realizzati su base multidimensionale
+        * efficienza nelle interrogazioni
+        * dimensioni contenute
+
+### Gli schemi multidimensionali: caratteristiche e tipi
+- Fatti: evento che accade nell'ambito dell'attività e che si ha interesse a misuarare (es. vendire, i reclami, le spedizioni)
+    + Caratteristiche
+        * dimensioni che lo collocano nel tempo e nello spazio aziendale
+        * misure che lo quantificano
+        * informazioni descrittive
+    + Identificazione univoca del fatto e delle misure tramite l'ennupla di coordinate:
+        * fatto: (dimensione1, ... dimensioneN)
+        * misura: (dimensione1, ... dimensioneN).Misura
+- Misure: caratteristica numerica del fatto che ne descrive aspetti quantitativi rilevanti per l'analisi
+    + ogni fatto può avere più misure
+    + le misure possono essere
+        * effettive, memorizzate sulla base di dati
+        * calcolate run-time utilizzando i valori delle misure effettive
+        * implicite, indicano la presenza (o l'assenza) di un fatto
+- Aggregabilità: possibilità di usare un operatore di aggregazione su una misura (quindi su tutte le dimensioni) o su una specifica coppia (misura, dimensione)
+- Additività: possibilità di usare l'operatore di aggregazione "Somma" su una misura (quindi su tutte le dimensioni) o su una specifica coppia (misura, dimensione)
+- Gerarchie: insieme di attributi (attributi dimensionali) collegati gerarchicamente ad una dimensione
+    + sono usati per aggregare i fatti elementari
+    + sono determinati univocamente dal valore della dimensione
+    + rappresentano classificazioni della dimensione
+    + l'analisi dei fatti di un cubo può essere condotta attraverso viste che utilizzano attributi dimensionali
+
+**Schemi multidimensionali su basi di dati relazionali**
+**Schema a stella**
+stile più semplice di schema per data warehouse. La struttura di base consiste in una tabella di fatti che referenzia un numero (da due in su) di tabelle di dimensioni.
+
+Questo tipo di schema viene solitamente utilizzato per la rappresentazione di data mart, ovvero di un sottoinsieme di dati aziendali o dipartimentali con uno specifico e ben definito ambito di analisi.
+
+Esso è formato da:
+- Tabella dei fatti (fact table)
+    + una tabella per ogni fatto, sia co i dettagli e con dati di sintesi
+    + un campo per ogni misura ed una chiave esterna per ogni dimensione di base
+    + la primary key ha una sola colonna per dimensione
+    + contiene come attriuti la chiave di ciascuna dimensione
+- Tabelle delle dimensioni
+    + ha una sola chiave
+    + ogni dimensione è una singola tabella, altamente denormalizzata
+    + un campo per ongi attributo dimensionale della gerarchia che ha radice nella dimensione rappresentata (denormalizzaizione completa)
+
+I collegamenti tra dimensioni e fatti avvengono tramite chiavi esterne
+
+<p align="center"><img src="./images/schema-stella.png" width="300" alt="Schema stella"></p>
+
+Di fatto, un star chema se implementato in un DBMS è rappresentato da un modello relazionale con una relazione tra tabella di dimensione e fact table. Un elevato numero di dimensioni complica la gestione dei fatti e l'analisi, quindi è sconsigliato.
+- vantaggi: 
+    + facile da comprendere
+    + mapping intuitivo tra le entità di business
+    + gerarchie di facile definizione
+    + riduzione di join fisico
+    + mautenzione ridotta
+    + metadati molto semplici
+- svantaggi: i dati riepilogati nella tabella di fatto presentano prestazioni inferiori per i livelli di repilogo, mentre la dimensione enorme rappresenta un problema
+
+<p align="center"><img src="./images/schema-stella2.png" width="600" alt="Schema stella"></p>
+
+particolarità:
+- nella dimensione del tempo sono presenti dati derivati e rindondanze
+- le rindondanze servono per facilitare le operazioni di analisi dei dati
+- i fatti sono in forma normale di boyce-codd in quanto ogni attributo nonchiave dipende funzionalmente dalla sua unica chiave
+- le dimensioni sono in genere relazioni non normalizzate
+
+**Schema a fiocco di neve**
+E' uno schema di database per data warehouse che può essere visto come una estensione dello Schema a stella.
+
+<p align="center"><img src="./images/schema-fiocco-di-neve.png" width="600" alt="Schema a fiocco di neve"></p>
+
+La struttura di base consiste in una tabella dei fatti, al centro, che referenzia un numero (da due in su) di tabelle di dimensioni (dimension tables) che, a differenza dello schema a stella, hanno ramificazioni con altre tabelle normalizzate, anche su più livelli. Il nome attribuito a questo tipo di schema è legato proprio alla rappresentazione grafica di questi legami fra le tabelle che ricorda, appunto, quella di un fiocco di neve. 
+
+I benefici di questo tipo di schema, rispetto allo schema a stella, sono quelli tipicamente contemplati nella normalizzazione dei database:
+- azzeramento della ridondanza dei dati
+- semplificazione dell'aggiornamento dei dati (conseguenza del primo punto)
+- minore occupazione di spazio per la conservazione dei dati
+- velocità di accesso alle informazioni
+
+Di contro, tuttavia, questo aumento del numero di tabelle rende necessaria la scrittura di query più complesse (con più join) per la ricerca delle informazioni. Questo problema, in realtà, viene spesso superato dalla creazione di viste (View) che riportano la struttura della gerarchia di tabelle di una dimensione di analisi a quella che avrebbe avuto in uno schema a stella.
+
+**Schema a costellazione**
+Schema che vede le tabelle dimensionali condivise da più tabelle dei fatti. Risulta quindi un approccio da seguire quando più fatti coinvolgono gli stessi soggetti.
+
+<p align="center"><img src="./images/schema-costellazione.png" width="600" alt="Schema costellazione"></p>
+
+
+**Summary**
+Qualcosa lo schema sia complesso (specialmente il constellation schema), il banchmarking delle prestazioni è essenziale per determinare quale sia il design migliore.
+- Schema snowflake:
+    + più facile mantenere tabelle di dimensione quando le tabelle di dimensioni sono molto grandi (ridurre lo spazio totale)
+    + non è generalmente raccomandato in un ambiente di data warehouse
+- Schema a stella:
+    + più efficace per la visualizzazione di cubi di dati (meno join): può influenzare le prestazioni
+
