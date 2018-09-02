@@ -1401,3 +1401,62 @@ I metodi per la ricerca sono:
 - **Relazioni con il mercato**
     + l'analisi degli cluster sulla base dei dati di accesso alle pagine del sito web può evidenziare quali siano le informazioni maggiormente ricercate
     + mediante i meccanismi di riconoscimento, l'utente che accede alle pagine può essere riconosciuto ed avere un profilo
+
+## Linked Open Data
+### Data deluge
+Siamo sommersi di dati, essi ci possono aiutare a prendere decisioni migliori, questi data stanno giocando un ruolo rempre più centrale nelle nostre vite e stanno guidando l'emergente data economy.
+Sempre più soggetti stanno "consumando" questi dati per costruire nuovi business.
+- Amazon rende i dati dei suoi prodotti dispobili a terze parti attraverso web api migliorando così le sue possibilità di business
+- Google sfrutta dati strutturanti di siti web e di e-commerce per creare delle liste di prodotti
+- Società scientifiche richiedono lo scambio di dati a livello globare per la ricerca. es Human Genome Project
+- La politica stessa è pilotata da questa enorme quantità di dati
+
+Il valore e la diversità di questi ecosistemi dimostrano la forte domanda all'accesso dei dati. Questo solleva tre importanti domande:
+- Come si può fornire accesso ai dati così che possano essere riusati?
+- Come si possono identificare i dati veramente importanti in questa moltitudine di dati?
+- Come si può permettere alle applicazzioni di integrare dati con un così vasti tipi di dato diversi?
+
+Proprio come il World Wide Web ha rivoluzionato il modo di connettere e consumare i documenti, così può anche rivoluzionare il modo di scoprire, accedere e integrare l'uso dei dati.
+
+Si vuole quindi analizzare come l'insieme di principi e tecnlogie, conosciute come Linked Data, può guidare l'etica e le infrastrutture del web in modo da permettere la condivisione ed il riuso dei dati in scala massiccia.
+
+### Links across distributed data
+Per capire i concetti ed i valori dei Linked Data è importante considerare gli attuali meccanismi per la condivisione ed il riuso dei dati nel Web.
+
+- HTML: orientato alla stutturazione di testi e documenti piuttosto che di dati. Questo rende difficile creare applicazioni software che estraggano dati dalle pagine HTML
+    + le relazioni vengono gestite con gli href che si riferiscono ad altre pagine Web
+- Micorformats: tentativo a risolvere il problema. Possono essere usati per pubblicare dati strutturati che descrivono tipi di entità come persone, organizzazioni, eventi, recensioni o entità. Hanno lo svantaggio che sono ristretti alla rappresentazione di piccoli insieme di tipi diversi di dati, quindi non sono candidabili per la condivisione di dati arbirtari sul Web.
+- Web API: forniscono un accesso a dati strutturati attraverso il protocollo HTTP. Esempi sono Amazon Product Advertising API, Flickr API ecc... Anche qui abbiamo lo svantaggio che un pogrammatore che vuole utilizzare questi dati deve scrivere del codice ad hoc per accederci.
+    + solitamnte non hanno un sistema per "seguire i dati", ossia trovare dati correlati a quelli cercati
+    + usano identificatori con scope locale. es. product_id: 123456. Non c'è quindi un meccanismo per riferirsi ad un item comune tra 2 diverse API
+
+### The global space of data
+Linking data distribuiti in giro per il Web richiedono meccanismi standard per specificare l'esistenza e il significato delle connessioni tra gli items descritti in questi dati. 
+Questo meccasimo è fornito da **RDF** Resource Description Framework. Esso fornisce un modo flessibile per descrivere cose nel mondo, come persone, luoghi, concetti astratti, e come questi sono **relazionati** fra loro.
+
+- **RDF connette cose, non documenti**: esso non connette semplicemente i dati ma asserisce connessioni tra entità descritte nei dati.
+- **RDF descrive le connessioni**: esso permette di chi pubblica i dati di definire esplicitamente la natura della connessione. es: "mio libro" *inVenditaIn* "Libreria del nonno", "Libreria del nonno" *siTrovaA* "Trento"
+
+RDF rende i links espliciti in modo che le  applicazioni che lo sfruttano possano seguire i dati e trovarne di altri. Questo rende il Web, dove questi dati sono pubblicati, un posto più navigabile e che facilita l'usabilità dei dati.
+
+Linked Data permette di relazionare dati di diverse sorgenti creando così un unico **Global Data Space**. L'uso di standars Web e modelli di dati comuni rende possible implementare applicazioni generiche che operano su tutto il Data Space. Questa è l'essenza dei Linked Data.
+L'aumentare dell'adozione dei Linked Data ha creato cosi quello che viene chiamto Web of Data, anche chiamato Semantic Web.
+
+### Principles of Linked Data
+Il termime Linked Data si riferisce all'insieme di best practives per la pubblicazione e la relazione di dati strutturati sul web. Questi concetti sono stati introdotti da Tim Berners-Lee.
+
+1. **Usare gli URIs come nome delle cose**
+2. **Usare HTTP URIs, così che le persone possano cercare questi nomi**
+3. **Quando qualcuno cerca un URI, fornisce infromazioni utili, usando gli standards come RDF, JSON-LD, SPARQL**
+4. **Includere links di altri URIs, cosi che si possano trovare più cose**
+
+L'idea di base è quella di applicare questi principi di stuttrazione dei dati all'archittettura già esistente del World Wide Web.
+
+- URIs: Uniform Resource Identifiers
+- HTTP: HyperText Trasfer Protocol
+- HTML: HyperText Markup Language
+
+Gli hyperlinks sono la parte cruciale per la connesisone di contenuti di diversi sorgenti cosi da creare un unico *single global information space*.
+
+Come conseguenza al Web of Data basato su standard e modelli di dati comuni, diventano possibili implementazioni di applicazioni generiche che operano sul data space completo. Elcuni esempi possono essere Linked Data browser o Linked Data Search engines.
+
