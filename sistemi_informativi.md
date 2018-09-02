@@ -1460,3 +1460,70 @@ Gli hyperlinks sono la parte cruciale per la connesisone di contenuti di diversi
 
 Come conseguenza al Web of Data basato su standard e modelli di dati comuni, diventano possibili implementazioni di applicazioni generiche che operano sul data space completo. Elcuni esempi possono essere Linked Data browser o Linked Data Search engines.
 
+#### Naming things with URIs
+Per pubblicare dei dati sul web, prima è necessario identificare il dominio di interesse dell'item.  
+Per identificare le entitaà e le relazioni si usano gli URIs e questo è fatto principalemnte per due motivi:
+- forniscono un modo semplice per creare un nomi univoci a livello globale in modo decentralizzato dato che ogni proprietario di un nome di dominio può creare un nuovo riferimento URI
+- non servono solo come nome ma anche come significato di accesso alle infomazioni che descrivendo l'entità identificata
+
+#### Making URIs Deferenceable 
+Qualsiasi HTTP URI dovrebbe essere deferenziabile, questo significa che il client HTTP può usare l'URI attraverso il protocollo HTTP e recuperare la descrizione della risorsa che è identificata dall'URI.
+
+Descrizioni delle risorse sono incorporate nel formato di documento Web. Le descrizioni che sono costruite per essere lette da esseri umani sono rappresentate come HTML, mentre le descrizioni destinate alle macchine sono rappresentate come dati RDF. Questo può essere fatto attravverso un meccanismo HTTP chiamato content negotiation. L'idea di base è che il client invia un header HTTP che indica il tipo di documento che preferisce e quindi il server analizzando l'header può costruire una risposta appropriata.
+Ci sono 2 diverse strategie per rendere un URI che rappresenta un oggetto reale deferenziabile
+
+- **303 URIs** (303 redirect): il server invece di rispondere con l'oggetto stesso risponde con un codice `303 See Other` e l'URI del documento Web che descrive l'oggetto. Quindi il client deferenzia questo nuovo URI e recupera il documento Web.
+- **Hash URIs**: sfrutta la caratteristica degli URI che possono contenere una parte speciale (fragment identifier) che è separata dall'URI con il simobolo hash. Quando un client vuole recuperare un hash URI, il protocollo HTTP recuperare normalmente la risorsa senza guardare il fragment identifier e lo usa successivamente. Questo permette di creare URIs che identificano oggetti reali o concetti astratti senza creare ambiguità.
+
+**Hash vs 303**
+L'hash URI ha il vantaggio che riduce il numero di richieste HTTP, e quindi la latenza. Come contro ha il fatto che descrizioni di tutte le risorse the condividono la stessa parte non-fragment URI sono ritornate assieme, indistintamente che il client le voglia o no. Questo porta a riposte di dimensioni maggiori con informazioni inutili.
+303 URIs sono flessibili perchè il target può essere diverso per ogni risorsa ma richiedono un maggior numero di richieste HTTP. Questi sono spesso usati per servire descrizioni di risorse che apprtangono a dei grandi data set.
+Gli hash URI invece sono usati spesso per idenetificare termini appartenti a vocabolari che solitamente sono piuttosto piccoli. Sono usati anche quando sono embeddati a pagine HTML usando RDFa.
+
+#### Providing Useful RDF Information
+Per fare in modo di creare una vasta quanità di divverenti applicazioni che processino i contenuti Web è importate standardizzare i formati dei contenuti. RDF fornisce un modello di dati estremamente semplice e su misura per le architetture web. Per essere pubblicato sul web i dati RDF possono essere serializati in differenti formati, i due più comuni sono RDF/XML e RDFa.
+
+I modelli RDF rappresentano informazioni come nodi e archi etichettati di un grafo orientato e sono disegnati per integrare rappresentazioni di informazioni originate da diverse sorgenti.
+RDF punta a essere una lingua franca capace di moderare altri modelli di dati presenti sul web.
+
+In RDF la descrizione di una risorsa è rappresentata come una tripletta.
+- Soggetto: URI che idendifica la risorsa descritta
+- Predicato: URI che indica il tipo di relazione tra soggetto e oggetto
+    + viene preso da un vocabolario: insieme di URIs che vengono usati per rappresentare un informazione a proposito di un certo dominio
+- Oggetto: valore letterale (stringa, numero) o data
+
+```
+    Matt Briggs      has nick name      Matty
+      Subject           Predicate       Object
+```
+
+Esistono due tipi principali di triplette:
+- Triplette letterali: hanno un RDF letterale come stringa numero data come oggetto. Sono usate per descrivere le proprietà di una risorsa. es. il nome o la data di nascita di una persona. E' combinata con un datatype URI che identifica il tipo di letterale (XML Schema datatypes specification)
+- RDF Links: descrivono le relazioni tra due risorse. Sono formate da tre URI. L'URI dell'oggetto del predicato e dell'Oggetto. 
+    + RDF Link Interno: connette risorse appartenenti allo stesso Linked Data Source. Il soggetto e l'oggetto appartengono allo stesso namespace
+    + RDF Link Esterno: connettono risorse di diversi Linked Data Source
+
+
+Esempi:
+- `http://biglynx.co.uk/people/matt‐briggs http://xmlns.com/foaf/0.1/nick "Matty"`
+- `http://biglynx.co.uk/people/matt‐briggs http://xmlns.com/foaf/0.1/knows http://biglynx.co.uk/people/dave‐smith`
+- `http://biglynx.co.uk/people/matt‐briggs http://biglynx.co.uk/vocab/sme#leads http://biglynx.co.uk/teams/production`
+
+
+#### Linking to other things
+Ci sono tre imporatanti tipi di RDF Links:
+- Relationship Link: puntano a entità collegate presenti in altri data sources. Questo permette di collegare maggiormente l'entità. Esempio collegare Paolo al posto dove vive, se anche la biblioteca del suo paese è collegata allo stesso luogo si può risalire ai libri facilmente accessibili da lui
+- Identity Link (`owl:sameAs`): puntano ad URI alias usati da altri data sources per identificare lo stesso oggetto reale o astratto. Questo permetto di rendere il Web of Data un sistema sociale:
+    + Diverse opinioni: URI alisas hanno un importante funzione sociale dato che porta ad avere deferenziazioni della stessa risorsa da differenti publisher che cosi possono offrire diverse opinioni
+    + Tracciablità: L'uso di avere diversi URI permette di risalire a chi ha espresso una certa opinione
+    + Nessun punto di fallimento: si decentralizza l'informazione.
+- Vocabulary Links: un vocabolario può avere definizioni che sono già presenti in altri vocabolari quindi è importante linkarli fra loro
+
+### 5 stars model for open data
+Tim Berners-Lee ha creato un sistema dove i publisher possono dare un premio ai loro data set in base ai seguenti criteri:
+- 1 Stella: dati è disponibile sul web (qualisasi formato), ma con una licenza open
+- 2 Stelle: dati sono disponibili e strutturati in modo che una macchina possa leggerli (Excel invece di una scannerizzazione)
+- 3 Stelle: dati disponibili come 2 ma non in un formato proprietario (CSV invece di Excel)
+- 4 Stelle: dati disponibili come sopra con in più l'uso di standard aperti del W3C (RDF e SPARQL) per identificare le cose, così che le persone possano linkarle
+- 5 Stelle: dati disponibili come sopra con in più links uscenti verso dati di altre persone per fornire contesto
+
