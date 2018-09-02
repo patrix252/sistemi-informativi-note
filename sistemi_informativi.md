@@ -1153,3 +1153,251 @@ dei decision makers, senza dipendere dai manager IT
 - **Difficoltà nel creare un ambiente DBMS distribuito**: Il DW è centralizzato per natura, renderlo distribuito è complesso e costoso
 - **Time-lag tra DW e operazionale**: un DW real-time è un sogno, visto che è impossibile avere una replicazione real-time dei dati operativi per un full-scale DW
 - **Livello di fedeltà dei dati**: il DW memorizza una fetta di dati che è sempre fuori rilevanza fino a quando non sarà sostituita da dati freschi
+
+## Capitolo 14 - Knowloedge discovery, architettura e processi di data mining
+### Knowledge discovery, architettura e processi di data mining
+
+**Recap: applicazioni front-end per data warehouse**
+- Analisi statica (reporting)
+    + elaborazione di situazioni aziendali da lanciare con elevata periodicità, con modalità invarianti nel tempo
+    + riflette informazione di base
+- Analisi interattiva (OLAP):
+    + analisi interattiva basata su ipotesi
+    + supporta operazioni OLAP di base: slide-dice, drill up-down, pivot
+- Data mining
+    + fa emergere nuova conoscenza rilevando pattern nascosti
+    + supporta modelli descrittivi e predittivi
+
+La maggior parte delle aziende dispone di enormi basi di dati contenenti dati ti tipo operativo che possono essere una vera miniera di informazini
+
+**Knowledge discovery**: processo di estrazione dai dati di pattern:
+- validi 
+- precedentemente sconosciuti
+- potenzialmente utili
+- comprensibili
+
+Grazie a questa attività si possono riconoscere/estrarre (semi)automaticamente infromazioni da basi di dati di grandi dimensioni
+
+Le fasi per riuscirci sono:
+- Pulizia
+- Integrazione
+- Selezione
+- Trasformazione
+- Data Mining
+- Valutazione dei pattern
+- Presentazione della conoscenza
+
+Le prime fasi coincidono con il popolamento dei sistemi di DW. In ambito aziendale il data mining può essere considerato un ampliamento del sistema di data warehousing e un complemento dei sistemi di OLAP di analisi dati.
+Da sistemi di OLAP si possono costruire sistemi OLAM
+
+**OLAM** OnLine Analytical Mining: si può partire dai data warehouse cosi da sfruttare làaccesso a dati ben strutturati, puliti e completi.
+Sfortunatamente il processo di mining non può essere completamente automatico poichè i pattern rilavati potrebbero essere troppi e non interessanti.
+Il data mining è quindi un processo interattivo dove gli utenti indicano la direzione in cui "scavare". 
+
+**Architettura dei sistemi di Data Mining**
+
+<p align="center"><img src="./images/architettura-data-mining.png" width="200" alt="ETL"></p>
+
+- **Data warehouse**: è una base di dati pronta, di elevata qualità e multidimensionale. I dati da analizzare sono definit da un'interrogazione OLAP.
+- **Base di conoscenza** (Knowledge Base): è l'insieme di regole e conoscenze date per note utilizzate per guidare la ricerca e per filtrare i risultati sulla base del loro effettivo interese.
+- **Motore di data mining** (Data Mining Engine): è l'insieme di funzioni di analisi dei dati
+- **Sistema di valutazione delle condizioni** (Pattern Evaluation): effettua un postprocessing delle informazioni estratte dal mining (pattern) mantenendo le sole condizioni interessanti
+- **Sistema di presentazione**: è l'interfaccia utente per l'attivazione delle funzioni di mining e la visualizzazione dei pattern
+
+**Processo di mining dei dati**
+Consiste in una serie di interrogazioni iterate di mining sul sistema di DW, che portano progressivamente alla comprensione del fenomeno.
+
+I parametri necessari per avviare un'analisi di mining:
+- **Isolare l'insieme dei dati da analizzare**: porzione di dati del DW da fornire in input. Criticità sulla poca conoscenza da parte dell'analista di cosa sta cercando
+- **Scelta della funzione di DM da usare in base all'obiettivo**: descrittive, classificatorie, predittive, outliner, eccezioni. Comprensione del metodo di mining, fornitura di parametri coretti, livelli di approssimazione accettati, numero di iterazioni ecc.
+- **Le misure di interesse**: postprocessing e filtro sulla quantità importante di risultati. Caratteristiche di un pattern di interesse:
+    + **Novità**: rispetto a quanto conosciuto / presente (es. nulle gerarchie dimensionali)
+    + **Semplicità**: lunghezza formula associativa, complessità sistema di regole, profondità dell'albero decisionale
+    + **Certezza**: validità del risultato anche su dati nuovi o diversi rispetto ai parametri fissati (confidenza, supporto, threshold...)
+    + **Utilità**: rilevanza / precisione / rumore
+- **La base di conoscenza**: sistema di regole, parametri, soglie ecc. documentati all'interno del sistema di data mining. Occorre descrivere al sistema ciò che è noto all'utente. Il caso più frequente di conoscenza da esprimere al sistema di DM sono le gerarchie:
+    + **Strutturali**: OLAP
+    + **Di raggruppamento**: classificazioni su fatti e misure normalmente continui (es. Peso, quotazioni, prezzi...)
+    + **Derivate**: create dagli algoritmi di classificazione di DM
+    + **Basate su regole**: derivanti da postulati logici su cui basare regole valutate dinamicamente (if...then...else)
+- **Visualizzazione dei pattern**: fattore di successo per qualsiasi soluzione di DM. Non solo visualizzazione fine a sè stessa, ma anche elemento di discovery (es. grafo, albero decisionale, diagrammi a dispersione). La visualizzazione è fondamentale anche per la navigaione dei fenomeni rappresentati. In qualche sistema c'è la possibilità di navigazione dinamica, variando i parametri per cambiare rappresentazione.
+
+
+Il **processo di mining** quindi consiste in:
+- **Comprensione** del dominio
+- **Preparazione** sul set di dati, Individuazione di un sottoinsieme dei dati della DW su cui effettuare il mining
+- **Scoperta** dei patern: Ricerca e individuazionedi pattern ripetitivi tra i dati
+- **Valutazione** dei pattern: Partendo da ipattern scoperti si valutano quali esperimenti compiere succesivamente e quali ipotesi formulare o quali conseguenze trarre.
+- **Utilizzo** dei risultato: Prendere decisioni operative a seguito del processo di data mining (allocazione merci, concessione credito, operaione chirurgica, intervento polizia, correzione rotta..)
+
+
+### Funzioni di mining
+Le attività di mining possono essere ripartitie in due macro classi
+- mining **descrittivo**: estrae informazioni che descrivono le proprietà generali dei dati
+- mining **predittivo**: determina regole generali e crea modelli per predire le tendeze nel futuro
+
+I sistemi sul mercato propongon diversi insiemi di funzioni di mining, per cercare un certo tipo di informazione o costruire un particolare modello di predizione. La stessa funzione può essere elaborata tramite algoritmi diversi. Le funzioni sono riconducibili a cinque tipologie
+- generalizzazione, caratterizzazione e discriminazione
+- analisi associativa
+- classificazione e predizione
+- analisi dei cluster
+- analisi degli outlier
+
+**Generalizzazione, caratterizzazione e discriminazione**
+Sono strumenti che permettono di descrivere in modo sintetico ma preciso i dati contenuti nel database e operano tramite generalizzazione (classificazione dei dati elementari in gruppi caratterizzati da attributi comuni o tecninche OLAP) o tramite funzioni di descrizione delle classi (caratterizzazione: descrizione delle particolarità della classe, discriminazione: marcamento delle differenze tra classe e classe)
+
+Si possono usare le funzioni offerte dal DM come le misure aggregate OLAP (conteggio, media, min, max, somma...) o le funzioni di caratteriziazzione e di discriminazione
+
+**Analisi associativa**
+Permette di identificare condizioni che si verificano contemporaneamente con elevata frequenza. Rilave quindi pattern che si ripetono su terminati attributi e ne deriva regole di implicazione del tipo (A -> B).
+Alcune applicazioni d'esempio possono essere market basket analysis, profili clienti (abitudini di acquisto), ottimizzazione delle manutenzioni, condizioni mediche / epidemiologiche.
+
+Viene valutata in base a:
+- Confidenza: misura la certezza del pattern
+- Supporto: misura la frequenza co cui il pattern è presente nella base di dati
+
+I motori di DM cercano le associazioni forti che superano livelli di confidenza e supporto forniti dall'utente.
+
+I risultati si recuperano in 2 passaggi:
+- ricerca delle condizioni con supporto maggiore della soglia
+- selezione di quello con il livello di confidenza richiesto
+
+**Classificazione e predizione**
+Servono per costruire modelli per predire gli eventi futuri o stimare il valore di elementi non noti.
+
+La costruzione si basa su esempi. Si deriva un modello da un sottoinsieme significativo dei dati esistenti, si valuta l'efficacia su un sottoinsieme diverso dei dati e se il modello si rivela efficace può essere usato come predittore.
+
+Può essere applicato per:
+- Propensione all'acquisto dei clienti
+- Qualità dei fornitori
+- Affidabilità dei prodotti
+- ...
+
+**Classificazione**
+L'utente fornisce i parametri per la creazione del modello così da indicare l'appartenenza di un elemento ad una certa classe.
+Per la costruizione dei classificatori si possono usare diverse tecniche
+- Funzioni matematiche
+- Regole associative
+- Alberi di decisione: strutture di classificazione basate su valutazioni di condizioni del tipo if-then-else. Richiedono 2 fasi
+    + fase di build: si costruisce l'albero iniziale, partizionando ripetutamente il training set sul valore di un attributo, fino a quando tutti gli esempi in ogni partizione appartengono ad una sola classe
+    + fase di pruning: si pota l'albero, eliminando rami dovuti a rumore o fluttuazioni statistiche
+- Reti della verità bayesiane: si creano dei modelli grafici aciclici orientati per la rappresentazione della conoscenza in un dominio incerto e si applica la regola di Bayes per creare una struttura dati chamata "rete di credenze" che rappresenta la dipendaza fra le variabli e per dare una specifica concisa della distribuzione di probabilità congiunta. La regola di bayes dice: Calcolare la probabilità di una causa che ha scatenato l'evento = valutare una probabilità avendo già delle informazioni su quanto è già accaduto in precedenza.
+    + Dati due eventi A e B, se questi sono in qualche modo correlati, è ragionevole pensare che il sapere che uno dei due è già avvenuto possa migliorare la conoscenza della probabilità dell'altro (Probabilità codizionata)
+    + la probabilità che si verifichi A sapendo che si è giaà verificato B, cioè la probabilità di A condizionata a B
+- Reti neurali: reti che cercano di simulare il funzionamento dei neuroni all'iterno di un sistema informatico. E' un modello computazionale parallelo, costituito da numerose unità eleaborative omogenee fortemente interconnesse mediante collegamenti di varia intensità.
+
+*Reti neurali*
+Nelle reti neurali i nodi che compongono la rete sono divisi in 3 macro-categorie:
+- Nodi unità di ingresso (input)
+- Nodi appartenenti ale unità di uscita (output)
+- Nodi delle unità nascoste (hidden)
+
+Quando un nodo riceve un input sopra una certa soglia di attivazione, emette a sua volta un segnale alle altre unità a cui è connesso. 
+L'apprendimento è basato su dati empirici e può essere:
+- **supervisionato**: insieme di dati di addrestamento grazie ai quali riesce a inferire i legami che legano queri dati e sviluppare un modello "generale"
+- **non supervisionato**: il isitema fa riferimetno ad algoritmi che tentano di raggruppare i dati di ingresso per tipologia, individuando Cluster rappresentativi dei dati stessi facendo uso tipicamente di metodi tipoologici e probabilistici
+- **per rinforzo**: un algoritmo si prefigge di individuare un modus oprandi a partire da un processo di osservazione dall'ambiente esterno
+
+Le proprietà di una rete neurale sono quindi:
+- **capacità di apprendere da esempi**
+- **capacità di generalizzare**: risposte simili in corrispondenza di esmepi simili a quelli su cui sono state addestrate
+- **capacitià di astrarre**: risposte corrette in corripondenza di esmpi diversi da quelli su cui sono state addestrate
+- **insensibilità al rumore**: capacità di generalizzare anche in presenza di dati alterati o incerti
+- **decadimento graduale prestazioni**: il comportamento si altera gradualmente se si eliminano cnnessioni o si alterano i pesi
+
+Alcuni esempi di applicazioni delle reti neurali possono essere:
+- riconosciemnto di segnali percettivi (immagini, voce, sonar)
+- diagnosi e gestione di apparati complessi in tempo reale
+- controllo dei movimenti di robot e veicoli autonomi
+- classificaizone ed interpretazione di dati rumorosi
+- memoria ssociativa: accesso in tempo reale a grandi quanitità di dati
+- ricostruzione di informazioni parziali o corrotte da rumore
+- soluzioni approssimate in tempo reale di problemi computazionalmente intrattabili
+
+**Predizione**
+E' una tecninca analoga alla classificazione, ma permette di identificare valori no noti di elementi il cui dominio è continuo.
+Si basa sulla costuzione di funzioni di tendenza tramite interpolazione sui punti noti (regressione). Ci sono vari modelli:
+- lineare semplice: distribuzioni bivariate
+- multilineare: distribuzini multivariate
+- non-lineare: polinomiale, esponenziale, logaritminca, ...
+
+**Clustering**
+Tencninca analoga alla classificazione, ma ripartisce gli elementi in classi anonime sulla base delle affinità rilevate tramite l'osservazione dei dati. Le classi quindi non sono definite a priori ma sono proposte all'utente come "agglomerati spontanei" di dati sui quali poi l'utente può derivare informazioni e enuovi criteri su cui costruire modelli di classificazione.
+
+Caratteristiche dei cluster:
+- **massima similarità tra gli elementi appartenenti ad una classe**
+- **minima similarità tra gli elementi appartenenti a classi diverse**
+
+Le due filosofie principali su cui si basano:
+- **metodi aggregativi o bottom-up**: inizialmente tutti gli elementi sono considerati cluster a sè, e poi l'algoritmo provvede ad unire i cluster più vicini. Si continua ad unire elementi al cluster fino a che (uno di questi):
+    + un numero prefissato di cluster
+    + la distanza minima tra i cluster non supera un valore
+    + non si raggiunge un certo criterio statistico
+- **metodi divisivi o top-down**: all'inizio tutti gli elementi sono un unico cluster, e poi l'algoritmo inizia a dividere il cluster in tanti cluster di dimensioni inferiori cercando di ottenere gruppi sempre più omogenei. L'algoritmo procede ifno a che non viene soddisfatta una regola di arresto generale legata al raggiugimento di un numvero prefissato di cluster.
+
+I metodi di clustering si fondano su diverse tecniche:
+- **partizionamento**: l'utente indica in quante classi ripartire i dati e l'algorimo ripartisce gli elementi nel numero di classi indicato sulla base delle reciproche distanze
+- **classificaizone gerarchica**:
+    + basata sullàaggregazione: costruisce le classi aggregando interativamente gli elementi sulla base delle similitudini
+    + basata su divisione: ripartisce iterativamente l'insieme dei dati in sottoinsieme di elementi simili
+- **valutazione della densità**: i cluster sono identificati dalle zone topologicamente
+
+Gli argoritmi di clustering sono caratterizzati da:
+- **scalabilità**: tempo di elaborazione e loop sono elementi critici
+- **robustezza**: classificare anche con errori, dati mancanti o dati ou-of-range
+- **alta dimensionalità**: utilizzare più attributi contemporanei
+- **capacità di operare condiversi tipi di attributi**: non solo numerici, ma anche categorici o misti
+- **capacità di reperire cluster di qualsiasi forma**: non solo cluster sferici regolari (distanza euclidea)
+- **insensibilità all'ordinamento**: cluster indifferente all'ordinamento dei dati di partenza
+
+**Ricerca degli outliner**
+E' un possibile risultato dei metodi di clustering, un eccezzione, un elemento fuori range. La ricerca infatti si basa sugli stessi principi del clustering e concentra gli sforzi sull'identificazione degli elementi che si discostano maggiormente dagli altri.
+I metodi per la ricerca sono:
+- statistici: applicabili se sui dati è identificabile una distribuzione
+- bassati sulla distanza: ricercano gli elemento che massimizzano la distanza dai rastanti elementi del set di analisi
+- basati sulla deviazione: identificano gli ouliner com elementi che deviano dalle caratteristiche tendenziali del gruppo.
+
+### Data Mining: aree applicative
+- **Analisi finanziaria**
+    + analisi descrittive
+        * viste dei debiti e degli incassi per mese, regione, settore
+        * accesso a informazioni statistiche sui flussi finanziari
+        * valutazione del credito e delle performance sui pagamenti dei clienti
+    + classificazione dei clienti basata sulle abitudini di pagamento, da utilizzare per:
+        * predizione sui pagamenti
+        * definizione di politiche di credit
+        * identificazione dei clienti o dei gruppi critici
+    + analisi degli outliers
+        * per la rilevazione di frodi o di moviemtni finanziari anomali
+- **Marketing**
+    + **analisi descrittive** su clienti e prospect, per approfondire la conoscenza delle caratteristiche potenziali del mercto e di quele dei clienti già acquisiti, con lo scopo di identificare, ad esempio, settori non coperti, aree di possibile sviluppo, possibili differenziazioni
+    + **clustering** dei clienti, per caratterizzare i raggruppamenti spontanei ed usare questa conoscenza per definire programmi e azioni marketin puntuali
+    + **classificazione** di clienti e porspect, per l'attivazione di azioni di marketing mirato
+- **Vendite**
+    + analisi descrittive
+        * su clienti, per approfondirne il profilo e definirne segmentazioni, ad esmpio in classi di fatturato
+        * sulle vendite, per analizzarne l'andamento, valutare l'efficacia di campagne promozionali, valutare aggiustamenti nelle politiche di prezzo o nella varietà degli articoli
+        * sui reclami e sulle chiamate di assistenza per comprenderne le linee di tendenza e migliorare la qualità del servizio al cliente
+        * sulle zone servite, per progettare migliori politiche di trasporto e distribuzione
+        * sui tempi di evasione degli ordini, per valutare la puntualità delle consegne
+    + analisi di associazione (market basket analysis)
+        * identificando i prodotti che vengono più frequentemente acquistati assieme, permette di studiare una distribuzione della merce sugli scaffali che privilegi l'acquisto congiunto
+    + analisi dei cluster
+        * per scoprire caratteristiche e schemi di acquisto dei clienti
+    + analisi degli outliners
+        * per la scoperta di condizioni anomale nelle vendite (come sconti, provvigioni o margini non standard)
+        * per l'identificazione delle tendenze dei clienti all'abbandono (ad esempio osservando cali ingiustificati delle vendite prolungati nel tempo)
+        * per identificare prodotti critici
+- **Logistica**
+    + dalle liste di prelievo si possono lanciare analisi associative per identificare i materiali che vengono prelevati insieme e disporre quindi la merce in magazzino in modo ottimizzato
+- **Acquisiti**
+    + tramite metodi di caratterizzazione e di associazione, il grado di puntualità dei fornitori sui diversi prodotti forniti, o di confrontare le prestazini di fornitori che operano nel medesimo settore
+- **Constrollo qualità**
+    + l'analisi dei cluster e quella degli outliner possono permettere di identificare elementi critici, o di definire criteri per la classificazione dei prodotti sulla base della loro tendenza alla difettosità
+- **Manutenzione**
+    + alaisi associative possono rilevare relazioni tra condizioni diverse; conoscendo queste, al verificarsi di una possono essere attuate azioni di manutenizone preventiva sulle altre
+- **Sicurezza**
+    + l'analisi degli outliner sulla base dei dati di traffico della rete può portare alla luce intrusioni non autorizzate nel sistema
+- **Relazioni con il mercato**
+    + l'analisi degli cluster sulla base dei dati di accesso alle pagine del sito web può evidenziare quali siano le informazioni maggiormente ricercate
+    + mediante i meccanismi di riconoscimento, l'utente che accede alle pagine può essere riconosciuto ed avere un profilo
