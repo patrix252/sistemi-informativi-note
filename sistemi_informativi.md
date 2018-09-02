@@ -1487,10 +1487,10 @@ I modelli RDF rappresentano informazioni come nodi e archi etichettati di un gra
 RDF punta a essere una lingua franca capace di moderare altri modelli di dati presenti sul web.
 
 In RDF la descrizione di una risorsa è rappresentata come una tripletta.
-- Soggetto: URI che idendifica la risorsa descritta
-- Predicato: URI che indica il tipo di relazione tra soggetto e oggetto
+- **Soggetto**: URI che idendifica la risorsa descritta
+- **Predicato**: URI che indica il tipo di relazione tra soggetto e oggetto
     + viene preso da un vocabolario: insieme di URIs che vengono usati per rappresentare un informazione a proposito di un certo dominio
-- Oggetto: valore letterale (stringa, numero) o data
+- **Oggetto**: valore letterale (stringa, numero) o data
 
 ```
     Matt Briggs      has nick name      Matty
@@ -1498,10 +1498,10 @@ In RDF la descrizione di una risorsa è rappresentata come una tripletta.
 ```
 
 Esistono due tipi principali di triplette:
-- Triplette letterali: hanno un RDF letterale come stringa numero data come oggetto. Sono usate per descrivere le proprietà di una risorsa. es. il nome o la data di nascita di una persona. E' combinata con un datatype URI che identifica il tipo di letterale (XML Schema datatypes specification)
-- RDF Links: descrivono le relazioni tra due risorse. Sono formate da tre URI. L'URI dell'oggetto del predicato e dell'Oggetto. 
-    + RDF Link Interno: connette risorse appartenenti allo stesso Linked Data Source. Il soggetto e l'oggetto appartengono allo stesso namespace
-    + RDF Link Esterno: connettono risorse di diversi Linked Data Source
+- **Triplette letterali**: hanno un RDF letterale come stringa numero data come oggetto. Sono usate per descrivere le proprietà di una risorsa. es. il nome o la data di nascita di una persona. E' combinata con un datatype URI che identifica il tipo di letterale (XML Schema datatypes specification)
+- **RDF Links**: descrivono le relazioni tra due risorse. Sono formate da tre URI. L'URI dell'oggetto del predicato e dell'Oggetto. 
+    + **RDF Link Interno**: connette risorse appartenenti allo stesso Linked Data Source. Il soggetto e l'oggetto appartengono allo stesso namespace
+    + **RDF Link Esterno**: connettono risorse di diversi Linked Data Source
 
 
 Esempi:
@@ -1512,18 +1512,18 @@ Esempi:
 
 #### Linking to other things
 Ci sono tre imporatanti tipi di RDF Links:
-- Relationship Link: puntano a entità collegate presenti in altri data sources. Questo permette di collegare maggiormente l'entità. Esempio collegare Paolo al posto dove vive, se anche la biblioteca del suo paese è collegata allo stesso luogo si può risalire ai libri facilmente accessibili da lui
-- Identity Link (`owl:sameAs`): puntano ad URI alias usati da altri data sources per identificare lo stesso oggetto reale o astratto. Questo permetto di rendere il Web of Data un sistema sociale:
+- **Relationship Link**: puntano a entità collegate presenti in altri data sources. Questo permette di collegare maggiormente l'entità. Esempio collegare Paolo al posto dove vive, se anche la biblioteca del suo paese è collegata allo stesso luogo si può risalire ai libri facilmente accessibili da lui
+- **Identity Link** (`owl:sameAs`): puntano ad URI alias usati da altri data sources per identificare lo stesso oggetto reale o astratto. Questo permetto di rendere il Web of Data un sistema sociale:
     + Diverse opinioni: URI alisas hanno un importante funzione sociale dato che porta ad avere deferenziazioni della stessa risorsa da differenti publisher che cosi possono offrire diverse opinioni
     + Tracciablità: L'uso di avere diversi URI permette di risalire a chi ha espresso una certa opinione
     + Nessun punto di fallimento: si decentralizza l'informazione.
-- Vocabulary Links: un vocabolario può avere definizioni che sono già presenti in altri vocabolari quindi è importante linkarli fra loro
+- **Vocabulary Links**: un vocabolario può avere definizioni che sono già presenti in altri vocabolari quindi è importante linkarli fra loro
 
 ### 5 stars model for open data
 Tim Berners-Lee ha creato un sistema dove i publisher possono dare un premio ai loro data set in base ai seguenti criteri:
-- 1 Stella: dati è disponibile sul web (qualisasi formato), ma con una licenza open
-- 2 Stelle: dati sono disponibili e strutturati in modo che una macchina possa leggerli (Excel invece di una scannerizzazione)
-- 3 Stelle: dati disponibili come 2 ma non in un formato proprietario (CSV invece di Excel)
-- 4 Stelle: dati disponibili come sopra con in più l'uso di standard aperti del W3C (RDF e SPARQL) per identificare le cose, così che le persone possano linkarle
-- 5 Stelle: dati disponibili come sopra con in più links uscenti verso dati di altre persone per fornire contesto
+- **1 Stella**: dati è disponibile sul web (qualisasi formato), ma con una licenza open
+- **2 Stelle**: dati sono disponibili e strutturati in modo che una macchina possa leggerli (Excel invece di una scannerizzazione)
+- **3 Stelle**: dati disponibili come 2 ma non in un formato proprietario (CSV invece di Excel)
+- **4 Stelle**: dati disponibili come sopra con in più l'uso di standard aperti del W3C (RDF e SPARQL) per identificare le cose, così che le persone possano linkarle
+- **5 Stelle**: dati disponibili come sopra con in più links uscenti verso dati di altre persone per fornire contesto
 
