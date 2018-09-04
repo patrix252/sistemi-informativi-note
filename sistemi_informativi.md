@@ -750,16 +750,16 @@ Requisiti ideali di leggibilità per un DSS sono:
 - semplificazione della query a causa dei metadati
 
 ### Il modello multidimensionale e le operazioni principali
-I sistemi informazionali si basano su una struttura dei dati particolarmente adatta all'analisi: **la struttura multidimensionale che è intuitiva, facilmente interpretabile dall'utente, e partcolarmente efficiente nelle ricerche** e nelle operazioni di aggregazione di disaggregazione dei dati. Il principio su cui si fonda questa modellazione è che **il processo di analisi** non **si articola** intorno alle attività operative, ma **intorno a temi descritti da soggetti e da relazioni quantificabili tra i soggetti**.
+I sistemi informazionali si basano su una struttura dei dati particolarmente adatta all'analisi: **la struttura multidimensionale che è intuitiva, facilmente interpretabile dall'utente, e particolarmente efficiente nelle ricerche** e nelle operazioni di aggregazione di disaggregazione dei dati. Il principio su cui si fonda questa modellazione è che **il processo di analisi** non **si articola** intorno alle attività operative, ma **intorno a temi descritti da soggetti e da relazioni quantificabili tra i soggetti**.
 
 esempi:
 - le abitudini d'acquisto dei clienti (il soggetto è il cliente)
 - i margini di redditività degli articoli (il soggetto è l'articolo)
 - l'efficienza della catena di distribuzione per linee di prodotto (i soggetti sono gli agenti e gli articoli)
 
-L'analisi viene effettuata valutando in chemisura il soggetto partecipa a eventi trattati dall'azienda. Uno stesso evento può quindi essere analizzato mettendolo in relazione con diversi soggetti.
+L'analisi viene effettuata valutando in che misura il soggetto partecipa a eventi trattati dall'azienda. Uno stesso evento può quindi essere analizzato mettendolo in relazione con diversi soggetti.
 
-Da questa visione nasce spontaneamente la modellazione dello spazio delle informazioni dei sistemi di supporto alle decisioni con matrici multidimensionali. **In cui la misura di ogni evento è descritta da un insieme di coordinate ognuna delle quali rappresenta un soggetto di interesse** per le analisi d condurre su quell'eveneto. Esempio, se l'evento è la vendita, possibili dimensioni di analisi sono l'articolo, il cliente, la daa in cui la vendita è avvenua e l'agente che ha promosso la vendita.
+Da questa visione nasce spontaneamente la modellazione dello spazio delle informazioni dei sistemi di supporto alle decisioni con matrici multidimensionali. **In cui la misura di ogni evento è descritta da un insieme di coordinate ognuna delle quali rappresenta un soggetto di interesse** per le analisi da condurre su quell'evento. Esempio, se l'evento è la vendita, possibili dimensioni di analisi sono l'articolo, il cliente, la daa in cui la vendita è avvenua e l'agente che ha promosso la vendita.
 
 Nei sistemi informazionali il modello standard de facto per la rappresentazione dei dati è l'ipercubo, una matrice multidimensionale che permette di memorizzare e di estrarre facilmente i dati relativi a una classe di eventi.
 - **Fatto elementare**: l'elemento ottenuto specificando un valore per ogni possibile coordinata
@@ -781,7 +781,7 @@ con un modello così costituito possiamo rispondere a domande tipo:
 <p align="center"><img src="./images/struttura-ipercubo.jpg" width="500" alt="Struttura ipercubo"></p>
 
 **Operazioni sui dati multidimensionali**
-- **Drill down**: disggrega i dati
+- **Drill down**: disaggrega i dati
     + dettaglia i dati scendendo lungo la gerarchia
     + dettaglia i dati aggiungendo una dimensione di analisi
     + <p align="center"><img src="./images/drill-down.png" width="500" alt="Drill down"></p>
@@ -792,7 +792,7 @@ con un modello così costituito possiamo rispondere a domande tipo:
 - **Slice & Dice**: seleziona e proietta
     + Slice: fissa il valore di una delle dimensioni base per analizzare la prozione di dati filtrati così ottenuta
         * <p align="center"><img src="./images/slice.png" width="500" alt="Slice"></p>
-    + Dice: Filtra i fatti elementari considerati nell'analisi fissando valori per coordinate dimensionali di qualisasi livello
+    + Dice: filtra i fatti elementari considerati nell'analisi fissando valori per coordinate dimensionali di qualsiasi livello
         * <p align="center"><img src="./images/dice.png" width="500" alt="Dice"></p>
 - **Pivot**: riorienta il cubo
     + Inverte la relazione tra le dimensioni, realizzando una rotazione del cubo nell'analisi
@@ -804,11 +804,11 @@ con un modello così costituito possiamo rispondere a domande tipo:
 - **ROLAP**: la struttura intrinsecamente multidimensionale dei fatti viene realizzata completamente su database relazioni. Gli strumenti di interrograzione agiscono tramite query SQL standard, con opportune funzioni di aggregazione.
     + Vantaggi:
         * minima occupazione di spazio
-        * elevata conoscenza degli strumenti relazioni da parte degli operatori
+        * elevata conoscenza degli strumenti relazionali da parte degli operatori
     + Svantaggi:
         * esecuzione di query poco efficiente
         * le soluzioni per il miglioramento della velocità di risposta (denormalizzazione, materializzazione delle viste) implicano un aumento della complessità e dell'occupazione di spazio
-- **MOLAP**: memorizza i dati usando strutture intrinsecamente multidimensionali: i fati vengon ofisicamente memorizzati in vettori e l'accesso è di tipo posizionale. Il sistema alloca una cella per ogni possibile combinazione dei valori delle dimensioni e l'accesso a un fatto avviene in modo diretto, sulla base delle coordinate fornite. Le interrogazioni sono ottimizzate tramite strumenti di query proprietari
+- **MOLAP**: memorizza i dati usando strutture intrinsecamente multidimensionali: i fatti vengono fisicamente memorizzati in vettori e l'accesso è di tipo posizionale. Il sistema alloca una cella per ogni possibile combinazione dei valori delle dimensioni e l'accesso a un fatto avviene in modo diretto, sulla base delle coordinate fornite. Le interrogazioni sono ottimizzate tramite strumenti di query proprietari
     + Vantaggi:
         * elevata efficienza nell'esecuzione delle query complesse
         * stretta adereza al modello concettuale
@@ -825,7 +825,7 @@ con un modello così costituito possiamo rispondere a domande tipo:
         * dimensioni contenute
 
 ### Gli schemi multidimensionali: caratteristiche e tipi
-- Fatti: evento che accade nell'ambito dell'attività e che si ha interesse a misuarare (es. vendire, i reclami, le spedizioni)
+- Fatti: evento che accade nell'ambito dell'attività e che si ha interesse a misuarare (es. vendite, reclami, spedizioni)
     + Caratteristiche
         * dimensioni che lo collocano nel tempo e nello spazio aziendale
         * misure che lo quantificano
@@ -842,7 +842,7 @@ con un modello così costituito possiamo rispondere a domande tipo:
 - Aggregabilità: possibilità di usare un operatore di aggregazione su una misura (quindi su tutte le dimensioni) o su una specifica coppia (misura, dimensione)
 - Additività: possibilità di usare l'operatore di aggregazione "Somma" su una misura (quindi su tutte le dimensioni) o su una specifica coppia (misura, dimensione)
 - Gerarchie: insieme di attributi (attributi dimensionali) collegati gerarchicamente ad una dimensione
-    + sono usati per aggregare i fatti elementari
+    + sono usate per aggregare i fatti elementari
     + sono determinati univocamente dal valore della dimensione
     + rappresentano classificazioni della dimensione
     + l'analisi dei fatti di un cubo può essere condotta attraverso viste che utilizzano attributi dimensionali
@@ -855,20 +855,20 @@ Questo tipo di schema viene solitamente utilizzato per la rappresentazione di da
 
 Esso è formato da:
 - Tabella dei fatti (fact table)
-    + una tabella per ogni fatto, sia co i dettagli e con dati di sintesi
+    + una tabella per ogni fatto, con i dettagli e con dati di sintesi
     + un campo per ogni misura ed una chiave esterna per ogni dimensione di base
     + la primary key ha una sola colonna per dimensione
-    + contiene come attriuti la chiave di ciascuna dimensione
+    + contiene come attributi la chiave di ciascuna dimensione
 - Tabelle delle dimensioni
     + ha una sola chiave
     + ogni dimensione è una singola tabella, altamente denormalizzata
-    + un campo per ongi attributo dimensionale della gerarchia che ha radice nella dimensione rappresentata (denormalizzaizione completa)
+    + un campo per ogni attributo dimensionale della gerarchia che ha radice nella dimensione rappresentata (denormalizzaizione completa)
 
 I collegamenti tra dimensioni e fatti avvengono tramite chiavi esterne
 
 <p align="center"><img src="./images/schema-stella.png" width="300" alt="Schema stella"></p>
 
-Di fatto, un star chema se implementato in un DBMS è rappresentato da un modello relazionale con una relazione tra tabella di dimensione e fact table. Un elevato numero di dimensioni complica la gestione dei fatti e l'analisi, quindi è sconsigliato.
+Di fatto, un star schema se implementato in un DBMS è rappresentato da un modello relazionale con una relazione tra tabella di dimensione e fact table. Un elevato numero di dimensioni complica la gestione dei fatti e l'analisi, quindi è sconsigliato.
 - vantaggi: 
     + facile da comprendere
     + mapping intuitivo tra le entità di business
@@ -876,14 +876,14 @@ Di fatto, un star chema se implementato in un DBMS è rappresentato da un modell
     + riduzione di join fisico
     + mautenzione ridotta
     + metadati molto semplici
-- svantaggi: i dati riepilogati nella tabella di fatto presentano prestazioni inferiori per i livelli di repilogo, mentre la dimensione enorme rappresenta un problema
+- svantaggi: i dati riepilogati nella tabella dei fatti presentano prestazioni inferiori per i livelli di riepilogo, mentre la dimensione enorme rappresenta un problema
 
 <p align="center"><img src="./images/schema-stella2.png" width="600" alt="Schema stella"></p>
 
 particolarità:
 - nella dimensione del tempo sono presenti dati derivati e rindondanze
 - le rindondanze servono per facilitare le operazioni di analisi dei dati
-- i fatti sono in forma normale di boyce-codd in quanto ogni attributo nonchiave dipende funzionalmente dalla sua unica chiave
+- i fatti sono in forma normale di boyce-codd in quanto ogni attributo non chiave dipende funzionalmente dalla sua unica chiave
 - le dimensioni sono in genere relazioni non normalizzate
 
 **Schema a fiocco di neve**
@@ -908,15 +908,16 @@ Schema che vede le tabelle dimensionali condivise da più tabelle dei fatti. Ris
 
 
 **Summary**
-Qualcosa lo schema sia complesso (specialmente il constellation schema), il banchmarking delle prestazioni è essenziale per determinare quale sia il design migliore.
+Qualora lo schema sia complesso (specialmente il constellation schema), il banchmarking delle prestazioni è essenziale per determinare quale sia il design migliore.
 - Schema snowflake:
     + più facile mantenere tabelle di dimensione quando le tabelle di dimensioni sono molto grandi (ridurre lo spazio totale)
     + non è generalmente raccomandato in un ambiente di data warehouse
 - Schema a stella:
     + più efficace per la visualizzazione di cubi di dati (meno join): può influenzare le prestazioni
 
-## Capitolo 13 - DataWarehouse e Datamart
-**Datawarehouse**: L'insieme delle strutture dati e dei tool necessari per ottenere, a partire dai dati operazionali utilizzati e creati dal sistema informativo aziendale, informazioni che aiutino i manager nella valutazione tecnico-economica dell'andamento aziendale
+## Capitolo 13 - Data Warehouse e Data Mart
+### Data Warehouse e Data Mart
+**Data warehouse**: L'insieme delle strutture dati e dei tool necessari per ottenere, a partire dai dati operazionali utilizzati e creati dal sistema informativo aziendale, informazioni che aiutino i manager nella valutazione tecnico-economica dell'andamento aziendale
 
 **Non è un programma ma un porcesso** che serve ad estrarre informazioni utili al processo decisionale a partire:
 - dai dati operazionali
@@ -1012,13 +1013,13 @@ In generale, un DW è troppo difficile, troppo costoso, troppo impolitico, richi
 - **Progettazione concettuale** degli schemi di fatto
     + uso di schemi a stella o a fiocco di neve, costruzione di viste materializzate o di ipercubi ad alto livello di aggregazione
 - **Progettazione dell'alimentazione**
-    + definizione delle procedure di popolamento del fata warehouse a partire dalle sorgenti
+    + definizione delle procedure di popolamento del data warehouse a partire dalle sorgenti
 
 Ovviamente i prodotti creati devono sfruttare il web per offrire accesso ai dati sempre e ovunque
 
 ### Architetture e modelli di DW
 Le caratteristiche di un'architettura per il data warehousing sono:
-- Sparazione
+- Separazione
 - Scalabilità
 - Estendibiltà
 - Sicurezza
@@ -1043,16 +1044,16 @@ Il sistema di data warehousing è costituito da basi di dati poste a livelli dis
 
 **Ciclo di vita dei sistemi di data warehousing**
 La costruzione avviene con un approccio iterativo
-- Costruizione del pirmo ipercubo relativamente al fatto più significativo
+- Costruzione del primo ipercubo relativamente al fatto più significativo
 - Integrazione progressiva degli altri fatti
 - Rilascio di data mart
 
 <p align="center"><img src="./images/ciclo-dw.png" width="200" alt="Ciclo DW"></p>
 
 Vantaggi:
-- Primi rislutati disponibili in breve tempo
+- Primi risultati disponibili in breve tempo
 - Invesitmenti diluiti
-- Possibilità di tarare e di viluppare il modello sulla base delle indicazioni emerse dall'uso effettivo
+- Possibilità di tarare e di sviluppare il modello sulla base delle indicazioni emerse dall'uso effettivo
 
 
 **Architettura a un livello**
@@ -1063,7 +1064,7 @@ Il livello di storicizzazione è complesso da gestire
 Sorgenti, Data warehouse e Data Mart. Comprendono anche l'area di trasformazione dei dati (staging area), le procedure per il trasferimento dei dati tra le diverse basi di dati e gli strumenti per l'analisi dei dati
 
 Vantaggi:
-- C'è qualità d'informazione anche in mancanda dei dati originari grazie alle ETL
+- C'è qualità d'informazione anche in mancanza dei dati originari grazie alle ETL
 - L'interrogazione OLAP non iterferisce con i dati OLTP
 - C'è una discordanza temporale tra dati OLTP e dati OLAP
 - Si possono applicare nel DW tecniche speciali di ottimizzazione per analisi e reportistica
@@ -1115,14 +1116,14 @@ Sono strumenti necessari ad alimentare una data warehouse
     + aggiornamento dall'esterno (dimensioni più esterne) all'interno (fatti), con applicazione delle politiche di aggiornamento agli elementi già esistenti
     + aggiornamento dei fatti
     + copia dei dati trasformati nei vari data marts in modalità batch
-    + idicizzazione dei nuovi dati
+    + indicizzazione dei nuovi dati
 - *Servizi di controllo*
-        * controlla l'intero processo e genera statistiche (metadati)
-        * definizione dei processi, schedulazione dei processi, monitoraggio, trattamneto errori, notifica
-        * controllo qualità: verifica consistenza dei dati caricati
-        * tecniche applicabili:
-            - controllo totali con sistemi di produzione
-            - confronti unità periodo precedente e attuale (ad esempio, si contano i magazzini e si aggiunge una piccola variazione addittiva)
+    + controlla l'intero processo e genera statistiche (metadati)
+    + definizione dei processi, schedulazione dei processi, monitoraggio, trattamento errori, notifica
+    + controllo qualità: verifica consistenza dei dati caricati
+    + tecniche applicabili:
+        * controllo totali con sistemi di produzione
+        * confronti unità periodo precedente e attuale (ad esempio, si contano i magazzini e si aggiunge una piccola variazione addittiva)
 
 I metadati sono informazioni mantenute a supporto di queste attività.
 
@@ -1141,7 +1142,7 @@ Quattro architetture principali per i sistemi di data warehouse
 - **Separazione ambiente operativo dall'ambiente DSS**: In questo modo, managers e analisti possono usare dati storici senza invluenzare e senza essere influenzati nei tempi di risposta e nei concetti
 - **Vantaggio competitivo**: La conoscenza presente nel DB operazionale viene usata meglio, e questo porta ad una migliore comprensione della clientela, in una più rapida risposta al mercato ecc. Questo ammortizza i costi di un DW
 - **Creazione di un DB distribuito**: DW raccoglie informazioni da fonti disparate e luoghi potenzialmente incompatibili attraverso l'utilizzo i middleware, sw per data transfer e altri client/server tools
-- **Costo operativo**: DW elimina archivi storici cartacei, ad investimento iniziale coperto, le risorse IT necessarie sono generalemnte inferiori
+- **Costo operativo**: DW elimina archivi storici cartacei, ad investimento iniziale coperto, le risorse IT necessarie sono generalmente inferiori
 - **Gestione del flusso informativo**: DW aiuta un raffinamento incrementale dei sistemi che devono monitorare i dati di produzione
 - **Supporto all'elaborazione parallela**: Le query utente sono troppo computer-intensive per i sistemi operazionali. Il DW può essere creato su ambienti client/server, più portenti, scalabili, con migliori rapporti prezzo/performance
 - **Downsizing**: Possibilità di portare la decisione lontano da DB sui desktop 
@@ -1159,17 +1160,17 @@ dei decision makers, senza dipendere dai manager IT
     + problema della scalabilità del sistema rispetto alla domanda dell'utenza e alla complessità del DW
     + sclta del prodotto di sviluppo e della piattaforma HW
     + **conoscenza di tutti gli schemi DB coinvolti nel proesso**
-    + lavorando sul core-business aziendale, presneza di forti resistenze interne di vario tipo e livello, da impiegati a dirigenti
+    + lavorando sul core-business aziendale, presenza di forti resistenze interne di vario tipo e livello, da impiegati a dirigenti
 - **Lunghi tempi di creazione** (1-2 anni): In mancanza di forti sponsor interni, le lunghezze di un progetto di DW + le ingenti spese possono causare problemi al progetto
 - **Dispendioso** (range di M€): lo scambio dati dall'ambito operazionale al DW è fatto spesso con operazioni manuali, ambienti vecchi e poco conosciuti
 - **Mancanza di API**: il software DW manca ancora di (API) o altri standard che aiutino il processi di DW, come ad sempio ODBC
-- **End-user training**: CAmbiamenti radicali nella mentalitaà degli utenti finali di un DW, quindi training intensivo e soprattutto non solo tecnico
+- **End-user training**: Cambiamenti radicali nella mentalità degli utenti finali di un DW, quindi training intensivo e soprattutto non solo tecnico
 - **Complessità nello sfruttare SMP/MPP di DW**: sviluppare un prodotto che sfrutti capacità multiprocessing simmetrico o parallelo è difficoltoso
 - **Difficoltà nel creare un ambiente DBMS distribuito**: Il DW è centralizzato per natura, renderlo distribuito è complesso e costoso
 - **Time-lag tra DW e operazionale**: un DW real-time è un sogno, visto che è impossibile avere una replicazione real-time dei dati operativi per un full-scale DW
 - **Livello di fedeltà dei dati**: il DW memorizza una fetta di dati che è sempre fuori rilevanza fino a quando non sarà sostituita da dati freschi
 
-## Capitolo 14 - Knowloedge discovery, architettura e processi di data mining
+## Capitolo 14 - Knowledge discovery, architettura e processi di data mining
 ### Knowledge discovery, architettura e processi di data mining
 
 **Recap: applicazioni front-end per data warehouse**
@@ -1183,15 +1184,15 @@ dei decision makers, senza dipendere dai manager IT
     + fa emergere nuova conoscenza rilevando pattern nascosti
     + supporta modelli descrittivi e predittivi
 
-La maggior parte delle aziende dispone di enormi basi di dati contenenti dati ti tipo operativo che possono essere una vera miniera di informazini
+La maggior parte delle aziende dispone di enormi basi di dati contenenti dati di tipo operativo che possono essere una vera miniera di informazini
 
-**Knowledge discovery**: processo di estrazione dai dati di pattern:
+**Knowledge discovery**: processo di estrazione di pattern dai dati:
 - validi 
 - precedentemente sconosciuti
 - potenzialmente utili
 - comprensibili
 
-Grazie a questa attività si possono riconoscere/estrarre (semi)automaticamente infromazioni da basi di dati di grandi dimensioni
+Grazie a questa attività si possono riconoscere/estrarre (semi)automaticamente informazioni da basi di dati di grandi dimensioni
 
 Le fasi per riuscirci sono:
 - Pulizia
@@ -1205,7 +1206,7 @@ Le fasi per riuscirci sono:
 Le prime fasi coincidono con il popolamento dei sistemi di DW. In ambito aziendale il data mining può essere considerato un ampliamento del sistema di data warehousing e un complemento dei sistemi di OLAP di analisi dati.
 Da sistemi di OLAP si possono costruire sistemi OLAM
 
-**OLAM** OnLine Analytical Mining: si può partire dai data warehouse cosi da sfruttare làaccesso a dati ben strutturati, puliti e completi.
+**OLAM** OnLine Analytical Mining: si può partire dai data warehouse cosi da sfruttare l'accesso a dati ben strutturati, puliti e completi.
 Sfortunatamente il processo di mining non può essere completamente automatico poichè i pattern rilavati potrebbero essere troppi e non interessanti.
 Il data mining è quindi un processo interattivo dove gli utenti indicano la direzione in cui "scavare". 
 
@@ -1235,7 +1236,7 @@ I parametri necessari per avviare un'analisi di mining:
     + **Di raggruppamento**: classificazioni su fatti e misure normalmente continui (es. Peso, quotazioni, prezzi...)
     + **Derivate**: create dagli algoritmi di classificazione di DM
     + **Basate su regole**: derivanti da postulati logici su cui basare regole valutate dinamicamente (if...then...else)
-- **Visualizzazione dei pattern**: fattore di successo per qualsiasi soluzione di DM. Non solo visualizzazione fine a sè stessa, ma anche elemento di discovery (es. grafo, albero decisionale, diagrammi a dispersione). La visualizzazione è fondamentale anche per la navigaione dei fenomeni rappresentati. In qualche sistema c'è la possibilità di navigazione dinamica, variando i parametri per cambiare rappresentazione.
+- **Visualizzazione dei pattern**: fattore di successo per qualsiasi soluzione di DM. Non solo visualizzazione fine a sè stessa, ma anche elemento di discovery (es. grafo, albero decisionale, diagrammi a dispersione). La visualizzazione è fondamentale anche per la navigazione dei fenomeni rappresentati. In qualche sistema c'è la possibilità di navigazione dinamica, variando i parametri per cambiare rappresentazione.
 
 
 Il **processo di mining** quindi consiste in:

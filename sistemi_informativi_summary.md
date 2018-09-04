@@ -144,3 +144,99 @@
     + Parallel Query Processing: `solo certe query` `hw sw costoso`
     + Requisiti ideali: `chiarezza schema DW` `dati leggibili` `puliti` `navigabili` `query semplificate`
 - **Il modello multidimensionale e le operazioni principali**
+    + Struttura multidimensionale: struttura dati adatta all'analisi su cui si basano i sistemi informazionali. 
+        * `intuitiva` `facilmente interpretabile` (`ricerche` `aggregazione` `disaggregatzione`) `efficienti`
+        * analisi di modellazione su temi descritti da soggetti e da relazioni quantificabili tra soggetti
+        * lo stesso evento può essere analizzato in relazione a diversi soggetti
+        * la misura di ogni evento è descritta da un insieme di coordinate ognuna delle quali rappresenta un soggetto di interesse per le analisi da condurre su quell'evento
+        * rappresentato con l'ipercubo (matrice multidimensionale)
+            - `Fatto elementare`: l'elemento otenuto specificando un valore per ogni possibile coordinata
+            - `Misure`: valori numerici che quantificano il fatto elementare
+            - `Dimensioni`: coordinate di ciascun elemento che costituiscono l'analisi dei fatti
+        * esempio:
+            - Fatto: vendita prodotto
+            - Misure: quantità e importo di vendita
+            - Dimensioni: cliente che ha acquistato, articolo venduto, data
+        * soluzioni esempio
+            - quanti prodotti venduti di un certo tipo in un certo periodo?
+            - quali sono i clienti con maggior fatturato?
+            - quali articoli portano maggior fatturato?
+            - quali sono principali acquirenti di un certo articolo?
+    + Operazioni sui dati:
+        * `Drill down`: `disaggrega` dati
+            - dettaglia dati aggiungendo una dimensione di analisi
+        * `Roll up`: `aggrega` dati
+            - sintetizza dati eliminando una dimensione di analisi
+        * `Slice & Dice`: seleziona e proietta
+            - Slice: fissa il valore di una dimensione base
+            - Dice: filtra i fatti 
+        * `Pivot`: riorienta il cubo
+            - inverte la realzione tra le dimensioni
+- **Caratteristiche e modelli logici OLAP**
+    + `ROLAP`: struttura multidimensionale su `database relazionale`
+        * `sql standard`
+        * Vantaggi: `minimo spazio` `conoscenza strumenti relazionali`
+        * Svantaggi: `query poco efficienti` `+ velocità = + complessità`
+    + `MOLAP`: struttura multidimensionale su `vettori ad accesso posizionale`
+        * `una cella x combinazione di dimensioni` `accesso diretto` `strumenti di query proprietari`
+        * Vantaggi: `efficienza query complesse` `aderenza modello concettuale`
+        * Svantaggi: `occupazione spazio` `mancanza standard` 
+    + `HOLAP`: combina vantaggi MOLAP e ROLAP
+        * Data warehouse su db relazionale: `semplicità` `scalabilità`
+        * Data mart su base multidimensionale: `interrogazioni efficienti` `dimensioni contenute`
+- **Gli schemi multidimensionali: caratteristiche e tipi**
+    + Caratteristiche
+        * `Fatto`: evento che accade nell'ambito dell'attività e che si ha iteresse a misurare. es. vedite, spedizioni
+            - identificazione tramite l'ennupla di coordinate `(dimensione1, ..., dimensioneN)`
+        * `Misura`: caratteristica numerica del fatto, ogni fatto può avere più misure. `memorizzate su db` `calcolate` `implicite (presenza/assenza)`
+            - identificazione tramite l'ennupla di coordinate `(dimensione1, ..., dimensioneN).Misura`
+        * `Aggregabilità`: possibilità di usare l'operatore di aggregazione su una misura (tutte dimensioni) o su una specifica coppia (misura, dimensione)
+        * `Additività`: possibilità di usare l'operatore di aggregazione somma su una misura (tutte dimensioni) o su una specifica coppia (misura, dimensione)
+        * `Gerarchie`: insieme di attributi dimensionali collegati gerarchicamente ad una dimensione
+    + Tipi
+        * `Schema a stella`: una tabella dei fatti che referenzia un numero (da due in su) di tabelle di dimensioni
+            - `semplice` `data mart` `riduzione join` `manutenzione ridotta` `collegamenti = chiavi esterne`
+            - sconsigliato per un elevato numero di dimensioni
+        * `Schema a fiocco di neve`: schema a stella con ramificazioni normalizzate sulle tabelle di dimensioni (anche più livelli)
+            - `data warehouse` `estensione schema a stella` `normalizzazione db` `azzeramento rindondanza` `aggiornamento semplificato` `minore spazio` `accesso + veloce` `query + complesse` `creazione viste`
+        * `Schema a costellazione`: tabelle dimensioni condivise da più tabelle dei fatti
+            - `complesso`
+            - approccio da seguire quando più fatti coinvolgono gli stessi elementi
+    + Il banchmarking delle prestazione è essenziale per determinare quale sia il design migliore
+
+### Data Warehouse e Data Mart
+- **Data Warehouse e Data Mart**
+    + `Data Warehouse`: Insieme di strutture dati e dei tool necessari per ottenere, a partire dai dati operazionali utilizzati e creati dal sistema informativo aziendale, informazioni che aiutino i manager nella valutazione tecnico-economica dell'andamento aziendale
+        * `processo` `dati operazionali` `dati esterni` `accessibilità` `integrazione` `fressiblità` `sintesi` `rapresentzione multidimensionale` `correttezza` `compatezza` `lettura giorno` `aggiornamento notte`
+        * Dati: `subject oriented` `aziendali e non dipartamentali` `aggregati` `asse temporale`
+    + `Data Mart`: sottoinsieme del data warehouse contente l'insieme di informazioni rilevanti per un particolare problema
+        * `contestuale` `limitato` `estensione temporale ridotta` `veloce e semplice` `costo inferiore` `risposte veloci` `limitato all'utente`
+- **Architeture e modelli di DW**
+    + Caratteristiche: `separazione` `scalabilità` `estendibilità` `sicurezza` `amministrabilità`
+    + Diverse basi dati: `sorgenti` `staging area (opzionale)` `data warehouse` `data mart`
+    + Flusso dati: `livello sogente` > `livello dell'alimentazione` > `livello DW` > `livello analisi`
+    + Ciclo di vita (iterativo)
+        * costruzione primo (fatto più significativo)
+        * integrazione progressiva altri fatti
+        * rilascio data mart
+    + Architetture
+        * 1 livello: `OLTP + OLAP`
+        * 2 livello: `sorgenti` `data warehouse` `data mart`
+        * 3 livello: `sorgenti` `staging area` `data warehouse` `data mart`
+    + ETL
+        * Extraction: `statica` `incrementale`
+        * Transformation: `riconciliazione` `duplicati` `integrità` `coverstione tipi`
+        * (Cleaning): `rilevazione errori` `correzione`
+        * Loading: `batch to marts` `indicizzazione` `informazioni temporali` `generazione dati aggregati`
+        * (Servizi di controllo): `metadati` `statistiche` `controllo qualità` `trattamento errori`
+    + Modelli di DW
+        * Central Data Warehouse (Enterprise Data Warehouse): enorme dw con dati da diversi database operativi e molti utenti
+        * Distributed System: DW è distribuito su piattaforme multiple
+        * Data Warehouse + Data Marts: dati estratti da DW centrale e caricati su sistemi più piccoli DM
+        * Single Warehouse or Data Mart: singola fonte di dati operazionali orientati a servire pochi utenti (di dipartimento)
+- **Vantaggi e svantaggi di un DW**
+    + Vantaggi: `semplicità` `migliore qualità dei dati` `accesso rapido` `separazione ambiente operativo dall'ambiente DSS` `vantaggio competitivo` `costo operativo` `cgestion del flusso informativo` `bechmarking realistico` `sicurezza`
+    + Svantaggi: `complessità nello sviluppo` `lunghi tempi di creazione` `dispendioso` `end-user traning` `complessità nell sfruttare SMP/MPP di DW` `difficoltà nel creare un ambiente DBMS distribuito` `time-lag tra DW e operazionale`
+
+## Knowledge discovery, architettura e processi di data mining
+- Knowledge discovery, architettura e processi di data mining
