@@ -1226,7 +1226,7 @@ Consiste in una serie di interrogazioni iterate di mining sul sistema di DW, che
 I parametri necessari per avviare un'analisi di mining:
 - **Isolare l'insieme dei dati da analizzare**: porzione di dati del DW da fornire in input. Criticità sulla poca conoscenza da parte dell'analista di cosa sta cercando
 - **Scelta della funzione di DM da usare in base all'obiettivo**: descrittive, classificatorie, predittive, outliner, eccezioni. Comprensione del metodo di mining, fornitura di parametri coretti, livelli di approssimazione accettati, numero di iterazioni ecc.
-- **Le misure di interesse**: postprocessing e filtro sulla quantità importante di risultati. Caratteristiche di un pattern di interesse:
+- **Le misure di interesse**: postprocessing e filtro sulla quantità e importanza dei risultati. Caratteristiche di un pattern di interesse:
     + **Novità**: rispetto a quanto conosciuto / presente (es. nulle gerarchie dimensionali)
     + **Semplicità**: lunghezza formula associativa, complessità sistema di regole, profondità dell'albero decisionale
     + **Certezza**: validità del risultato anche su dati nuovi o diversi rispetto ai parametri fissati (confidenza, supporto, threshold...)
@@ -1252,7 +1252,7 @@ Le attività di mining possono essere ripartitie in due macro classi
 - mining **descrittivo**: estrae informazioni che descrivono le proprietà generali dei dati
 - mining **predittivo**: determina regole generali e crea modelli per predire le tendeze nel futuro
 
-I sistemi sul mercato propongon diversi insiemi di funzioni di mining, per cercare un certo tipo di informazione o costruire un particolare modello di predizione. La stessa funzione può essere elaborata tramite algoritmi diversi. Le funzioni sono riconducibili a cinque tipologie
+I sistemi sul mercato propongno diversi insiemi di funzioni di mining, per cercare un certo tipo di informazione o costruire un particolare modello di predizione. La stessa funzione può essere elaborata tramite algoritmi diversi. Le funzioni sono riconducibili a cinque tipologie
 - generalizzazione, caratterizzazione e discriminazione
 - analisi associativa
 - classificazione e predizione
@@ -1260,17 +1260,17 @@ I sistemi sul mercato propongon diversi insiemi di funzioni di mining, per cerca
 - analisi degli outlier
 
 **Generalizzazione, caratterizzazione e discriminazione**
-Sono strumenti che permettono di descrivere in modo sintetico ma preciso i dati contenuti nel database e operano tramite generalizzazione (classificazione dei dati elementari in gruppi caratterizzati da attributi comuni o tecninche OLAP) o tramite funzioni di descrizione delle classi (caratterizzazione: descrizione delle particolarità della classe, discriminazione: marcamento delle differenze tra classe e classe)
+Sono strumenti che permettono di descrivere in modo sintetico ma preciso i dati contenuti nel database e operano tramite generalizzazione (classificazione dei dati elementari in gruppi caratterizzati da attributi comuni o tecniche OLAP) o tramite funzioni di descrizione delle classi (caratterizzazione: descrizione delle particolarità della classe, discriminazione: marcamento delle differenze tra classe e classe)
 
 Si possono usare le funzioni offerte dal DM come le misure aggregate OLAP (conteggio, media, min, max, somma...) o le funzioni di caratteriziazzione e di discriminazione
 
 **Analisi associativa**
-Permette di identificare condizioni che si verificano contemporaneamente con elevata frequenza. Rilave quindi pattern che si ripetono su terminati attributi e ne deriva regole di implicazione del tipo (A -> B).
+Permette di identificare condizioni che si verificano contemporaneamente con elevata frequenza. Rilevare quindi pattern che si ripetono su terminati attributi e ne deriva regole di implicazione del tipo (A -> B).
 Alcune applicazioni d'esempio possono essere market basket analysis, profili clienti (abitudini di acquisto), ottimizzazione delle manutenzioni, condizioni mediche / epidemiologiche.
 
 Viene valutata in base a:
 - Confidenza: misura la certezza del pattern
-- Supporto: misura la frequenza co cui il pattern è presente nella base di dati
+- Supporto: misura la frequenza con cui il pattern è presente nella base di dati
 
 I motori di DM cercano le associazioni forti che superano livelli di confidenza e supporto forniti dall'utente.
 
@@ -1291,7 +1291,7 @@ Può essere applicato per:
 
 **Classificazione**
 L'utente fornisce i parametri per la creazione del modello così da indicare l'appartenenza di un elemento ad una certa classe.
-Per la costruizione dei classificatori si possono usare diverse tecniche
+Per la costruzione dei classificatori si possono usare diverse tecniche
 - Funzioni matematiche
 - Regole associative
 - Alberi di decisione: strutture di classificazione basate su valutazioni di condizioni del tipo if-then-else. Richiedono 2 fasi
@@ -1299,13 +1299,13 @@ Per la costruizione dei classificatori si possono usare diverse tecniche
     + fase di pruning: si pota l'albero, eliminando rami dovuti a rumore o fluttuazioni statistiche
 - Reti della verità bayesiane: si creano dei modelli grafici aciclici orientati per la rappresentazione della conoscenza in un dominio incerto e si applica la regola di Bayes per creare una struttura dati chamata "rete di credenze" che rappresenta la dipendaza fra le variabli e per dare una specifica concisa della distribuzione di probabilità congiunta. La regola di bayes dice: Calcolare la probabilità di una causa che ha scatenato l'evento = valutare una probabilità avendo già delle informazioni su quanto è già accaduto in precedenza.
     + Dati due eventi A e B, se questi sono in qualche modo correlati, è ragionevole pensare che il sapere che uno dei due è già avvenuto possa migliorare la conoscenza della probabilità dell'altro (Probabilità codizionata)
-    + la probabilità che si verifichi A sapendo che si è giaà verificato B, cioè la probabilità di A condizionata a B
+    + la probabilità che si verifichi A sapendo che si è già verificato B, cioè la probabilità di A condizionata a B
 - Reti neurali: reti che cercano di simulare il funzionamento dei neuroni all'iterno di un sistema informatico. E' un modello computazionale parallelo, costituito da numerose unità eleaborative omogenee fortemente interconnesse mediante collegamenti di varia intensità.
 
 *Reti neurali*
 Nelle reti neurali i nodi che compongono la rete sono divisi in 3 macro-categorie:
 - Nodi unità di ingresso (input)
-- Nodi appartenenti ale unità di uscita (output)
+- Nodi appartenenti alle unità di uscita (output)
 - Nodi delle unità nascoste (hidden)
 
 Quando un nodo riceve un input sopra una certa soglia di attivazione, emette a sua volta un segnale alle altre unità a cui è connesso. 
@@ -1316,29 +1316,29 @@ L'apprendimento è basato su dati empirici e può essere:
 
 Le proprietà di una rete neurale sono quindi:
 - **capacità di apprendere da esempi**
-- **capacità di generalizzare**: risposte simili in corrispondenza di esmepi simili a quelli su cui sono state addestrate
-- **capacitià di astrarre**: risposte corrette in corripondenza di esmpi diversi da quelli su cui sono state addestrate
+- **capacità di generalizzare**: risposte simili in corrispondenza di esempi simili a quelli su cui sono state addestrate
+- **capacità di astrarre**: risposte corrette in corripondenza di esempi diversi da quelli su cui sono state addestrate
 - **insensibilità al rumore**: capacità di generalizzare anche in presenza di dati alterati o incerti
-- **decadimento graduale prestazioni**: il comportamento si altera gradualmente se si eliminano cnnessioni o si alterano i pesi
+- **decadimento graduale prestazioni**: il comportamento si altera gradualmente se si eliminano connessioni o si alterano i pesi
 
 Alcuni esempi di applicazioni delle reti neurali possono essere:
 - riconosciemnto di segnali percettivi (immagini, voce, sonar)
 - diagnosi e gestione di apparati complessi in tempo reale
 - controllo dei movimenti di robot e veicoli autonomi
 - classificaizone ed interpretazione di dati rumorosi
-- memoria ssociativa: accesso in tempo reale a grandi quanitità di dati
+- memoria associativa: accesso in tempo reale a grandi quanitità di dati
 - ricostruzione di informazioni parziali o corrotte da rumore
 - soluzioni approssimate in tempo reale di problemi computazionalmente intrattabili
 
 **Predizione**
-E' una tecninca analoga alla classificazione, ma permette di identificare valori no noti di elementi il cui dominio è continuo.
-Si basa sulla costuzione di funzioni di tendenza tramite interpolazione sui punti noti (regressione). Ci sono vari modelli:
+E' una tecnica analoga alla classificazione, ma permette di identificare valori non noti di elementi il cui dominio è continuo.
+Si basa sulla costruzione di funzioni di tendenza tramite interpolazione sui punti noti (regressione). Ci sono vari modelli:
 - lineare semplice: distribuzioni bivariate
 - multilineare: distribuzini multivariate
 - non-lineare: polinomiale, esponenziale, logaritminca, ...
 
 **Clustering**
-Tencninca analoga alla classificazione, ma ripartisce gli elementi in classi anonime sulla base delle affinità rilevate tramite l'osservazione dei dati. Le classi quindi non sono definite a priori ma sono proposte all'utente come "agglomerati spontanei" di dati sui quali poi l'utente può derivare informazioni e enuovi criteri su cui costruire modelli di classificazione.
+Tencnica analoga alla classificazione, ma ripartisce gli elementi in classi anonime sulla base delle affinità rilevate tramite l'osservazione dei dati. Le classi quindi non sono definite a priori ma sono proposte all'utente come "agglomerati spontanei" di dati sui quali poi l'utente può derivare informazioni e nuovi criteri su cui costruire modelli di classificazione.
 
 Caratteristiche dei cluster:
 - **massima similarità tra gli elementi appartenenti ad una classe**
@@ -1349,46 +1349,46 @@ Le due filosofie principali su cui si basano:
     + un numero prefissato di cluster
     + la distanza minima tra i cluster non supera un valore
     + non si raggiunge un certo criterio statistico
-- **metodi divisivi o top-down**: all'inizio tutti gli elementi sono un unico cluster, e poi l'algoritmo inizia a dividere il cluster in tanti cluster di dimensioni inferiori cercando di ottenere gruppi sempre più omogenei. L'algoritmo procede ifno a che non viene soddisfatta una regola di arresto generale legata al raggiugimento di un numvero prefissato di cluster.
+- **metodi divisivi o top-down**: all'inizio tutti gli elementi sono un unico cluster, e poi l'algoritmo inizia a dividere il cluster in tanti cluster di dimensioni inferiori cercando di ottenere gruppi sempre più omogenei. L'algoritmo procede fino a che non viene soddisfatta una regola di arresto generale legata al raggiugimento di un numero prefissato di cluster.
 
 I metodi di clustering si fondano su diverse tecniche:
 - **partizionamento**: l'utente indica in quante classi ripartire i dati e l'algorimo ripartisce gli elementi nel numero di classi indicato sulla base delle reciproche distanze
 - **classificaizone gerarchica**:
-    + basata sullàaggregazione: costruisce le classi aggregando interativamente gli elementi sulla base delle similitudini
+    + basata sull'aggregazione: costruisce le classi aggregando interativamente gli elementi sulla base delle similitudini
     + basata su divisione: ripartisce iterativamente l'insieme dei dati in sottoinsieme di elementi simili
-- **valutazione della densità**: i cluster sono identificati dalle zone topologicamente
+- **valutazione della densità**: i cluster sono identificati dalle zone topologicamente dense
 
 Gli argoritmi di clustering sono caratterizzati da:
 - **scalabilità**: tempo di elaborazione e loop sono elementi critici
-- **robustezza**: classificare anche con errori, dati mancanti o dati ou-of-range
+- **robustezza**: classificare anche con errori, dati mancanti o dati out-of-range
 - **alta dimensionalità**: utilizzare più attributi contemporanei
 - **capacità di operare condiversi tipi di attributi**: non solo numerici, ma anche categorici o misti
 - **capacità di reperire cluster di qualsiasi forma**: non solo cluster sferici regolari (distanza euclidea)
 - **insensibilità all'ordinamento**: cluster indifferente all'ordinamento dei dati di partenza
 
 **Ricerca degli outliner**
-E' un possibile risultato dei metodi di clustering, un eccezzione, un elemento fuori range. La ricerca infatti si basa sugli stessi principi del clustering e concentra gli sforzi sull'identificazione degli elementi che si discostano maggiormente dagli altri.
+E' un possibile risultato dei metodi di clustering, un'eccezzione, un elemento fuori range. La ricerca infatti si basa sugli stessi principi del clustering e concentra gli sforzi sull'identificazione degli elementi che si discostano maggiormente dagli altri.
 I metodi per la ricerca sono:
 - statistici: applicabili se sui dati è identificabile una distribuzione
-- bassati sulla distanza: ricercano gli elemento che massimizzano la distanza dai rastanti elementi del set di analisi
-- basati sulla deviazione: identificano gli ouliner com elementi che deviano dalle caratteristiche tendenziali del gruppo.
+- basati sulla distanza: ricercano gli elemento che massimizzano la distanza dai rastanti elementi del set di analisi
+- basati sulla deviazione: identificano gli ouliner come elementi che deviano dalle caratteristiche tendenziali del gruppo.
 
 ### Data Mining: aree applicative
-- **Analisi finanziaria**
+- **Analisi finanziaria**6
     + analisi descrittive
         * viste dei debiti e degli incassi per mese, regione, settore
         * accesso a informazioni statistiche sui flussi finanziari
         * valutazione del credito e delle performance sui pagamenti dei clienti
     + classificazione dei clienti basata sulle abitudini di pagamento, da utilizzare per:
         * predizione sui pagamenti
-        * definizione di politiche di credit
+        * definizione di politiche di credito
         * identificazione dei clienti o dei gruppi critici
     + analisi degli outliers
-        * per la rilevazione di frodi o di moviemtni finanziari anomali
+        * per la rilevazione di frodi o di movimenti finanziari anomali
 - **Marketing**
-    + **analisi descrittive** su clienti e prospect, per approfondire la conoscenza delle caratteristiche potenziali del mercto e di quele dei clienti già acquisiti, con lo scopo di identificare, ad esempio, settori non coperti, aree di possibile sviluppo, possibili differenziazioni
+    + **analisi descrittive** su clienti e prospect, per approfondire la conoscenza delle caratteristiche potenziali del mercato e di quelle dei clienti già acquisiti, con lo scopo di identificare, ad esempio, settori non coperti, aree di possibile sviluppo, possibili differenziazioni
     + **clustering** dei clienti, per caratterizzare i raggruppamenti spontanei ed usare questa conoscenza per definire programmi e azioni marketin puntuali
-    + **classificazione** di clienti e porspect, per l'attivazione di azioni di marketing mirato
+    + **classificazione** di clienti e prospect, per l'attivazione di azioni di marketing mirato
 - **Vendite**
     + analisi descrittive
         * su clienti, per approfondirne il profilo e definirne segmentazioni, ad esmpio in classi di fatturato
@@ -1407,11 +1407,11 @@ I metodi per la ricerca sono:
 - **Logistica**
     + dalle liste di prelievo si possono lanciare analisi associative per identificare i materiali che vengono prelevati insieme e disporre quindi la merce in magazzino in modo ottimizzato
 - **Acquisiti**
-    + tramite metodi di caratterizzazione e di associazione, il grado di puntualità dei fornitori sui diversi prodotti forniti, o di confrontare le prestazini di fornitori che operano nel medesimo settore
+    + tramite metodi di caratterizzazione e di associazione, il grado di puntualità dei fornitori sui diversi prodotti forniti, o di confrontare le prestazioni di fornitori che operano nel medesimo settore
 - **Constrollo qualità**
     + l'analisi dei cluster e quella degli outliner possono permettere di identificare elementi critici, o di definire criteri per la classificazione dei prodotti sulla base della loro tendenza alla difettosità
 - **Manutenzione**
-    + alaisi associative possono rilevare relazioni tra condizioni diverse; conoscendo queste, al verificarsi di una possono essere attuate azioni di manutenizone preventiva sulle altre
+    + analisi associative possono rilevare relazioni tra condizioni diverse; conoscendo queste, al verificarsi di una possono essere attuate azioni di manutenzione preventiva sulle altre
 - **Sicurezza**
     + l'analisi degli outliner sulla base dei dati di traffico della rete può portare alla luce intrusioni non autorizzate nel sistema
 - **Relazioni con il mercato**
@@ -1420,17 +1420,17 @@ I metodi per la ricerca sono:
 
 ## Linked Open Data
 ### Data deluge
-Siamo sommersi di dati, essi ci possono aiutare a prendere decisioni migliori, questi data stanno giocando un ruolo rempre più centrale nelle nostre vite e stanno guidando l'emergente data economy.
+Siamo sommersi di dati, essi ci possono aiutare a prendere decisioni migliori, questi dati stanno giocando un ruolo rempre più centrale nelle nostre vite e stanno guidando l'emergente data economy.
 Sempre più soggetti stanno "consumando" questi dati per costruire nuovi business.
 - Amazon rende i dati dei suoi prodotti dispobili a terze parti attraverso web api migliorando così le sue possibilità di business
-- Google sfrutta dati strutturanti di siti web e di e-commerce per creare delle liste di prodotti
-- Società scientifiche richiedono lo scambio di dati a livello globare per la ricerca. es Human Genome Project
+- Google sfrutta dati strutturati di siti web e di e-commerce per creare delle liste di prodotti
+- Società scientifiche richiedono lo scambio di dati a livello globale per la ricerca. es Human Genome Project
 - La politica stessa è pilotata da questa enorme quantità di dati
 
 Il valore e la diversità di questi ecosistemi dimostrano la forte domanda all'accesso dei dati. Questo solleva tre importanti domande:
 - Come si può fornire accesso ai dati così che possano essere riusati?
 - Come si possono identificare i dati veramente importanti in questa moltitudine di dati?
-- Come si può permettere alle applicazzioni di integrare dati con un così vasti tipi di dato diversi?
+- Come si può permettere alle applicazioni di integrare dati con così tanti tipi di dato diversi?
 
 Proprio come il World Wide Web ha rivoluzionato il modo di connettere e consumare i documenti, così può anche rivoluzionare il modo di scoprire, accedere e integrare l'uso dei dati.
 
@@ -1441,9 +1441,9 @@ Per capire i concetti ed i valori dei Linked Data è importante considerare gli 
 
 - **HTML**: orientato alla stutturazione di testi e documenti piuttosto che di dati. Questo rende difficile creare applicazioni software che estraggano dati dalle pagine HTML
     + le relazioni vengono gestite con gli href che si riferiscono ad altre pagine Web
-- **Micorformats**: tentativo a risolvere il problema. Possono essere usati per pubblicare dati strutturati che descrivono tipi di entità come persone, organizzazioni, eventi, recensioni o entità. Hanno lo svantaggio che sono ristretti alla rappresentazione di piccoli insieme di tipi diversi di dati, quindi non sono candidabili per la condivisione di dati arbirtari sul Web.
+- **Microformats**: tentativo di risolvere il problema. Possono essere usati per pubblicare dati strutturati che descrivono tipi di entità come persone, organizzazioni, eventi o recensioni. Hanno lo svantaggio che sono ristretti alla rappresentazione di piccoli insieme di tipi diversi di dati, quindi non sono candidabili per la condivisione di dati arbirtari sul Web.
 - **Web API**: forniscono un accesso a dati strutturati attraverso il protocollo HTTP. Esempi sono Amazon Product Advertising API, Flickr API ecc... Anche qui abbiamo lo svantaggio che un pogrammatore che vuole utilizzare questi dati deve scrivere del codice ad hoc per accederci.
-    + solitamnte non hanno un sistema per "seguire i dati", ossia trovare dati correlati a quelli cercati
+    + solitamente non hanno un sistema per "seguire i dati", ossia trovare dati correlati a quelli cercati
     + usano identificatori con scope locale. es. product_id: 123456. Non c'è quindi un meccanismo per riferirsi ad un item comune tra 2 diverse API
 
 ### The global space of data
@@ -1455,32 +1455,32 @@ Questo meccasimo è fornito da **RDF** Resource Description Framework. Esso forn
 
 RDF rende i links espliciti in modo che le  applicazioni che lo sfruttano possano seguire i dati e trovarne di altri. Questo rende il Web, dove questi dati sono pubblicati, un posto più navigabile e che facilita l'usabilità dei dati.
 
-Linked Data permette di relazionare dati di diverse sorgenti creando così un unico **Global Data Space**. L'uso di standars Web e modelli di dati comuni rende possible implementare applicazioni generiche che operano su tutto il Data Space. Questa è l'essenza dei Linked Data.
-L'aumentare dell'adozione dei Linked Data ha creato cosi quello che viene chiamto Web of Data, anche chiamato Semantic Web.
+Linked Data permette di relazionare dati di diverse sorgenti creando così un unico **Global Data Space**. L'uso di standards Web e modelli di dati comuni rende possible implementare applicazioni generiche che operano su tutto il Data Space. Questa è l'essenza dei Linked Data.
+L'aumentare dell'adozione dei Linked Data ha creato cosi quello che viene chiamato Web of Data, anche chiamato Semantic Web.
 
 ### Principles of Linked Data
-Il termime Linked Data si riferisce all'insieme di best practives per la pubblicazione e la relazione di dati strutturati sul web. Questi concetti sono stati introdotti da Tim Berners-Lee.
+Il termime Linked Data si riferisce all'insieme di best practices per la pubblicazione e la relazione di dati strutturati sul web. Questi concetti sono stati introdotti da Tim Berners-Lee.
 
 1. **Usare gli URIs come nome delle cose**
 2. **Usare HTTP URIs, così che le persone possano cercare questi nomi**
-3. **Quando qualcuno cerca un URI, fornisce infromazioni utili, usando gli standards come RDF, JSON-LD, SPARQL**
+3. **Quando qualcuno cerca un URI, fornire informazioni utili, usando gli standards come RDF, JSON-LD, SPARQL**
 4. **Includere links di altri URIs, cosi che si possano trovare più cose**
 
-L'idea di base è quella di applicare questi principi di stuttrazione dei dati all'archittettura già esistente del World Wide Web.
+L'idea di base è quella di applicare questi principi di stutturazione dei dati all'archittettura già esistente del World Wide Web.
 
 - URIs: Uniform Resource Identifiers
 - HTTP: HyperText Trasfer Protocol
 - HTML: HyperText Markup Language
 
-Gli hyperlinks sono la parte cruciale per la connesisone di contenuti di diversi sorgenti cosi da creare un unico *single global information space*.
+Gli hyperlinks sono la parte cruciale per la connessione di contenuti di diversi sorgenti cosi da creare un unico *global information space*.
 
-Come conseguenza al Web of Data basato su standard e modelli di dati comuni, diventano possibili implementazioni di applicazioni generiche che operano sul data space completo. Elcuni esempi possono essere Linked Data browser o Linked Data Search engines.
+Come conseguenza al Web of Data basato su standard e modelli di dati comuni, diventano possibili implementazioni di applicazioni generiche che operano sul data space completo. Elcuni esempi possono essere Linked Data Browser o Linked Data Search Engines.
 
 #### Naming things with URIs
 Per pubblicare dei dati sul web, prima è necessario identificare il dominio di interesse dell'item.  
-Per identificare le entitaà e le relazioni si usano gli URIs e questo è fatto principalemnte per due motivi:
+Per identificare le entità e le relazioni si usano gli URIs e questo è fatto principalmente per due motivi:
 - forniscono un modo semplice per creare un nomi univoci a livello globale in modo decentralizzato dato che ogni proprietario di un nome di dominio può creare un nuovo riferimento URI
-- non servono solo come nome ma anche come significato di accesso alle infomazioni che descrivendo l'entità identificata
+- non servono solo come nome ma anche come significato di accesso alle infomazioni descrivendo l'entità identificata
 
 #### Making URIs Deferenceable 
 Qualsiasi HTTP URI dovrebbe essere deferenziabile, questo significa che il client HTTP può usare l'URI attraverso il protocollo HTTP e recuperare la descrizione della risorsa che è identificata dall'URI.
@@ -1492,18 +1492,18 @@ Ci sono 2 diverse strategie per rendere un URI che rappresenta un oggetto reale 
 - **Hash URIs**: sfrutta la caratteristica degli URI che possono contenere una parte speciale (fragment identifier) che è separata dall'URI con il simobolo hash. Quando un client vuole recuperare un hash URI, il protocollo HTTP recuperare normalmente la risorsa senza guardare il fragment identifier e lo usa successivamente. Questo permette di creare URIs che identificano oggetti reali o concetti astratti senza creare ambiguità.
 
 **Hash vs 303**
-L'hash URI ha il vantaggio che riduce il numero di richieste HTTP, e quindi la latenza. Come contro ha il fatto che descrizioni di tutte le risorse the condividono la stessa parte non-fragment URI sono ritornate assieme, indistintamente che il client le voglia o no. Questo porta a riposte di dimensioni maggiori con informazioni inutili.
+L'hash URI ha il vantaggio che riduce il numero di richieste HTTP, e quindi la latenza. Come contro ha il fatto che descrizioni di tutte le risorse che condividono la stessa parte non-fragment URI sono ritornate assieme, indistintamente che il client le voglia o no. Questo porta a risposte di dimensioni maggiori con informazioni inutili.
 303 URIs sono flessibili perchè il target può essere diverso per ogni risorsa ma richiedono un maggior numero di richieste HTTP. Questi sono spesso usati per servire descrizioni di risorse che apprtangono a dei grandi data set.
 Gli hash URI invece sono usati spesso per idenetificare termini appartenti a vocabolari che solitamente sono piuttosto piccoli. Sono usati anche quando sono embeddati a pagine HTML usando RDFa.
 
 #### Providing Useful RDF Information
-Per fare in modo di creare una vasta quanità di divverenti applicazioni che processino i contenuti Web è importate standardizzare i formati dei contenuti. RDF fornisce un modello di dati estremamente semplice e su misura per le architetture web. Per essere pubblicato sul web i dati RDF possono essere serializati in differenti formati, i due più comuni sono RDF/XML e RDFa.
+Per fare in modo di creare una vasta quantità di differenti applicazioni che processino i contenuti Web è importate standardizzare i formati dei contenuti. RDF fornisce un modello di dati estremamente semplice e su misura per le architetture web. Per essere pubblicato sul web i dati RDF possono essere serializzati in differenti formati, i due più comuni sono RDF/XML e RDFa.
 
 I modelli RDF rappresentano informazioni come nodi e archi etichettati di un grafo orientato e sono disegnati per integrare rappresentazioni di informazioni originate da diverse sorgenti.
 RDF punta a essere una lingua franca capace di moderare altri modelli di dati presenti sul web.
 
 In RDF la descrizione di una risorsa è rappresentata come una tripletta.
-- **Soggetto**: URI che idendifica la risorsa descritta
+- **Soggetto**: URI che identifica la risorsa descritta
 - **Predicato**: URI che indica il tipo di relazione tra soggetto e oggetto
     + viene preso da un vocabolario: insieme di URIs che vengono usati per rappresentare un informazione a proposito di un certo dominio
 - **Oggetto**: valore letterale (stringa, numero) o data
@@ -1515,7 +1515,7 @@ In RDF la descrizione di una risorsa è rappresentata come una tripletta.
 
 Esistono due tipi principali di triplette:
 - **Triplette letterali**: hanno un RDF letterale come stringa numero data come oggetto. Sono usate per descrivere le proprietà di una risorsa. es. il nome o la data di nascita di una persona. E' combinata con un datatype URI che identifica il tipo di letterale (XML Schema datatypes specification)
-- **RDF Links**: descrivono le relazioni tra due risorse. Sono formate da tre URI. L'URI dell'oggetto del predicato e dell'Oggetto. 
+- **RDF Links**: descrivono le relazioni tra due risorse. Sono formate da tre URI. L'URI dell'oggetto del predicato e dell'oggetto. 
     + **RDF Link Interno**: connette risorse appartenenti allo stesso Linked Data Source. Il soggetto e l'oggetto appartengono allo stesso namespace
     + **RDF Link Esterno**: connettono risorse di diversi Linked Data Source
 
@@ -1527,8 +1527,8 @@ Esempi:
 
 
 #### Linking to other things
-Ci sono tre imporatanti tipi di RDF Links:
-- **Relationship Link**: puntano a entità collegate presenti in altri data sources. Questo permette di collegare maggiormente l'entità. Esempio collegare Paolo al posto dove vive, se anche la biblioteca del suo paese è collegata allo stesso luogo si può risalire ai libri facilmente accessibili da lui
+Ci sono tre importanti tipi di RDF Links:
+- **Relationship Link**: puntano a entità presenti in altri data sources. Questo permette di collegare maggiormente l'entità. Esempio collegare Paolo al posto dove vive, se anche la biblioteca del suo paese è collegata allo stesso luogo si può risalire ai libri facilmente accessibili da lui
 - **Identity Link** (`owl:sameAs`): puntano ad URI alias usati da altri data sources per identificare lo stesso oggetto reale o astratto. Questo permetto di rendere il Web of Data un sistema sociale:
     + Diverse opinioni: URI alisas hanno un importante funzione sociale dato che porta ad avere deferenziazioni della stessa risorsa da differenti publisher che cosi possono offrire diverse opinioni
     + Tracciablità: L'uso di avere diversi URI permette di risalire a chi ha espresso una certa opinione

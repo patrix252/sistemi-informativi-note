@@ -239,4 +239,139 @@
     + Svantaggi: `complessità nello sviluppo` `lunghi tempi di creazione` `dispendioso` `end-user traning` `complessità nell sfruttare SMP/MPP di DW` `difficoltà nel creare un ambiente DBMS distribuito` `time-lag tra DW e operazionale`
 
 ## Knowledge discovery, architettura e processi di data mining
-- Knowledge discovery, architettura e processi di data mining
+- **Knowledge discovery, architettura e processi di data mining**
+    + Knowledge discevery: processo di estrazione di pattern dai dati
+        * pattern: `validi` `sconosciuti` `utli` `comprensibili`
+    + OLAP -> `OLAM`: `non completamente automatico` 
+    + Architettura dei sistemi di Data Mining
+        * `Data Warehouse` `Knowledge Base` `Data Mining Engine` `Pattern Evaluation` `Sistema di presentazione`
+    + Processo di mining: interrogazioni iterate su DW che portano progressivamente alla comprensione del fenomeno
+        * `Comprensine del dominio` `Preparazione dati` `Scoperta pattern` `Valutazione pattern` `Utilizzo`
+    + Parametri:
+        * Porzione di dati da analizzare
+        * Funzione di DM da usare in base all'obiettivo
+            - `descrittive` `classificatorie` `predittive` `outliner` `eccezzioni` `livelli di approssimazione` `numero iterazioni`
+        * Misure di interesse: `pattern` `novità` `semplicità` `certezza` `utilità`
+        * Base di conoscenza: descrivere al sistema ciò che è noto all'utente
+            - `regole` `parametri` `soglie` `gerarchie`
+        * Visualizzazione dei pattern: `visualizzazione` `discovery` `navigazione`
+- **Funzioni di data mining**
+    + `mining descrittivo` `mining predittivo`
+    + Generalizzazione, caratterizzazione e discriminazione
+        * classificazione: gruppi caratterizzati da attributi comuni
+        * caratterizzazione: descrizione delle particolarità della classe
+        * discriminazione: marcamento delle differenze tra classi
+    + Analisi associativa: identifica condizioni che si verificano contemporaneamente con elevata frequenza. Ne derivano regole di implicazione.
+        * `confidenza`: misura certezza del pattern
+        * `supporto`: misura frequenza della presenza del pattern
+    + Classificazione e predizione: predire elementi futuri o stimare valori di elementi non noti
+        * costruzione basata su esempi. si deriva un modello, valuta l'efficacia su diverso sottoinsieme
+    + Classificazione: utente fornisce parametri per la creazione del modello. Ci sono diverse teniche: 
+        * `funzioni matematiche` `regole associative` 
+        * `alberi di decisione`: `build` `pruning`
+        * `reti della verità bayesiane`: `rete di credenze` `prob condizionata`
+        * `reti neurali`: quando un nodo riceve un input sopra una certa soglia di attivazione, emette a sua volta un segnale alle altre unità a cui è connesso
+            - `nodi unità ingresso` `nodi unità uscita` `nodi unità nascoste`
+            - apprendimento: `supervisionato` `non supervisionato` `per rinforzo`
+            - proprietà: `capacità di apprendere da esempi` `capacità di generalizzare` `capacità di astrarre` `insensibilità al rumore` `decadimento graduale prestazioni`
+    - Predizione: indentifica valori non noti il cui dominio è continuo.
+        + funzioni di tendenza tramite interpolazione sui punti noti (regressione)
+    - Clustering: ripartisce gli elementi in classi anonime sulla base delle affinità rilevate tramite l'osservazione dei dati. `agglomerati spontanei`
+        + Caratteristiche:
+            * massima similarità tra gli elementi appartenti ad una classe
+            * minima similarità tra gli elementi appartenti a classi diverse
+        + Tecniche: `metodi aggregativi (bottom-up)` `metodi divisivi (top-down)`
+    - Ricerca outliner: identificazione degli elementi che si discostano maggiormente dagli altri
+        + `risultato di clustering`
+        + Tecniche: `statistici` `basati sulla distanza` `basati sulla deviazione`
+- **Data Mining: aree applicative**
+    + analisi finanziaria
+        * analisi descrittive: `debiti` `incassi per mese` `regione` `settore`
+        * classificazione clienti: `abitudini pagamento` `predizone pagamenti` `definizione politiche credito` `clienti critici`
+        * analisi degli outliners: `frodi` `movimenti anomali`
+    + marketing
+        * analisi descrittive: `clienti` `prospect` `mercati potenziali` `aree di sviluppo`
+        * clustering clienti: `azioni marketing puntuali`
+        * classificazione clienti: `marketing mirato`
+    + vendite
+        * analisi descrittive: `clienti` `vendite` `reclami` `zone servite` `tempi di evasione`
+        * analisi di associazione: `prodotti acquistati frequentemente`
+        * analisi cluster: `schemi di acquisto`
+        * analisi outliners: `condizioni anomale di vendita` `tendenze all'abbandono` `prodotti critici`
+    + logistica
+        * analisi associative: `materiali prelevati` `disposizione merce magazzino`
+    + acquisti
+        * caratterizzazione: `puntualità fornitori`
+        * associazione: `confrontare prestazioni fornitori`
+    + controllo qualità: 
+        * analisi cluster: `classificazione prodotti diffetosi`  
+        * analisi outliner: `elementi critici`
+    + manutenzione:
+        * analisi associative: `manutenzione preventiva`
+    + sicurezza:
+        * analisi outliner traffico rete: `intrusioni`
+    + relazioni con il mercato:
+        * analisi cluster dati accesso: `info + cercate`
+
+## Linked Open Data
+- **Data deluge**
+    + Sommersi dai dai, ci possono aiutare a prendere decisioni migliori, hanno un ruolo sempre più centrale nelle nostre vite, guidano la data economy, costruire nuovi business.
+        * `Amazon` `Google` `Società scientifiche` `Politica`
+        * Come creare riuso dati?
+        * Come identificare dati veramente importanti in questa moltitudine?
+        * Come permettere alle applicazioni di integrare dati così diversi?
+- **Links across distributed data**
+    + Attuali meccanismi di riuso dei dati nel Web
+        * `HTML`: testi o documenti piuttosto che dati, difficile estrarre dati
+        * `Microformats`: dati strutturati che descrivono tipi di entità ristretti a piccoli insieme
+        * `Web API`: dati strutturati attravero HTTP. codice ad hoc per accederci, non hanno un sistema per seguire i dati, scope locale (id_prodotto: 12345)
+- **The global space of data**
+    + Linked Data distribuiti richiedono meccanismi standard per specificare l'esistenza e il significato delle connessioni tra gli items descritti in questi dati.
+    + RDF fornisce un modo flessibile per descrivere cose nel mondo, e come sono relazionati fra loro
+        * `connette cose, non documenti` `descrive le connessioni`
+        * `links espliciti` `seguire dati` `trovare altri dati`
+    + Dati di diverse sorgenti creano un unico `Global Data Space`
+    + L'adozione dei linked data crea `Web of Data` `Semantic Web`
+- **Principles of Linked Data**
+    + Linked Data: best practices per la pubblicazione e la relazione di dati strutturati sul web. `Tim Berners-Lee` `usare archittetura già esistente` `URI` `HTTP` `HTML`
+        * Usare gli URIs come nome delle cose
+        * Usare HTTP URIs, così che le persone possano cercare questi nomi
+        * Quando qualcuno cerca un URI, fornire informazioni utili, usando standards come REF, SPARQL
+        * Includere links di altri URIs, così che si possano trovare più cose
+    + `Linked Data Browser` `Linked Data Search Engine`
+- **Naming thing with URIs**
+    + Per identificare entità e relazioni si usano gli URIs
+        * semplice creare nomi univoci a livello globare in modo decetralizzato
+        * descrivono il significato
+- **Making URIs Deferenceable**
+    + Tutti gli URI dovrebbero essere deferenzibili per recuperare la descrizione della risorsa
+    + `content negotiation` `HTML > Umani` `RDF > Macchine`
+    + Tecniche deferenziazione
+        * 303 URIs (303 Redirect): `303 See Other`
+            - `flessibili` `diversi target` `+ richieste HTTP` `grandi data set`
+        * Hash URIs: `fragment identifier`
+            - `- richieste HTTP` `- latenza` `informazioni inutili` `vocabolari` `embeddati HTML RDFa`
+- **Providing Useful RDF Information**
+    + Formati serializazzione: `RDF/XML` `RDFa` (`JSON-LD`)
+    + i modelli RDF rappresentano informazioni rappresentate come nodi e archi etichettati di un grafo orientato, e sono disegnati per integrare reppresentazioni di informazioni originate da diverse sorgenti
+    + Composizione tripletta
+        * Soggetto: URI che identifica la risorsa
+        * Predicato: URI indica il tipo di relazione (vocabolario)
+        * Oggetto: letterale o URI
+    + Tipi triplette
+        * Triplette letterali: `oggetto letterale` `descrivono proprietà` `datatype URI`
+        * RDF Links: `3 URIs` `descrivono relazioni`
+            - RDF Links Interno: `stesso Linked Data Source`
+            - RDF Links Esterno: `diverso Linked Data Source`
+- **Linking to other things**
+    + RDF Links
+        * Relationship Link: `altri data source` `paolo->biblioteca`
+        * Identity Link: `alias` `sistema sociale` `diverse opinioni` `tracciabilità` `decentralizzazione`
+        * Vocabulary Link
+- **5 stars model for open data**
+    - `Tim Berners-Lee` sistema dove i publisher possono dare un premio ai loro data set in base ai seguenti criteri
+    - 1 Stella: disponibile Web, Open
+    - 2 Stelle: strutturati per una macchina `Excel`
+    - 3 Stelle: formato Open `CSV`
+    - 4 Stelle: standard aperti `W3C` per identificare i dati `RDF` `SPARQL`
+    - 5 Stelle: links uscenti verso altri data set
