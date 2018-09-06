@@ -605,11 +605,68 @@ Un sistema ERP è comunemente scomposto in sistemi di base che sono:
         * Disponibilità di risorse interne ed esterne
 
 ## Capitoli 7-11
-- ERP: l'area amministrativa
-- ERP: l'area logistica
-- ERP: l'area vendite
-- ERP: l'area acquisti
-- ERP: l'area produttiva
+### ERP: l'area amministrativa
+Obiettivi:
+- Rispetto delle normaitve fiscali e civilistiche
+    + stesura bilancio aziendale, libro giornale e documentazione collegata
+    + trattamento IVA
+    + trattamento sostituti d'importa e previdenziali
+    + trattamento cespiti
+- Valutazione consuntiva degli andamenti aziendali, trmite la registrazione dei fatti consolidati attraverso documenti. Il bilancio civilistico è il punto ufficiale d'arrivo di questo filone di lavoro
+    + trattamento contabilità ordinaria
+    + trattamento contabilità analitica
+    + trattamento contabilità finanziaria
+- Valutazione presuntiva degli andamenti aziendali, tramite la definizione di politiche di budget, la registrazione provvisoria di fatti consolidati ma non supportati da documentazione e la proiezione nel tempo degli andamenti
+    + budget finanziari ed economici
+    + controllo gestione
+
+Struttura di base
+- Piano dei conti
+- Anagrafiche
+    + clienti
+    + fornitori
+    + istituti di credito
+- Movimentazione contabile
+- Movimentazione finanziaria
+- Movimentazione IVA
+
+### ERP: l'area logistica
+Obiettivi:
+- definire le caratteristiche gestionali degli articoli trattati dall'azienda
+- controllare la movimentazione degli articoli
+- fornire analisi di disponibilità e giacenza degli articoli
+- fornire valutazioni inventariali con relative valorizzazioni
+
+Struttura di base
+- le anagrafiche degli articoli, cioè la descrizione dei prodotti su cui lavora l'azienda
+- il layout aziendale, cioè la scomposizione fisica o logica del magazzino in depositi
+- la movimentazione, cioè la rappresentazione dei fenomeni transazionali sugli articoli, per esempio il loro ingresso e la loro uscita dai depositi
+
+### ERP: l'area vendite
+Obiettivi:
+Si occupa principalmente di definire le caratteristiche commerciali dei prodotti e dei clienti, di stabilire le condizioni contrattuali, di fornire i supporti informativi per le funzioni operative quali creazione offerte, immissione ordini aperti ed esecutivi, definizione spediazioni, creazione documenti di trasportoo, fatturazione attiva, e infine di fornire valutazioni statistiche sulle vendite con relative valorizzazioni.
+
+Struttura di base:
+- le anagrafiche commerciali dei clienti e dei prodotti di vendita
+- le strutture dati che dfiniscono listini, scontistiche e rapporti di agenzia
+- i documenti di processo, che rappresentano i fenomeni transazionali complessi, quali ordini, documenti di trasporto e fatture
+- i piani di processo, quali piani di spedizione e di fatturazione
+
+### ERP: l'area acquisti
+Obiettivi:
+Simmetrici a quelli presenti nell'area vendite. Si occupano principalmente di definire le caratteristiche commerciali dei prodotti e dei fornitori di materiali e di servizi, di definire le condizioni d'acquisto, di garantire i supporti informativi per le funzioni operative, quali trattamneto delle richieste d'acquisto, immisione di ordini esecutivi, ricezione dei materiali, registrazione delle fatture passive; infine permetton valutazioni statistiche sugli acquisti co le relative valorizzazioni.
+
+Struttura di base:
+- le anagrafiche commerciali dei prodotti d'acquisto e dei fornitori di materiali e di servizi
+- le strutture dati che definiscono listini e sconti
+- i documenti di processo che registrano  i fenomeni transazionali complessi, quali ordini, documenti di trasporto e fatture ricevute.
+
+### ERP: l'area produttiva
+Obiettivi:
+- Il trattamento dei processi di definizione del prodotto. Vengono predisposti la struttura di ogni prodotto e il processo operativo di trasformazione necessario a ottenerlo, indicando tempi e risorse impegnate.
+- La pianificazione della produzione, sia da un punto di vista strategico che operativo. A vari livelli di astrazione, vengono definiti gli obiettivi produttivi e da questi sono ricavate le risorse in termini di materiale e di capacità produttiva necessarie per raggiungerli.
+- Il trattamento dei processi di produzione. Vengono attivati e consuntivati operativamente i processi produttivi, considerando i materiali che devono essere movimentati e le risorse che devono sviluppare le singole lavorazioni.
+- La preventivazione e la consuntivazione dei costi produttivi. Vengono analizzati in forma previsionale e consuntiva i costi di produzione per ciò che riguarda i materiali, la manodopera e l'utilizzo delle macchine interne o di risorse esterne (terzisti)
 
 ## Capitolo 12 - Sistemi informazionali
 

@@ -27,3 +27,9 @@
 - URI: Uniform Resource Identifier
 - HTTP: HyperText Transfer Protocol
 - HTML: HyperText Markup Language
+- CMMS Computerized Maintenance Management System
+- DAU Daily Active Users
+- WAU Weekly Active Users
+- MAU Monthly Active Users
+- ARPU Average Revenue Per User
+- ARPPU Average Revenue Per Paying User
