@@ -1,7 +1,7 @@
 # Sistemi Informativi
 
 ## Capitolo 0
-### ICT e società della conoscienza
+### ICT e società della conoscenza
 L’idea di una **società fondata sulla conoscenza**,
 basata sulla **gestione dell’informazione**, segna il
 superamento dell’era industriale, fondata sui
@@ -92,7 +92,7 @@ consolidati.
 - la scienza che studia i principi di rappresentazione ed elaborazione elettronica dell'informazione
 - l'insieme delle strutture tecnologiche hardware e software utilizzate per la raccolta, l'archiviazione, l'elaborazione dei dati e la produzione di informazioni.
     
-**Sistema informativo**: **l'insieme delle procedure e delle infrastrutture** che definiscono e supportano il fluire delle informazioni all'interno di una **struttra organizzativa**. 
+**Sistema informativo**: **l'insieme delle procedure e delle infrastrutture** che definiscono e supportano il fluire delle informazioni all'interno di una **struttura organizzativa**. 
 Si può definire come quel complesso di elementi interconnessi che:
 - Raccolgono
 - Catalogano
@@ -116,7 +116,7 @@ ITC: Information and Communication Technology
 
 - Esigenze di business - Marcroaree di influenza:
     + **Operativa**: supportare, guidare e facilitare i compiti esecutivi
-    + **Organizzativa**: migliorare l'organizzione del lavoro, dei processi e il flusso delle informazioni.
+    + **Organizzativa**: migliorare l'organizzazione del lavoro, dei processi e il flusso delle informazioni.
     + **Controllo**: tenere sotto controllo gli eventi aziendali, supportando analisi quantitative e politiche di cotrollo
     + **Strategica**: permette di elaborare strategie basate sull'analisi di dati provenienti da altri sistemi
 - Problemi del business:
@@ -138,20 +138,20 @@ ITC: Information and Communication Technology
         * di configurazione: es. moneta d'esercizio
         * operativi: es. info sull'andamento di una lavorazione
         * di supporto: nome web server su cui è stata fatta un'azione
-        * di stato: fatturato azindale
-    + **Procedure**: specificano e attuano le sequenze di azioni che ermettono al sistema di aderire alla realtà
-    + **Mezzi e strumenti** per il trattamento e il trasferimento delle infromazioni
+        * di stato: fatturato aziendale
+    + **Procedure**: specificano e attuano le sequenze di azioni che permettono al sistema di aderire alla realtà
+    + **Mezzi e strumenti** per il trattamento e il trasferimento delle informazioni
 
 ### L'impatto dell'informatica nelle aziende
-I sistemi infromativi sono strumenti per diffondere la conoscenza all'interno dell'azienda.
+I sistemi informativi sono strumenti per diffondere la conoscenza all'interno dell'azienda.
 Le necessità di un'azienda si differenziano in base a diversi fattori
 - **Livello di astrazione**: il grado di sintesi delle informazioni richieste.
-- **Tempempesitività**: assere informati su azenti aziendali all'occorrenza
-- **Livello di copertura**: l'attenzione deve essere concetrata su un'area particolare e un certo periodo di tempo.
+- **Tempestività**: essere informati su fatti aziendali all'occorrenza
+- **Livello di copertura**: l'attenzione deve essere concentrata su un'area particolare e un certo periodo di tempo.
 
 Le informazioni all'interno di un'azienda fluisce in due diverse direzioni
 - Orizzontalmente: definendo e sincronizzando i processi operativi aziendali
-- Verticalmente: in flussi che riorganizzano ed elaborano i dati oprativi raccolti delle procedure, estrendone informazioni diverse per i diversi livelli
+- Verticalmente: in flussi che riorganizzano ed elaborano i dati operativi raccolti delle procedure, estraendone informazioni diverse per i diversi livelli
 
 Il ruolo principale dell'informatica all'interno dei **processi classici** è quello di:
 - ridurre il costo meccanizzando procedure altamente standardizzate
@@ -163,7 +163,7 @@ successivamente il ruolo passa ad altre aree strategiche aziendali:
 - Controllo: la qualità e soprattutto l'immediata disponibilità di dati consente la definizione di procedure di controllo efficaci.
 
 Con l'introduzione dell'informatica all'interno delle aziende essa diviene veicolo per il cambiamento: cambiamento dell'organizzazione e dei flussi, innovazione nelle modalità di trattamento dei dati e di comunicazione.
-BPR (Business Process Rengineering) introduce innovazione agendo pricipalmente sui processi di business modificando le procedure azinedali.
+BPR (Business Process Reengineering) introduce innovazione agendo pricipalmente sui processi di business modificando le procedure aziendali.
 
 ### L'impatto macroeconomico dell'IT, la sua evoluzione storica e i cambiamenti organizzativi generati
 
@@ -182,11 +182,11 @@ Cambiamenti a livello interno alle aziende:
 - Revisione dei processi di front office: sistemi di comunicazione
 - Revisione del modello organizzativo: da una struttura orientata alla funzione a una struttura orientata al processo.
 
-## Capitolo 2 - Struttura dell'azienda e del suo sitema informativo
+## Capitolo 2 - Struttura dell'azienda e del suo sistema informativo
 ### Esigenza informativa
-La struttura del sistema informativo aziendale determina l'insieme delle informazioni disponibili e le dinamiche dei flussi operativi dei dati. La sua articolazione deve rispondere in modo adeguato a ogni diversa esigneza informativa: devono coesistere, all'interno del sistema informativo aziendale, il dettaglio richiesto dai ruoli operativi e la sintesi necessaria ai livelli decisionali. **L'esigenza infromativa non è definibile a livello di azienda, ma è relativa al tipo di attività che ogni persona deve compiere all'interno dell'organizzazione**.
+La struttura del sistema informativo aziendale determina l'insieme delle informazioni disponibili e le dinamiche dei flussi operativi dei dati. La sua articolazione deve rispondere in modo adeguato a ogni diversa esigneza informativa: devono coesistere, all'interno del sistema informativo aziendale, il dettaglio richiesto dai ruoli operativi e la sintesi necessaria ai livelli decisionali. **L'esigenza informativa non è definibile a livello di azienda, ma è relativa al tipo di attività che ogni persona deve compiere all'interno dell'organizzazione**.
 
-Funzione primaria del sistema infromativo è supportare **chi fa funzionare l'azienda attraverso la propria attività**
+Funzione primaria del sistema informativo è supportare **chi fa funzionare l'azienda attraverso la propria attività**
 
 **Supporto necessario in aree diverse, con livello di astrazione che sale man mano che aumenta il livello decisionale**
 
@@ -195,7 +195,7 @@ L'Esigenza informativa dipende dal tipo di attività da compiere in azienda:
 - i livelli decisionali hanno bisogno di informazioni sintetiche
 
 ### Schema di Anthony
-I livelli operativi hanno bisogno di informaizoine dettagliata e attuale; **man mano che si sale ai libelli decisionali l'informazione richiesta è sempre più sintetitca**, costituita da indicatori sull'andamento delle attività e sullo stato dell'azienda otenuti elaborando dati relativi a eventi elementari.
+I livelli operativi hanno bisogno di informazione dettagliata e attuale; **man mano che si sale ai livelli decisionali l'informazione richiesta è sempre più sintetica**, costituita da indicatori sull'andamento delle attività e sullo stato dell'azienda ottenuti elaborando dati relativi a eventi elementari.
 
 <p align="center"><img src="./images/schema_di_anthony.png" width="300" alt="Schema di Anthony"></p>
 
@@ -203,19 +203,19 @@ I livelli operativi hanno bisogno di informaizoine dettagliata e attuale; **man 
 Una rappresentazione efficace della classificazione dell'esigenza informativa è la piramide di Anthony: man mano che si sale nel livello decisionale, la necessità di molte informazioni dettagliate decresce, mentre cresce l'esigenza di avere poche informazioni sintetiche di qualità che permettano l'adozione di decisioni strategiche corrette.
 
 Il modello di Anthony, 1965, distingue tre diversi livelli, ognuno dei quali interagisce con quelli adiacenti realizzando cicli di pianificazione e controllo attraverso i quali verificare risultati e decidere azioni correttive: 
-- **Direzionale strategico**: identifica gli obiettvi primari dell'azienda nei confronti del mercato e della concorrenza.
-- **Direzionale tattico**: si occupa dell'analisi economica, definendo le previsioni a medio termine e verificandone periodicamente l'attuazione; fornisce inoltre gli indirizzi operativi attraverso piani eseutivi, come i piani di produzione e i programmi di spiedizione;
+- **Direzionale strategico**: identifica gli obiettivi primari dell'azienda nei confronti del mercato e della concorrenza.
+- **Direzionale tattico**: si occupa dell'analisi economica, definendo le previsioni a medio termine e verificandone periodicamente l'attuazione; fornisce inoltre gli indirizzi operativi attraverso piani esecutivi, come i piani di produzione e i programmi di spedizione;
 - **Operativo**: attua i piani definiti occupandosi dello svolgimento delle attività correnti.
 
 ### Profili informativi
-Ai diversi livelli corrispondo diversi profili informativi, che si differenziano 
+Ai diversi livelli corrispondono diversi profili informativi, che si differenziano 
 - per la quantità di dati necessari al processo decisionale 
 - per il grado di aggregazione 
 - per la frequenza con cui avviene la consultazione dei dati 
 - per la fonte da cui i dati provengono.
 
 Man mano che si sale nel livello, i processi decisionali diventano sempre meno standardizzabili e difficilmente riconducibili a procedure automatizzate.
-A differenza dei pocessi operativi, i processi decisionali non sono facilmente strutturabili.
+A differenza dei processi operativi, i processi decisionali non sono facilmente strutturabili.
 
 - **livello direzionale strategico**: competono informazioni sintetiche, diversificate e poco strutturate. es concorrenza, mercati, ipotesi sugli scenari futuri, progetti di investimento.
 - **livello direzionale tattico**: competono le attività di definizione di obiettivi a breve compatibili con il piano strategico aziendale e con il controllo periodico dei risultati ottenuti, per verificare l'effettivo raggiungimento degli obiettivi. es. controllo budget delle vendite
@@ -225,7 +225,7 @@ A differenza dei pocessi operativi, i processi decisionali non sono facilmente s
 
 
 ### Scomposizione del sistema informativo: sistemi operazionali e sistemi informazionali
-Le diverse esigenze informative hanno portato nel tempo a una separazione tra sistemi informativi **orientati alle decisioni** e sistemi **orientati al supporto dell'operatività** e al controllo sistematico dele attività aziendali.
+Le diverse esigenze informative hanno portato nel tempo a una separazione tra sistemi informativi **orientati alle decisioni** e sistemi **orientati al supporto dell'operatività** e al controllo sistematico delle attività aziendali.
 
 I sistemi di supporto alle decisioni, i cosiddetti *sistemi informazionali*, aiutano nella ricerca di soluzioni a problemi non (completamente) strutturati. Si pongono quindi come sistemi separati e complementari ai sistemi di supporto alle attività, chiamati *sistemi operazionali*; i primi vengono alimentati principalmente con i dati dei secondi, ma le finalità dei due sono completamente diverse, come diversa è la loro struttura.
 
@@ -241,9 +241,9 @@ Le funzioni principali:
 - **L'automazione delle attività procedurali**. es. redazione delle fatture, in cui calcoli vengono effettuati dal sistema
 - **Il supporto alle attività aziendali**, che risultano semplificate dalla presenza, sul sistema operazionale, di informazioni aggiornate facilmente reperibili. es. conoscere la disponibilità di un articolo.
 - **La raccolta di dati** che permettano ai livelli decisionali il controllo dell'attività operativa. es. consultazione delle lavorazioni in produzione
-- **La guida per l'operatore**, che segue con procedure e flussi predefiniti e controllati, con poche possibilità di incorrere in errori. es. inserimento di un oridine con verifiche di controllo errori
+- **La guida per l'operatore**, che segue con procedure e flussi predefiniti e controllati, con poche possibilità di incorrere in errori. es. inserimento di un ordine con verifiche di controllo errori
 
-Data la sua natura esecutiva, il sistema operazionale ha la tendenza a strutturare i flussi e a strandardizzare il contenuto informativo per minimizzare la possibilità di commettere errori e, nello stesso tempo, rendere le operazioni fluide e rapide.
+Data la sua natura esecutiva, il sistema operazionale ha la tendenza a strutturare i flussi e a standardizzare il contenuto informativo per minimizzare la possibilità di commettere errori e, nello stesso tempo, rendere le operazioni fluide e rapide.
 
 Azioni sui dati:
 - **L'accesso interattivo in inserimento, lettura, modifica**
@@ -262,7 +262,7 @@ Componenti fondamentali:
 Funzioni principali:
 - **informazioni sui risultati** rispetto agli obiettivi aziendali
 - **strumenti per il confronto** tra indicatori aziendali e parametri ambientali (concorrenza, domanda, ecc.)
-- **strumenti che facilitino il processo decisionale**, come analisi interattive, strumetni di ricerca di correlazioni, singolarità e raggruppamenti nei dati, simulazioni condotte a partire dai dati operativi ipotizzando scenari per il futuro.
+- **strumenti che facilitino il processo decisionale**, come analisi interattive, strumenti di ricerca di correlazioni, singolarità e raggruppamenti nei dati, simulazioni condotte a partire dai dati operativi ipotizzando scenari per il futuro.
 
 Azioni sui dati:
 - **Accesso interattivo in sola lettura**
@@ -290,7 +290,7 @@ Contrariamente al sistema operazione, l'accesso ai dati è nella maggior parte d
 <p align="center"><img src="./images/operazionale-vs-informazionale.png" width="500" alt="Operazionale vs Informazionale"></p>
 
 ## Capitolo 3 - Scelte organizzative
-Verranno descritte alcune scelete che stanno alla base dell'organizzazione dei moderni sistemi informativi aziendali. Tali scelte riguardano
+Verranno descritte alcune scelte che stanno alla base dell'organizzazione dei moderni sistemi informativi aziendali. Tali scelte riguardano
 - forme di reperimento/costruzione del sistema informativo
 - posizionamento della struttura che si occupa del sistema informativo all'interno dell'azienda
 - le problematiche connesse all'interrompibilità del servizio fornito dal sistema informativo
@@ -306,9 +306,9 @@ Le scelte sono 3 ma in realtà si fà un mix delle soluzioni con preponderanza d
     + Tempi di soluzione veloci per problemi banali, ma lunghe per i problemi complessi
     + Mantenimento interno del know-how
     + I modelli organizzativi possono essere mappati in maniera molto puntuale: software ad hoc
-- **Opzione Buy**: prevede l'acquisto del proprio sistema informativo e quindi crea un piccolo gruppo interno di lavoro in grando di gestire l'utenza esterna e di interloquire tecnicamente con l'esterno. Scelta della piccola media impresa.
+- **Opzione Buy**: prevede l'acquisto del proprio sistema informativo e quindi crea un piccolo gruppo interno di lavoro in grado di gestire l'utenza esterna e di interloquire tecnicamente con l'esterno. Scelta della piccola media impresa.
     + Comunque presenza interna ridotta: costi ridotti
-    + Parziale smobilizzazione degli investimenti: non sono necessari investimeniti della struttura di sviluppo
+    + Parziale smobilizzazione degli investimenti: non sono necessari investimenti della struttura di sviluppo
     + Concentrazione sul core-business
     + Stretta dipendenza da una struttura esterna
     + Maggior flessibilità rispetto alla soluzione Make. Il fornitore può crescere il prodotto anche in base alle richieste di altri clienti
@@ -332,15 +332,15 @@ Le scelte sono 3 ma in realtà si fà un mix delle soluzioni con preponderanza d
 ### Posizionamento del sistema informativo
 Le figure professionali "informatiche" che operano all'interno dell'azienda si possono considerare macroscopicamente in 4 livelli.
 
-- **Livello 1**: Il team informatico è composto da un **ristretto nucleo** di persone, con **competenze molto diversificate** e spesso solo parzialmente dedicate a questa funzione. Si occupano in maniera indistinta di tutti i problemi. La struttura è completamente orrizontale, non esistono figure responsabili. I **ruoli non sono definiti**, usualmente privi di budget nel medio periodo. Visione miope dell'organizzazione.
+- **Livello 1**: Il team informatico è composto da un **ristretto nucleo** di persone, con **competenze molto diversificate** e spesso solo parzialmente dedicate a questa funzione. Si occupano in maniera indistinta di tutti i problemi. La struttura è completamente orrizzontale, non esistono figure responsabili. I **ruoli non sono definiti**, usualmente privi di budget nel medio periodo. Visione miope dell'organizzazione.
 - **Livello 2**: Si comincia a delineare una precisa organizzione del settore. E' identificata una funzione di responsabilità: il **responsabile EDP** Electronic Data Processing. Ci sono persone impegnate in **3 filoni d'azione** con professionalità distinte.
     + **L'assistenza tecnico-sistemista**: si occupa dell'infrastruttura tecnologica
     + **L'assistenza applicativa**: supporta gli utenti nella normale operatività e nell'uso delle procedure
-    + Lo **sviluppo di nuove applicazioni** che si occupa di predisporre nuove procedure software e nuovi sottosistemi di gestione è sempre prensente in una logica *Make*, mentre in una logica *Buy* o *Outsource* questa funzione viene risolta fra l'EDP e l'assistenza applicativa, visto he viene demandata operativamente all'esterno e all'interno resta solo l'eventuale gestione.
+    + Lo **sviluppo di nuove applicazioni** che si occupa di predisporre nuove procedure software e nuovi sottosistemi di gestione è sempre prensente in una logica *Make*, mentre in una logica *Buy* o *Outsource* questa funzione viene risolta fra l'EDP e l'assistenza applicativa, visto che viene demandata operativamente all'esterno e all'interno resta solo l'eventuale gestione.
 
 <p align="center"><img src="./images/livello2.jpg" width="500" alt="Livello2"></p>
 
-- **Livello 3**: Viene riconosciuta una propria **Direzione** che quindi assume un ruolo strategico nei progetti d'azienda. Oltre al blocco più operativo (come capo EDP), si crea una nuova **sezione che studia l'applicazione delle nuove teconologie** nei vari ambiti dell'azienda.
+- **Livello 3**: Viene riconosciuta una propria **Direzione** che quindi assume un ruolo strategico nei progetti d'azienda. Oltre al blocco più operativo (come capo EDP), si crea una nuova **sezione che studia l'applicazione delle nuove tecnologie** nei vari ambiti dell'azienda.
 
 <p align="center"><img src="./images/livello3.jpg" width="700" alt="Livello3"></p>
 
@@ -357,20 +357,20 @@ Le figure professionali "informatiche" che operano all'interno dell'azienda si p
 Spesso la direzione d'azienda non ha chiara visione dei rischi e degli effetti di un'eventuale interruzione del servizio. Questa interruzione può portare in breve a una completa paralisi di qualsiasi organizzazione. 
 
 **Problematiche legate all'hardware**
-L'**hardware soffre di mortalità infantile**, tende eventualmente a guastarsi nelle primissime fasi di utilizzo, poi le probabilità di malfunzionamenti è alquanto limitata. Più delicate sono le parti in movimento come gli hard disk, tendono ad avere maggiorni problemi, particolarmente legati all'usure delle parti in movimento. Può portare alla perdita dei dati.
-Il **tempo di ripristino** è sensibile, bisogna sostituire l'unità diffettosa, ricaricare la parte di sistema o di dati necessari, riconfigurare il sistema. Queste operazioni possono richiedere anche giornate di lavoro che compormettono l'operatività dell'azienda. 
+L'**hardware soffre di mortalità infantile**, tende eventualmente a guastarsi nelle primissime fasi di utilizzo, poi le probabilità di malfunzionamenti è alquanto limitata. Più delicate sono le parti in movimento come gli hard disk, tendono ad avere maggiori problemi, particolarmente legati all'usura delle parti in movimento. Può portare alla perdita dei dati.
+Il **tempo di ripristino** è sensibile, bisogna sostituire l'unità difettosa, ricaricare la parte di sistema o di dati necessari, riconfigurare il sistema. Queste operazioni possono richiedere anche giornate di lavoro che compromettono l'operatività dell'azienda. 
 Questi problemi si combattono con due approcci
-- **rindondanza**: RAID, hot-swap (disco rimovibile al volo), vale solo per i dischi
-- **sistemi faut tolerant**: archittetture completamente rindondanti
+- **ridondanza**: RAID, hot-swap (disco rimovibile al volo), vale solo per i dischi
+- **sistemi faut tolerant**: architetture completamente ridondanti
     + MTBF Medium Time Between Failure
 
 Vanno accennati anche i **backup**, in caso di necessità si deve ricorrere a copie di dati che fanno fatte frequentemente, tenute in ambienti protetti e sicuri. In caso di necessità vanno usate le dovute tecniche di disaster recovery.
 
 **Problematiche legate al software**
-Il sofware presenta sempre malfunzionamenti di qualche tipo. L'unica possibilità è **ricorrere a tecninche di ingegneria del software** che riducano le probabilità di problematiche. I malfunzionamenti software raramente bloccano l'intera attività, più spesso possono interferire con un processo o con un gruppo di attività aziendali. Per controbattere a questi problemi un'arma efficace è avere a disposizione da parte del fornitore una **struttura di supporto** che possa o correggiore l'errore o suggerire procedure alternative per gestire il processo (turn-around). Un'altra strategia potrebbe essere quella di **recuperare una vecchia versione** funzionante.
+Il software presenta sempre malfunzionamenti di qualche tipo. L'unica possibilità è **ricorrere a tecninche di ingegneria del software** che riducano le probabilità di problematiche. I malfunzionamenti software raramente bloccano l'intera attività, più spesso possono interferire con un processo o con un gruppo di attività aziendali. Per controbattere a questi problemi un'arma efficace è avere a disposizione da parte del fornitore una **struttura di supporto** che possa o correggiore l'errore o suggerire procedure alternative per gestire il processo (turn-around). Un'altra strategia potrebbe essere quella di **recuperare una vecchia versione** funzionante.
 
 **Problematiche legate ad azioni dolose**
-Queste azioni possono arrecare interruzioni del servizio, ma anche altri danni, quali per esempio furto di denaro o di proprietà intelletuali o di informazioni riservate.
+Queste azioni possono arrecare interruzioni del servizio, ma anche altri danni, quali per esempio furto di denaro o di proprietà intellettuali o di informazioni riservate.
 **Gran parte dei danni è causata da personale interno** o da terzi che hanno accesso a strutture di calcolo interne. I sistemi per contrastare l'accesso dall'esterno come firewall se ben configurati e tenuti aggiornati sono sufficientemente sicuri per la gran parte delle casistiche.
 Possono essere usate **tecniche per autenticare e autorizzare gli utenti** che utilizzano il sistema. Qualcosa che ho, qualcosa che so, qualcosa che sono.
 
@@ -378,7 +378,7 @@ Possono essere usate **tecniche per autenticare e autorizzare gli utenti** che u
 ### Finalità dei sistemi operazionali
 I sistemi operazionali sono sistemi informativi orientati al trattamento delle attività quotidiane. La loro principale funzione è l'elaborazione interattiva di transazioni, eventi di interesse e atti rilevanti per l'azienda che si verificano in un determinato momento. 
 
-Le finalità di sistemi operazionali possono essere ricondote a quattro grandi categorie:
+Le finalità di sistemi operazionali possono essere ricondotte a quattro grandi categorie:
 
 **Registrazione delle transazioni**
 Comprende **tutte le operazioni elementari che rappresentano eventi** che si manifestano in un dato momento e che l'azienda ha interesse a memorizzare. es orgini cliente, prelievi da magazzino.
@@ -387,7 +387,7 @@ Possono essere:
 + complesse: concretizzarsi in una serie più o meno ampia di registrazioni elementari, spesso correlate a documenti fisici. es. spedizione che include destinatario, lista dei prodotti, data ecc..
 
 **Pianificazione e controllo delle operazioni** 
-L'uso di sistemi informativi rende possibile l'adozione di modelli complessi di pianificazione e consente il monitoraggio continuo dello stato dei processi tramite l'analisi delle transazioni di avanzamento registrate. **Lo scostamento tra piano e consuntivi può far emergere** **eccezioni**, dare una **misura dell'efficenza aziendale** ed **evidenziare punti critici** su cui si deve concentrare l'attenzione al miglioramento. es. piano di produzione, sistemi per la previsione dei consumi e delle vendite, per la composizione del carico delle spedizioni, avanzamento delle commesse, oprazioni di manutenzione e assistenza. 
+L'uso di sistemi informativi rende possibile l'adozione di modelli complessi di pianificazione e consente il monitoraggio continuo dello stato dei processi tramite l'analisi delle transazioni di avanzamento registrate. **Lo scostamento tra piano e consuntivi può far emergere** **eccezioni**, dare una **misura dell'efficienza aziendale** ed **evidenziare punti critici** su cui si deve concentrare l'attenzione al miglioramento. es. piano di produzione, sistemi per la previsione dei consumi e delle vendite, per la composizione del carico delle spedizioni, avanzamento delle commesse, operazioni di manutenzione e assistenza. 
 
 Vengono utilizzate per 
 + razionalizzare l'attività e rendere più fluida la concatenazione tra processi
@@ -397,32 +397,32 @@ Vengono utilizzate per
 Un funziona primaria dei sistemi operazionali è l'archiviazione organizzata dalla conoscenza aziendale.
 Lo scopo è trattare in modo centralizzato tutte le informazioni di supporto all'attività. Basi di conoscenza organizzata sono: registrazioni di transazioni, anagrafiche di clienti, fornitori, prodotti, ecc, composizione dei listini, struttura del piano dei conti.
 Le informazioni hanno le seguenti caratteristiche comuni:
-- Strutturate: riconducibili a un insieme di caratteristiche predeterminate che descivono ogni elemento archiviato
+- Strutturate: riconducibili a un insieme di caratteristiche predeterminate che descrivono ogni elemento archiviato
 - Correlate: per esempio la distinta base è correlata agli articoli, il cliente alla sua catena di agenzia, ecc.
 
 **Elaborazione delle situazioni aziendali**
-La sintesi di tutte le funzioni fin qui svolte dal sistema informativo aziendale è la possiblità  di eleborazione di indicatori dello stato corrente.
+La sintesi di tutte le funzioni fin qui svolte dal sistema informativo aziendale è la possibilità  di elaborazione di indicatori dello stato corrente.
 Se consideriamo il sistema informativo aziendale come un sistema dinamico, gli archivi ne rappresentano la struttura, gli eventi che scatenano le transazioni sono gli ingressi, le transazioni e le pianificazioni sono la porzione dinamica che sulla base dello stato corrente e degli input ricevuti, porta il sistema in un nuovo stato.
-**L'elaborazione degli indicatori di stato è uno dei compiti fondamentali del sistema infromativo**. La conoscenza dello stato corrente permette ai decisori di agire sul sistema azienda tramite leve opportune.
+**L'elaborazione degli indicatori di stato è uno dei compiti fondamentali del sistema informativo**. La conoscenza dello stato corrente permette ai decisori di agire sul sistema azienda tramite leve opportune.
 Gli indicatori sono per esempio: le giacenze degli articoli nei depositi, l'elenco degli ordini inevasi, il livello di saturazione dei reparti produttivi, il fatturato corrente...
 
-### Potenzialità informatica (intensità e attrativa)
-La potenzialità informatica di un'azienda è la funzione di due macroindicatori, uno l'*intensità informativa* relativo alla necessità di informazioni proprie dell'azienda, dipendente dal mercato in cui opera e dalla complessità della sua struttura, l'altro *l'attrativa informatica* più strettamente correlato alle caratteristiche dei processi aziendali. A questi deve aggiungersi la propensione del managment all'investimento in infrastruttura informatica e all'uso di tecnologia a supporto delle attività, paramentro che in molti casi determina il successo o l'insuccesso delle soluzioni informatiche installate.
+### Potenzialità informatica (intensità e attrattiva)
+La potenzialità informatica di un'azienda è la funzione di due macroindicatori, uno l'*intensità informativa* relativo alla necessità di informazioni proprie dell'azienda, dipendente dal mercato in cui opera e dalla complessità della sua struttura, l'altro *l'attrattiva informatica* più strettamente correlato alle caratteristiche dei processi aziendali. A questi deve aggiungersi la propensione del management all'investimento in infrastruttura informatica e all'uso di tecnologia a supporto delle attività, parametro che in molti casi determina il successo o l'insuccesso delle soluzioni informatiche installate.
 
 **Intensità informativa**
-Le aziende si differenziano per la natura dei prodotti che costruiscono o dei servizi che erogano. Queste differenze si ripercuotono nella complessità dell'organizzaione aziendale e dei processi aziendali, e nella quantità più o meno elevata di informazioni necessarie per realizzare il proprio core business.
-La complessità è riconucibile al seguente insieme di paramentri:
+Le aziende si differenziano per la natura dei prodotti che costruiscono o dei servizi che erogano. Queste differenze si ripercuotono nella complessità dell'organizzazione aziendale e dei processi aziendali, e nella quantità più o meno elevata di informazioni necessarie per realizzare il proprio core business.
+La complessità è riconducibile al seguente insieme di parametri:
 - **Dimensione**: più è elevato il numero di persone che cooperano più è la sua complessità
 - **Area geografica su cui si estende sul mercato**: aziende che operano in ambito internazionale devono trattare le differenze di normativa e di cultura presenti tra paese e paese, oltre che misurarsi con una concorrenza più ampia
 - **L'appartenenza a un gruppo**: maggiore complessità di traduce nella necessità di coordinamento tra le diverse aziende
 - **Il livello di diversificazione dei prodotti, dei mercati e delle tecnologie**: al crescere del livello aumentano sia il patrimonio informativo, sia la complessità di gestione della conoscenza
 
-Aziende con elevata complessità hanno la necesstià di elaborare grandi volumi di informazioni e quindi hanno un'elevata intensità informativa. Possono ridurre la loro intensità informativa adottando soluzioni organizzative particolari, come il sovradimensionamento delle risorse per i processi e la costituzione di celle operative autonome.
+Aziende con elevata complessità hanno la necessitià di elaborare grandi volumi di informazioni e quindi hanno un'elevata intensità informativa. Possono ridurre la loro intensità informativa adottando soluzioni organizzative particolari, come il sovradimensionamento delle risorse per i processi e la costituzione di celle operative autonome.
 Si definiscono due parametri che danno la misura della necessità informativa intrinseca di un'azienda:
 - **Intensità informativa del prodotto**: ogni prodotto ha caratteristiche che rendono più o meno proficua la sua gestione mediante strumenti informatici. L'informatica può fornire supporto alla gestione delle informazioni relative al prodotto finale: maggiore è la complessità del prodotto, più elevato è il bisogno di mantenere queste informazioni in forma articolata.
 - **Intensità informativa di processo**: più il processo è articolato, più è elevata la necessità di gestire l'informazione a esso associata. Processi più complessi richiedono maggiori informazioni per gli operatori e controlli più stretti sull'avanzamento. 
 
-L'intesità informativa aziendale, combinazione delle intensità informative di prodotto e di processo, è quindi indicatore della quantità di informazioni necessaria alla vita aziendale e dei benefici tangibili che questa può ottenere tramite l'introduzione e l'uso di sistemi informativi.
+L'intensità informativa aziendale, combinazione delle intensità informative di prodotto e di processo, è quindi indicatore della quantità di informazioni necessaria alla vita aziendale e dei benefici tangibili che questa può ottenere tramite l'introduzione e l'uso di sistemi informativi.
 
 **Schema Porter-Millar**
 Rappresentazione grafica dell'intensità informativa di un'azienda può essere ottenuta adottando la griglia di Porter-Millar, che classifica le aziende sulla base dell'intensità informativa (alta-bassa) dei processi e di quella dei prodotti.
@@ -432,9 +432,9 @@ Rappresentazione grafica dell'intensità informativa di un'azienda può essere o
 **Attrattiva informatica**
 L'intensità informativa non è sufficiente per determinare il vantaggio che l'uso di tecnologie informatiche può apportare. Esistono altri indicatori. I processi aziendali vengono integrati in un sistema informativo sulla base della facilità con cui possono essere automatizzati e dei vantaggi immediatamente ottenibili dall'automatizzazione. 
 I parametri per valutare l'attrattiva informatica di un processo sono i seguenti:
-- **Proceduralità**: un processo può avere diversi gradi di strutturazione, dove con strutturazione si intende la possibilità di definire in sequenza le azioni elementari da compiere per completarlo. Se privo di zone di discrezionalità o di aleatoriertà può essere facilemente informatizzato.
+- **Proceduralità**: un processo può avere diversi gradi di strutturazione, dove con strutturazione si intende la possibilità di definire in sequenza le azioni elementari da compiere per completarlo. Se privo di zone di discrezionalità o di aleatorietà può essere facilmente informatizzato.
 - **Complessità**: è un indicatore della complessità delle azioni elementari previste dal processo. Un processo semplice è il calcolo del peso e del volume di un carico, dati i colli che lo compongono. Decidere la composizione di un carico, ottimizzandolo sulla base dei colli da spedire e del percorso del vettore, è invece un processo complesso.
-- **Ripetitività**: se un processo viene reiterato senza variazioni con grande frequenza nel tempo, la sua attrativa informatica è eleveata.
+- **Ripetitività**: se un processo viene reiterato senza variazioni con grande frequenza nel tempo, la sua attrattiva informatica è elevata.
 - **Volume**: più elevata è la quantità di dati da elaborare, maggiore è l'attiva informatica del processo.
 
 i processi che hanno attrattiva informatica maggiore sono quindi processi completamente strutturati, con elevati volumi, con elevata ripetitività e poco complessi.
@@ -444,20 +444,20 @@ i processi che hanno attrattiva informatica maggiore sono quindi processi comple
 Da alcuni anni lo schema fornito dalla catena del valore di Porter viene considerato una buona base di partenza per rappresentazione della struttura aziendale e per la segmentazione di bisogni informativi aziendali. Questa segmentazione ci consente di definire l'insieme, o portafoglio, delle possibili applicazioni dei sistemi informativi aziendali.
 
 Questo schema è stato formalizzato per esaminare le attività aziendali e rilevare le aree di vantaggio competitivo attuale e potenziale.
-E' basato sulla rappresentazione schematica delle classi di attività che ogni azinda sviluppa per rendere competitivo il suo prodotto o servizio.
+E' basato sulla rappresentazione schematica delle classi di attività che ogni azienda sviluppa per rendere competitivo il suo prodotto o servizio.
 
 Lo schema riconduce tutte le attività aziendali a nove classi principali, ulteriormente accorpate in due categorie: le attività primarie e quelle di supporto.
 
 - **Attività primarie** (market driven): processi propri del core business dell'azienda
     + **Logistica in entrata**: tutti i processi legati al trattamento del materiale in ingresso
-    + **Attività operative**: sono i porcessi fondamentali dell'azienda. es. processi produttivi, processi di acquisizione di un ordine
+    + **Attività operative**: sono i processi fondamentali dell'azienda. es. processi produttivi, processi di acquisizione di un ordine
     + **Logistica in uscita**: tutti i processi legati al trattamento del materiale in uscita
     + **Marketing e vendite**: processi legati alla presenza dell'azienda sul mercato e quelli che portano ad acquisire ordini
     + **Servizi postvendita**: attività che forniscono un servizio al cliente
 - **Attività secondarie** o di supporto: tutti i processi a sostegno delle attività primarie
-    + **Approvvigionamenti**: processi legati all'acquisto delle risorse impiegate nei processi primari es. certificazione fonitori, approvvigioonamento, monitoraggio del servizio reso dai fornitori
+    + **Approvvigionamenti**: processi legati all'acquisto delle risorse impiegate nei processi primari es. certificazione fornitori, approvvigionamento, monitoraggio del servizio reso dai fornitori
     + **Gestione risorse umane**: processi legati al trattamento del personale
-    + **Sviluppo delle tecnologie**: processi legati all'innovazione dei processi primari operativi es. progettazione, collaudo, ingegnerizzzione del processo produttivo
+    + **Sviluppo delle tecnologie**: processi legati all'innovazione dei processi primari operativi es. progettazione, collaudo, ingegnerizzazione del processo produttivo
     + **Infrastrutture**: altri processi generali dell'azienda, es. contabilità, tesoreria, organizzazione, sviluppo e manutenzione dell'infrastruttura logistico/informatica, pianificazione strategica e tutti servizi generali.
 
 <p align="center"><img src="./images/catena_valore_porter.jpg" width="400" alt="Catena del valore di Porter"></p>
@@ -482,7 +482,7 @@ Infrastrutture
     Previsioni e controllo
         Budget
         Contabilità analitica
-        Controllo di gensione
+        Controllo di genstione
 Gestione risorse
     Personale
         Retribuzioni
@@ -492,9 +492,9 @@ Gestione risorse
 
 **Portafoglio operativo**
 Il portafoglio operativo è composto dalle applicazioni informatiche legate ai processi primari. Qui assistamo a processi di verticalizzazione del software, con elevata specializzazione settoriale delle soluzioni proposte. Il nostro interesse verte principalmente alle PMI.
-Le applicazioni informatiche a supporto delle attività primarie sono molte ed estremamente articolate: la catena del valore delle industrie manifatturiere è solitamente molto ampia, copre attività di progettazione e ingegnerizzazione, l'intero ciclo gestionale, dall'acquisizione dell'ordine alla spedizione, passando per approvigionamento, fabbricazione, distrbuzione e si estende anche ai servizi postvendita, strategici per alcune tipologie di azienda. 
+Le applicazioni informatiche a supporto delle attività primarie sono molte ed estremamente articolate: la catena del valore delle industrie manifatturiere è solitamente molto ampia, copre attività di progettazione e ingegnerizzazione, l'intero ciclo gestionale, dall'acquisizione dell'ordine alla spedizione, passando per approvvigionamento, fabbricazione, distribuzione e si estende anche ai servizi postvendita, strategici per alcune tipologie di azienda. 
 Oltre all'estensione, il portafoglio operativo rispecchia anche la modalità con cui opera il processo produttivo: troviamo aziende che producono su commessa articoli personalizzati per il cliente e altre che producono lotti di articoli di elevata standardizzazione;
-Il portafoglio operativo di un'azienda dipende quindi dall'attrattiva informatica che ognuno dei processi ha nell'ambito aziendale; a parità di processi informatizzati, le procedure adottate da aziende operanti in settori merceologici diversi possono variare, rispecchiando le peculirità dei prodotti. 
+Il portafoglio operativo di un'azienda dipende quindi dall'attrattiva informatica che ognuno dei processi ha nell'ambito aziendale; a parità di processi informatizzati, le procedure adottate da aziende operanti in settori merceologici diversi possono variare, rispecchiando le peculiarità dei prodotti. 
 
 ```
 Logica in entrata
@@ -534,7 +534,7 @@ ma questi sistemi possono portare a problemi consistenti nell'ottica complessiva
 - eterogeneità dei sistemi: diversi fornitori con differenti convenzioni
 - separazione: notevole sforzo nell'integrazione dei sistemi
 - autonomia dei sottosistemi: molte informazioni devo essere salvate più volte su archivi diversi
-- etererogeneità e separazione rendono difficile la visione d'insieme
+- eterogeneità e separazione rendono difficile la visione d'insieme
 
 La complessità dei sistemi informativi a *isole* ha favorito la rapida diffusione dei sistemi ERP, sistemi informativi operazionali nativamente integrati. 
 **ERP: Enterprise Resource Planning, pianificazione delle risorse dell'azienda.**
@@ -542,7 +542,7 @@ La copertura funzionale dei sistemi ERP si estende dalla definizione della base 
 - attività routinarie e gestionali: l'avanzamento della produzione è parte di un sistema ERP, mentre non lo è la progettazione;
 - attività interne all'azienda: eventi che hanno ripercussione sulla struttura interna, mentre quelli esterni sono delegate ad altri sistemi.
 
-I sistemi **ERP sono composti da sottosistemi nativamente integrati**: sviluppati da un'unica software house, condividono una base di dati comune e le procedure sono progettate per interagire e cooperare. Oltre a questa funzione unificante, gli ERP si propongono anche come sistemi informativi flessibili, in grado di assecondare l'azienda nei suoi porcessi di evoluzione e di crescita. 
+I sistemi **ERP sono composti da sottosistemi nativamente integrati**: sviluppati da un'unica software house, condividono una base di dati comune e le procedure sono progettate per interagire e cooperare. Oltre a questa funzione unificante, gli ERP si propongono anche come sistemi informativi flessibili, in grado di assecondare l'azienda nei suoi processi di evoluzione e di crescita. 
 
 Uno dei grandi problemi dei primi sistemi gestionali è stata l'elevata rigidità che si manifestava:
 - nei confronti dell'organizzazione aziendale: congelavano l'organizzazione aziendale corrente
@@ -552,14 +552,14 @@ I moderni ERP sono sviluppati come sistemi altamente configurabili, svincolati i
 
 <p align="center"><img src="./images/classico-vs-erp.jpg" width="500" alt="Sistema classico vs ERP"></p>
 
-La flessibilità è garantita anche dal fatto che questi sono solitamente articolati in moduli indipendenti, ognuo dei quali copre uno specifico ambito aziendale. L'organizzazione può cosi acquistare attivare i vari moduli separataemente.
+La flessibilità è garantita anche dal fatto che questi sono solitamente articolati in moduli indipendenti, ognuno dei quali copre uno specifico ambito aziendale. L'organizzazione può cosi acquistare attivare i vari moduli separatamente.
 
-Per l'attivazione di un sistema ERP in azienda richiede un impegno che comporta un periodo di avviamento durante il quale vengono analizzati, e se necessario ridefiniti, i porcessi aziendali che il sistema deve sviluppare. Segue l'effettiva parametrizzazione e configurazione del sistema.
+Per l'attivazione di un sistema ERP in azienda richiede un impegno che comporta un periodo di avviamento durante il quale vengono analizzati, e se necessario ridefiniti, i processi aziendali che il sistema deve sviluppare. Segue l'effettiva parametrizzazione e configurazione del sistema.
 
-L'introduzione di un sistema EPR può avere un elevato impatto a livello culturale e organizzativo: aziende possono incontrare grandi difficoltà o addirittura rinunciare a introdure un'innovazione tecnologica. Per venire in contro a queste aziende molti fornitori propongono soluzioni standardizzate per particolari settori merceologici, con schemi di processi aziendali preconfigurati adattabili in breve tempo alla singola azienda.
+L'introduzione di un sistema EPR può avere un elevato impatto a livello culturale e organizzativo: aziende possono incontrare grandi difficoltà o addirittura rinunciare a introdurre un'innovazione tecnologica. Per venire in contro a queste aziende molti fornitori propongono soluzioni standardizzate per particolari settori merceologici, con schemi di processi aziendali preconfigurati adattabili in breve tempo alla singola azienda.
 
 **Ambiti applicativi**
-Oltre ad una macrodifferenziazione, all'interno di uno stesso abito le soluzini ERP per i processi primari possono essere specializzate o verticalizzate. 
+Oltre ad una macrodifferenziazione, all'interno di uno stesso abito le soluzioni ERP per i processi primari possono essere specializzate o verticalizzate. 
 
 Un sistema ERP è comunemente scomposto in sistemi di base che sono:
 - **Amministrazione**: procedure ben definite e articolate. Regolano le procedure di contabilità generale. Sottoinsiemi
@@ -568,12 +568,12 @@ Un sistema ERP è comunemente scomposto in sistemi di base che sono:
     + Cespiti: beni ammortizzabili
     + Contabilità analitica
     + Budget
-    + Controlle di gestione
+    + Controllo di gestione
 
 <p align="center"><img src="./images/amministrazione.jpg" width="500" alt="Amministrazione"></p>
 
 - **Logistica**: si occupa del trattamento dei materiali: la loro definizione, la loro movimentazione all'interno dell'azienda, l'analisi dei costi e delle valorizzazione a essi riconducibili.
-    + Defnizione dell'anagrafica degli articoli
+    + Definizione dell'anagrafica degli articoli
     + Definizione del layout aziendale
     + Movimentazione
     + Valutazione dei costi dell'articolo
@@ -587,7 +587,7 @@ Un sistema ERP è comunemente scomposto in sistemi di base che sono:
         * Evasione
         * Analisi
 
-- **Acquisti**: procedure del flusso passivo costruiscono la catena di processi che permette all'azienda l'interazione con i propri **fornitori** per l'approvigionamento di materiali o per la richiesta di lavorazioni o servizi esterni.
+- **Acquisti**: procedure del flusso passivo costruiscono la catena di processi che permette all'azienda l'interazione con i propri **fornitori** per l'approvvigionamento di materiali o per la richiesta di lavorazioni o servizi esterni.
     + Definizione delle condizioni commerciali
     + Processi di gestione dell'ordine fornitore
         * Raccolta delle richieste
@@ -607,12 +607,12 @@ Un sistema ERP è comunemente scomposto in sistemi di base che sono:
 ## Capitoli 7-11
 ### ERP: l'area amministrativa
 Obiettivi:
-- Rispetto delle normaitve fiscali e civilistiche
+- Rispetto delle normative fiscali e civilistiche
     + stesura bilancio aziendale, libro giornale e documentazione collegata
     + trattamento IVA
-    + trattamento sostituti d'importa e previdenziali
+    + trattamento sostituti d'imposta e previdenziali
     + trattamento cespiti
-- Valutazione consuntiva degli andamenti aziendali, trmite la registrazione dei fatti consolidati attraverso documenti. Il bilancio civilistico è il punto ufficiale d'arrivo di questo filone di lavoro
+- Valutazione consuntiva degli andamenti aziendali, tramite la registrazione dei fatti consolidati attraverso documenti. Il bilancio civilistico è il punto ufficiale d'arrivo di questo filone di lavoro
     + trattamento contabilità ordinaria
     + trattamento contabilità analitica
     + trattamento contabilità finanziaria
@@ -644,17 +644,17 @@ Struttura di base
 
 ### ERP: l'area vendite
 Obiettivi:
-Si occupa principalmente di definire le caratteristiche commerciali dei prodotti e dei clienti, di stabilire le condizioni contrattuali, di fornire i supporti informativi per le funzioni operative quali creazione offerte, immissione ordini aperti ed esecutivi, definizione spediazioni, creazione documenti di trasportoo, fatturazione attiva, e infine di fornire valutazioni statistiche sulle vendite con relative valorizzazioni.
+Si occupa principalmente di definire le caratteristiche commerciali dei prodotti e dei clienti, di stabilire le condizioni contrattuali, di fornire i supporti informativi per le funzioni operative quali creazione offerte, immissione ordini aperti ed esecutivi, definizione spedizioni, creazione documenti di trasporto, fatturazione attiva, e infine di fornire valutazioni statistiche sulle vendite con relative valorizzazioni.
 
 Struttura di base:
 - le anagrafiche commerciali dei clienti e dei prodotti di vendita
-- le strutture dati che dfiniscono listini, scontistiche e rapporti di agenzia
+- le strutture dati che definiscono listini, scontistiche e rapporti di agenzia
 - i documenti di processo, che rappresentano i fenomeni transazionali complessi, quali ordini, documenti di trasporto e fatture
 - i piani di processo, quali piani di spedizione e di fatturazione
 
 ### ERP: l'area acquisti
 Obiettivi:
-Simmetrici a quelli presenti nell'area vendite. Si occupano principalmente di definire le caratteristiche commerciali dei prodotti e dei fornitori di materiali e di servizi, di definire le condizioni d'acquisto, di garantire i supporti informativi per le funzioni operative, quali trattamneto delle richieste d'acquisto, immisione di ordini esecutivi, ricezione dei materiali, registrazione delle fatture passive; infine permetton valutazioni statistiche sugli acquisti co le relative valorizzazioni.
+Simmetrici a quelli presenti nell'area vendite. Si occupano principalmente di definire le caratteristiche commerciali dei prodotti e dei fornitori di materiali e di servizi, di definire le condizioni d'acquisto, di garantire i supporti informativi per le funzioni operative, quali trattameneto delle richieste d'acquisto, immissione di ordini esecutivi, ricezione dei materiali, registrazione delle fatture passive; infine permettono valutazioni statistiche sugli acquisti con le relative valorizzazioni.
 
 Struttura di base:
 - le anagrafiche commerciali dei prodotti d'acquisto e dei fornitori di materiali e di servizi
@@ -687,7 +687,7 @@ L'avvento dei PC ha accelerato il "prurito" degli utenti di avere software di an
 **Sistemi di business intelligence**
 costituiscono la tecnologia che **supporta la dirigenza aziendale** nel **prendere decisioni** operative, tattiche, strategiche in modo efficace e veloce mediante particolari tipologie di elaborazione dette "analitiche" che usano in maniera integrata i dati dell'organizzazione combinati con eventuali dati esterni.
 
-Problemi con il data managment: Qualità vs Quantità
+Problemi con il data management: Qualità vs Quantità
 - Garbage in, Garbage out
     + il volume dei dati aumenta in modo esponenziale
     + i dati devono essere conservati per molto tempo
@@ -705,7 +705,7 @@ Problemi con il data managment: Qualità vs Quantità
 - Dati ROT 
     + mantenerne sempre il livello minimo, eliminati periodicamente
 - Dati oscuri
-    + dati da cui il valore ancora non è stato chiaramente indentificato
+    + dati da cui il valore ancora non è stato chiaramente identificato
     + includono dati critici a livello aziendale, dati ROT o più importanti, tutti i dati illegali o non conformi che creano un rischio invisibile nel sistema IT aziendale. 
 
 Gli **obiettivi** dell'analisi di dati e dei sistemi informazionali
@@ -727,8 +727,8 @@ Gli **obiettivi** dell'analisi di dati e dei sistemi informazionali
 - tradizionalmente basato su elaborazione di transazioni, che realizzano i processi operativi dell'organizzazione
     + operazioni predefinite, brevi e relativamente semplici
     + ogni operazione coinvolge "pochi" dati
-    + dati di dettaglio, aggiorati
-    + propriertà "ACID": atomicità, correttezza, isolamento, durabilità. sono essenziali
+    + dati di dettaglio, aggiornati
+    + proprietà "ACID": atomicità, correttezza, isolamento, durabilità. sono essenziali
 
 **OLAP** OnLine Analytical Processing: ambiente che facilita l'analisi dei dati
 - Dati di partenza
@@ -752,8 +752,8 @@ Gli **obiettivi** dell'analisi di dati e dei sistemi informazionali
 - Data Warehousing: strumenti e tecniche di definizione, costruzione, mantenimento del data warehouse
 - Decision Support System: sistemi informatici usati nel processo decisionale come supporto all'estrazione delle informazioni da basi di dati organizzate
 - Data Mining: strumenti e tecniche per l'estrazione dei dati di informazioni "nascoste"
-- Business Intelligence: attività di estrazione di informazione dai dati di business generati dai processi operatvi aziendali
-- Knowledge Managment: trattamento informatizzato della conoscenza aziendale in senso ampio (include sorgenti dati struturate, semi-strutturate, non struttrate)
+- Business Intelligence: attività di estrazione di informazione dai dati di business generati dai processi operativi aziendali
+- Knowledge Management: trattamento informatizzato della conoscenza aziendale in senso ampio (include sorgenti dati strutturate, semi-strutturate, non strutturate)
 
 **OLTP vs OLAP**
 <p align="center"><img src="./images/oltp-vs-olap.png" width="500" alt="DataBerg"></p>
@@ -762,11 +762,11 @@ Gli **obiettivi** dell'analisi di dati e dei sistemi informazionali
 <p align="center"><img src="./images/oltp-vs-olap-persistenza.png" width="500" alt="DataBerg"></p>
 
 **Tecniche di progettazione di soluzioni OLAP**
-Sono vari gli approcci per progettare e modellare soluzioni adatta per il mondo anlitico:
+Sono vari gli approcci per progettare e modellare soluzioni adatta per il mondo analitico:
 - ER modeling
 - Dimensional Modeling
 
-La soluzione più ovvia passa per il mondo relazionale ER e al sua implementazione nei RDBMS, ma questo mondo non si rivela adatto, anzi spesso controproducente creando problemi concettuali sostanziali che differenziano il modello relazionale da modello multidimenisonale. Le soluzioni:
+La soluzione più ovvia passa per il mondo relazionale ER e al sua implementazione nei RDBMS, ma questo mondo non si rivela adatto, anzi spesso controproducente creando problemi concettuali sostanziali che differenziano il modello relazionale da modello multidimensionale. Le soluzioni:
 - applicazioni a forte contenuto multimediale -> BLOBs
 - applicazioni con caratteristiche orientate agli OODBMS
 - applicazioni Column-oriented DB o NOSQL: es. DMS
@@ -783,7 +783,7 @@ I DBMS relazioni e i tools di front-end relativi presentano molte limitazioni qu
 - **modalità di consolidamento dei dati poco efficiente**
 
 **Gestione inefficiente delle relazioni multi-dimensionali**
-Le **strutture bidimensionali** (tabelle/relazioni) **non sono adatte a maneggiare strutture multidimensionali**, i dati vengono memorizzati in tabelle bidimensionali relazionate tra loro, appiattendo così la potenziale multimensionalità di una vista. Collegare schemi bidimensionali per creare un modello MD è complesso, rischioso e richiede molte risorse.
+Le **strutture bidimensionali** (tabelle/relazioni) **non sono adatte a maneggiare strutture multidimensionali**, i dati vengono memorizzati in tabelle bidimensionali relazionate tra loro, appiattendo così la potenziale multidimensionalità di una vista. Collegare schemi bidimensionali per creare un modello MD è complesso, rischioso e richiede molte risorse.
 L'utente finale percepisce confusione con l'uso di SQL e l'uso di join multiple causano performance pessime.
 
 Una soluzione potrebbe essere quella di creare DB denormalizzati per DSS ma questo crea una serie di svantaggi come calo di performance e quindi un aumentare dei tempi di risposta.
@@ -816,7 +816,7 @@ esempi:
 
 L'analisi viene effettuata valutando in che misura il soggetto partecipa a eventi trattati dall'azienda. Uno stesso evento può quindi essere analizzato mettendolo in relazione con diversi soggetti.
 
-Da questa visione nasce spontaneamente la modellazione dello spazio delle informazioni dei sistemi di supporto alle decisioni con matrici multidimensionali. **In cui la misura di ogni evento è descritta da un insieme di coordinate ognuna delle quali rappresenta un soggetto di interesse** per le analisi da condurre su quell'evento. Esempio, se l'evento è la vendita, possibili dimensioni di analisi sono l'articolo, il cliente, la daa in cui la vendita è avvenua e l'agente che ha promosso la vendita.
+Da questa visione nasce spontaneamente la modellazione dello spazio delle informazioni dei sistemi di supporto alle decisioni con matrici multidimensionali. **In cui la misura di ogni evento è descritta da un insieme di coordinate ognuna delle quali rappresenta un soggetto di interesse** per le analisi da condurre su quell'evento. Esempio, se l'evento è la vendita, possibili dimensioni di analisi sono l'articolo, il cliente, la data in cui la vendita è avvenuta e l'agente che ha promosso la vendita.
 
 Nei sistemi informazionali il modello standard de facto per la rappresentazione dei dati è l'ipercubo, una matrice multidimensionale che permette di memorizzare e di estrarre facilmente i dati relativi a una classe di eventi.
 - **Fatto elementare**: l'elemento ottenuto specificando un valore per ogni possibile coordinata
@@ -858,7 +858,7 @@ con un modello così costituito possiamo rispondere a domande tipo:
 
 
 ### Caratteristiche e modelli logici OLAP
-- **ROLAP**: la struttura intrinsecamente multidimensionale dei fatti viene realizzata completamente su database relazioni. Gli strumenti di interrograzione agiscono tramite query SQL standard, con opportune funzioni di aggregazione.
+- **ROLAP**: la struttura intrinsecamente multidimensionale dei fatti viene realizzata completamente su database relazioni. Gli strumenti di interrogazione agiscono tramite query SQL standard, con opportune funzioni di aggregazione.
     + Vantaggi:
         * minima occupazione di spazio
         * elevata conoscenza degli strumenti relazionali da parte degli operatori
@@ -868,7 +868,7 @@ con un modello così costituito possiamo rispondere a domande tipo:
 - **MOLAP**: memorizza i dati usando strutture intrinsecamente multidimensionali: i fatti vengono fisicamente memorizzati in vettori e l'accesso è di tipo posizionale. Il sistema alloca una cella per ogni possibile combinazione dei valori delle dimensioni e l'accesso a un fatto avviene in modo diretto, sulla base delle coordinate fornite. Le interrogazioni sono ottimizzate tramite strumenti di query proprietari
     + Vantaggi:
         * elevata efficienza nell'esecuzione delle query complesse
-        * stretta adereza al modello concettuale
+        * stretta aderenza al modello concettuale
     + Svantaggi:
         * elevata occupazione di spazio (viene allocato lo spazio per ogni possibile ennupla dimensionale)
         * mancanza di standard, sia di rappresentazione dei dati che di interrogazione
@@ -882,7 +882,7 @@ con un modello così costituito possiamo rispondere a domande tipo:
         * dimensioni contenute
 
 ### Gli schemi multidimensionali: caratteristiche e tipi
-- Fatti: evento che accade nell'ambito dell'attività e che si ha interesse a misuarare (es. vendite, reclami, spedizioni)
+- Fatti: evento che accade nell'ambito dell'attività e che si ha interesse a misurare (es. vendite, reclami, spedizioni)
     + Caratteristiche
         * dimensioni che lo collocano nel tempo e nello spazio aziendale
         * misure che lo quantificano
@@ -919,7 +919,7 @@ Esso è formato da:
 - Tabelle delle dimensioni
     + ha una sola chiave
     + ogni dimensione è una singola tabella, altamente denormalizzata
-    + un campo per ogni attributo dimensionale della gerarchia che ha radice nella dimensione rappresentata (denormalizzaizione completa)
+    + un campo per ogni attributo dimensionale della gerarchia che ha radice nella dimensione rappresentata (denormalizzazione completa)
 
 I collegamenti tra dimensioni e fatti avvengono tramite chiavi esterne
 
@@ -931,20 +931,20 @@ Di fatto, un star schema se implementato in un DBMS è rappresentato da un model
     + mapping intuitivo tra le entità di business
     + gerarchie di facile definizione
     + riduzione di join fisico
-    + mautenzione ridotta
+    + manutenzione ridotta
     + metadati molto semplici
 - svantaggi: i dati riepilogati nella tabella dei fatti presentano prestazioni inferiori per i livelli di riepilogo, mentre la dimensione enorme rappresenta un problema
 
 <p align="center"><img src="./images/schema-stella2.png" width="600" alt="Schema stella"></p>
 
 particolarità:
-- nella dimensione del tempo sono presenti dati derivati e rindondanze
-- le rindondanze servono per facilitare le operazioni di analisi dei dati
+- nella dimensione del tempo sono presenti dati derivati e ridondanze
+- le ridondanze servono per facilitare le operazioni di analisi dei dati
 - i fatti sono in forma normale di boyce-codd in quanto ogni attributo non chiave dipende funzionalmente dalla sua unica chiave
 - le dimensioni sono in genere relazioni non normalizzate
 
 **Schema a fiocco di neve**
-E' uno schema di database per data warehouse che può essere visto come una estensione dello Schema a stella.
+E' uno schema di database per data warehouse che può essere visto come un'estensione dello Schema a stella.
 
 <p align="center"><img src="./images/schema-fiocco-di-neve.png" width="600" alt="Schema a fiocco di neve"></p>
 
@@ -976,7 +976,7 @@ Qualora lo schema sia complesso (specialmente il constellation schema), il banch
 ### Data Warehouse e Data Mart
 **Data warehouse**: L'insieme delle strutture dati e dei tool necessari per ottenere, a partire dai dati operazionali utilizzati e creati dal sistema informativo aziendale, informazioni che aiutino i manager nella valutazione tecnico-economica dell'andamento aziendale
 
-**Non è un programma ma un porcesso** che serve ad estrarre informazioni utili al processo decisionale a partire:
+**Non è un programma ma un processo** che serve ad estrarre informazioni utili al processo decisionale a partire:
 - dai dati operazionali
 - da fonti dati esterne
 
@@ -991,7 +991,7 @@ I requisiti di un processo di DW sono:
 - Sintesi
 - Rappresentazione multidimensionale
 - Correttezza
-- Compatezza
+- Compattezza
 
 La persistenza dei dati è quindi:
 - **subject oriented**:
@@ -1002,7 +1002,7 @@ La persistenza dei dati è quindi:
         * struttura
         * codifica
         * rappresentazione multipla
-- **usualmente aggregata**: al fine si effettura stime e valutazioni
+- **usualmente aggregata**: al fine di effettuare stime e valutazioni
 - **non volatile**:
     + i dati del DW sono caricati e acceduti: l'aggiornamento non avviene nell'ambiente DW
 - **temporalmente corretto**:
@@ -1011,14 +1011,14 @@ La persistenza dei dati è quindi:
 - **separato dal mondo OLTP**, per diversi motivi
     + non esiste un'unica base di dati operazionale che contiene tutti i dati di interesse
     + la base di dati deve essere integrata
-    + non è tecnincamente possibile fare l'integrazione in linea
+    + non è tecnicamente possibile fare l'integrazione in linea
     + i dati di interesse sarebbero comunque diversi poiché devono essere mantenuti dati storici e aggregati
     + l'analisi dei dati richiede per i dati organizzazioni speciali e metodi di accesso specifici
     + degrado generale delle prestazioni senza la separazione
 
 <p align="center"><img src="./images/separazione-dw.jpg" width="400" alt="Separazione DW"></p>
 
-I solitamente nalla data warehouse vengono effettuate le **operazioni di accesso e interrogazione durante il giorno** e le **ore notture vengono effettuate le operazioni di caricamento e aggiornamento**.
+Solitamente nella data warehouse vengono effettuate le **operazioni di accesso e interrogazione durante il giorno** e le **ore notturne vengono effettuate le operazioni di caricamento e aggiornamento**.
 
 In base all'obiettivo si usano diverse tecniche di progettazione
 - Obiettivo: query/reporting
@@ -1029,12 +1029,12 @@ In base all'obiettivo si usano diverse tecniche di progettazione
     + Tecnica di progettazione: discovery analysis 
 
 **Data Mart**
-E' un sottoinsieme (in replica) del datawarehouse contente l'insieme delle informazioni rilevanti per un particolare problema.
+E' un sottoinsieme (in replica) del datawarehouse contenente l'insieme delle informazioni rilevanti per un particolare problema.
 
 E' un data warehouse tematico, derivato dal data warehouse aziendale
 - comprende i soli fatti che riguardano una certa area d'indagine
-- è un estensione temporale ridotta
-- ha una granualirità minore nei fatti rappresentati
+- è un'estensione temporale ridotta
+- ha una granularità minore nei fatti rappresentati
 
 <p align="center"><img src="./images/data-mart.jpg" width="300" alt="Data Mart"></p>
 
@@ -1044,21 +1044,21 @@ Le caratteristiche di un Data Mart sono:
 - necessità di una specifica funzionale
 - protezione delle informazioni sensibili memorizzate altrimenti nel DW
 - tempi di risposta più veloci dovuti ad un volume di dati inferiore
-- possibiltà di distribuire il data mart alle organizzazioni degli utenti
+- possibilità di distribuire il data mart alle organizzazioni degli utenti
 - costruito dal basso
 
 Le motivazioni per un Data Mart sono:
 - non appena il datawarehouse cresce, la motivazione per creare i data mart cresce
 - al crescere del data warehouse
     + la competizione per entrare nel DW diventa critica
-    + sempre più elaborazione DSS viene fatta nel DW e quindi le risorse divantno limitate e in competizione
-    + diventa difficle customizzare i dati in un DW esteso
+    + sempre più elaborazione DSS viene fatta nel DW e quindi le risorse diventano limitate e in competizione
+    + diventa difficile customizzare i dati in un DW esteso
     + il costo di effettuare elaborazioni nel DW cresce al crescere del volume dei dati
 - il reparto può customizzare il proprio DM mano a mano che i dati affluiscono nel DW senza essere influenzato da altri
 - l'ammontare di dati storici necessari è funzione del reparto non dell'azienda, quindi sono necessari molti meno dati
 - le elaborazioni possono essere fatte dal reparto senza impatti sull'utilizzo delle risorse del sistema
 - il reparto può usare software customizzato sulle proprie esigenze senza condizionare o essere condizionato dal resto dell'azienda
-- il costo unitario di elaborazione e di momorizzazione è significativamente inferiore al rispettivo costo della macchina per il DW
+- il costo unitario di elaborazione e di memorizzazione è significativamente inferiore al rispettivo costo della macchina per il DW
 
 In generale, un DW è troppo difficile, troppo costoso, troppo impolitico, richiede tempi di sviluppo troppo lunghi. DM è specifico, limitato, contestuale, orientato all'utente e focalizzato
 
@@ -1094,7 +1094,7 @@ Il sistema di data warehousing è costituito da basi di dati poste a livelli dis
 4 livelli descrivono il flusso dei dati:
 - **livello delle sorgenti**: fonti eterogenee, anche esterne
 - **livello dell'alimentazione**: ETL trasforma, ripulisce, valida, filtra e carica dati dalle sorgenti ad DW
-- **livello del DW**: dove le infromazioni sono raccolte, esigenza di metadati
+- **livello del DW**: dove le informazioni sono raccolte, esigenza di metadati
 - **livello di analisi**: creazione del Data Mart, report, analisi, simulazione
 
 <p align="center"><img src="./images/architettura-dw2.jpg" width="600" alt="Architettura DW 2"></p>
@@ -1109,7 +1109,7 @@ La costruzione avviene con un approccio iterativo
 
 Vantaggi:
 - Primi risultati disponibili in breve tempo
-- Invesitmenti diluiti
+- Investimenti diluiti
 - Possibilità di tarare e di sviluppare il modello sulla base delle indicazioni emerse dall'uso effettivo
 
 
@@ -1127,7 +1127,7 @@ Vantaggi:
 - Si possono applicare nel DW tecniche speciali di ottimizzazione per analisi e reportistica
 
 **Architettura a tre livelli**
-Aggiunge un il livello dei dati riconciliati dove i dati sono integrati, consistenti, corretti, voltatili, correnti e dettagliati. Il nuovo livello viene caricato nel DW creando così un modello comune e di riferimento per l'intera azienda e una netta separazione tra ETL e DW
+Aggiunge un il livello dei dati riconciliati dove i dati sono integrati, consistenti, corretti, volatili, correnti e dettagliati. Il nuovo livello viene caricato nel DW creando così un modello comune e di riferimento per l'intera azienda e una netta separazione tra ETL e DW
 
 
 **ETL**
@@ -1162,9 +1162,9 @@ Sono strumenti necessari ad alimentare una data warehouse
     + non è necessariamente successiva alla integrazione
     + tipologie di errori trattati
         * dati incompleti
-        * dati errati o incomprensibli
+        * dati errati o incomprensibili
         * dati inconsistenti
-    + strumenti utilizzati per il riconosciemnto e la correzione
+    + strumenti utilizzati per il riconoscimento e la correzione
         * dizionari
         * regole
         * classificatori, predittori
@@ -1180,7 +1180,7 @@ Sono strumenti necessari ad alimentare una data warehouse
     + controllo qualità: verifica consistenza dei dati caricati
     + tecniche applicabili:
         * controllo totali con sistemi di produzione
-        * confronti unità periodo precedente e attuale (ad esempio, si contano i magazzini e si aggiunge una piccola variazione addittiva)
+        * confronti unità periodo precedente e attuale (ad esempio, si contano i magazzini e si aggiunge una piccola variazione additiva)
 
 I metadati sono informazioni mantenute a supporto di queste attività.
 
@@ -1196,12 +1196,12 @@ Quattro architetture principali per i sistemi di data warehouse
 - **Semplicità**: una sola immagine integrata dei dati, consentono ai legacy systems esistenti di continuare ad operare anche se mantenendo una distribuzione client/server locale, inoltre unificano dati a livello company-wide incrementando la comunicazione aziendale.
 - **Migliore qualità dei dati**: rivisitazione degli schemi dei DB/files, de/normalizzazione consistenza, accuratezza, documentazione, DSS via OLAP e analisi DM
 - **Accesso rapido**: Il lavoro dell'ambiente operazionale e del reparto IS è ridotto, i tempi di risposta non sono influenzati dall'ambiente operazionale
-- **Separazione ambiente operativo dall'ambiente DSS**: In questo modo, managers e analisti possono usare dati storici senza invluenzare e senza essere influenzati nei tempi di risposta e nei concetti
+- **Separazione ambiente operativo dall'ambiente DSS**: In questo modo, managers e analisti possono usare dati storici senza influenzare e senza essere influenzati nei tempi di risposta e nei concetti
 - **Vantaggio competitivo**: La conoscenza presente nel DB operazionale viene usata meglio, e questo porta ad una migliore comprensione della clientela, in una più rapida risposta al mercato ecc. Questo ammortizza i costi di un DW
 - **Creazione di un DB distribuito**: DW raccoglie informazioni da fonti disparate e luoghi potenzialmente incompatibili attraverso l'utilizzo i middleware, sw per data transfer e altri client/server tools
 - **Costo operativo**: DW elimina archivi storici cartacei, ad investimento iniziale coperto, le risorse IT necessarie sono generalmente inferiori
 - **Gestione del flusso informativo**: DW aiuta un raffinamento incrementale dei sistemi che devono monitorare i dati di produzione
-- **Supporto all'elaborazione parallela**: Le query utente sono troppo computer-intensive per i sistemi operazionali. Il DW può essere creato su ambienti client/server, più portenti, scalabili, con migliori rapporti prezzo/performance
+- **Supporto all'elaborazione parallela**: Le query utente sono troppo computer-intensive per i sistemi operazionali. Il DW può essere creato su ambienti client/server, più potenti, scalabili, con migliori rapporti prezzo/performance
 - **Downsizing**: Possibilità di portare la decisione lontano da DB sui desktop 
 dei decision makers, senza dipendere dai manager IT
 - **Indipendenza della piattaforma**: DW può essere costruito partendo da un PC fino ad un mainframe, sebbene molti sistemi vadano su server Unix e ambienti client/server environment.
@@ -1215,12 +1215,12 @@ dei decision makers, senza dipendere dai manager IT
     + continui cambiamenti nel business aziendale
     + complessità della sincronizzazione DW e OLTP
     + problema della scalabilità del sistema rispetto alla domanda dell'utenza e alla complessità del DW
-    + sclta del prodotto di sviluppo e della piattaforma HW
-    + **conoscenza di tutti gli schemi DB coinvolti nel proesso**
+    + scelta del prodotto di sviluppo e della piattaforma HW
+    + **conoscenza di tutti gli schemi DB coinvolti nel processo**
     + lavorando sul core-business aziendale, presenza di forti resistenze interne di vario tipo e livello, da impiegati a dirigenti
 - **Lunghi tempi di creazione** (1-2 anni): In mancanza di forti sponsor interni, le lunghezze di un progetto di DW + le ingenti spese possono causare problemi al progetto
 - **Dispendioso** (range di M€): lo scambio dati dall'ambito operazionale al DW è fatto spesso con operazioni manuali, ambienti vecchi e poco conosciuti
-- **Mancanza di API**: il software DW manca ancora di (API) o altri standard che aiutino il processi di DW, come ad sempio ODBC
+- **Mancanza di API**: il software DW manca ancora di (API) o altri standard che aiutino il processi di DW, come ad esempio ODBC
 - **End-user training**: Cambiamenti radicali nella mentalità degli utenti finali di un DW, quindi training intensivo e soprattutto non solo tecnico
 - **Complessità nello sfruttare SMP/MPP di DW**: sviluppare un prodotto che sfrutti capacità multiprocessing simmetrico o parallelo è difficoltoso
 - **Difficoltà nel creare un ambiente DBMS distribuito**: Il DW è centralizzato per natura, renderlo distribuito è complesso e costoso
@@ -1241,7 +1241,7 @@ dei decision makers, senza dipendere dai manager IT
     + fa emergere nuova conoscenza rilevando pattern nascosti
     + supporta modelli descrittivi e predittivi
 
-La maggior parte delle aziende dispone di enormi basi di dati contenenti dati di tipo operativo che possono essere una vera miniera di informazini
+La maggior parte delle aziende dispone di enormi basi di dati contenenti dati di tipo operativo che possono essere una vera miniera di informazioni
 
 **Knowledge discovery**: processo di estrazione di pattern dai dati:
 - validi 
@@ -1264,7 +1264,7 @@ Le prime fasi coincidono con il popolamento dei sistemi di DW. In ambito azienda
 Da sistemi di OLAP si possono costruire sistemi OLAM
 
 **OLAM** OnLine Analytical Mining: si può partire dai data warehouse cosi da sfruttare l'accesso a dati ben strutturati, puliti e completi.
-Sfortunatamente il processo di mining non può essere completamente automatico poichè i pattern rilavati potrebbero essere troppi e non interessanti.
+Sfortunatamente il processo di mining non può essere completamente automatico poichè i pattern rilevati potrebbero essere troppi e non interessanti.
 Il data mining è quindi un processo interattivo dove gli utenti indicano la direzione in cui "scavare". 
 
 **Architettura dei sistemi di Data Mining**
@@ -1272,7 +1272,7 @@ Il data mining è quindi un processo interattivo dove gli utenti indicano la dir
 <p align="center"><img src="./images/architettura-data-mining.png" width="200" alt="ETL"></p>
 
 - **Data warehouse**: è una base di dati pronta, di elevata qualità e multidimensionale. I dati da analizzare sono definit da un'interrogazione OLAP.
-- **Base di conoscenza** (Knowledge Base): è l'insieme di regole e conoscenze date per note utilizzate per guidare la ricerca e per filtrare i risultati sulla base del loro effettivo interese.
+- **Base di conoscenza** (Knowledge Base): è l'insieme di regole e conoscenze date per note utilizzate per guidare la ricerca e per filtrare i risultati sulla base del loro effettivo interesse.
 - **Motore di data mining** (Data Mining Engine): è l'insieme di funzioni di analisi dei dati
 - **Sistema di valutazione delle condizioni** (Pattern Evaluation): effettua un postprocessing delle informazioni estratte dal mining (pattern) mantenendo le sole condizioni interessanti
 - **Sistema di presentazione**: è l'interfaccia utente per l'attivazione delle funzioni di mining e la visualizzazione dei pattern
@@ -1282,9 +1282,9 @@ Consiste in una serie di interrogazioni iterate di mining sul sistema di DW, che
 
 I parametri necessari per avviare un'analisi di mining:
 - **Isolare l'insieme dei dati da analizzare**: porzione di dati del DW da fornire in input. Criticità sulla poca conoscenza da parte dell'analista di cosa sta cercando
-- **Scelta della funzione di DM da usare in base all'obiettivo**: descrittive, classificatorie, predittive, outliner, eccezioni. Comprensione del metodo di mining, fornitura di parametri coretti, livelli di approssimazione accettati, numero di iterazioni ecc.
+- **Scelta della funzione di DM da usare in base all'obiettivo**: descrittive, classificatorie, predittive, outliner, eccezioni. Comprensione del metodo di mining, fornitura di parametri corretti, livelli di approssimazione accettati, numero di iterazioni ecc.
 - **Le misure di interesse**: postprocessing e filtro sulla quantità e importanza dei risultati. Caratteristiche di un pattern di interesse:
-    + **Novità**: rispetto a quanto conosciuto / presente (es. nulle gerarchie dimensionali)
+    + **Novità**: rispetto a quanto conosciuto / presente (es. nelle gerarchie dimensionali)
     + **Semplicità**: lunghezza formula associativa, complessità sistema di regole, profondità dell'albero decisionale
     + **Certezza**: validità del risultato anche su dati nuovi o diversi rispetto ai parametri fissati (confidenza, supporto, threshold...)
     + **Utilità**: rilevanza / precisione / rumore
@@ -1299,17 +1299,17 @@ I parametri necessari per avviare un'analisi di mining:
 Il **processo di mining** quindi consiste in:
 - **Comprensione** del dominio
 - **Preparazione** sul set di dati, Individuazione di un sottoinsieme dei dati della DW su cui effettuare il mining
-- **Scoperta** dei patern: Ricerca e individuazionedi pattern ripetitivi tra i dati
-- **Valutazione** dei pattern: Partendo da ipattern scoperti si valutano quali esperimenti compiere succesivamente e quali ipotesi formulare o quali conseguenze trarre.
-- **Utilizzo** dei risultato: Prendere decisioni operative a seguito del processo di data mining (allocazione merci, concessione credito, operaione chirurgica, intervento polizia, correzione rotta..)
+- **Scoperta** dei pattern: Ricerca e individuazione di pattern ripetitivi tra i dati
+- **Valutazione** dei pattern: Partendo dai pattern scoperti si valutano quali esperimenti compiere successivamente e quali ipotesi formulare o quali conseguenze trarre.
+- **Utilizzo** dei risultato: Prendere decisioni operative a seguito del processo di data mining (allocazione merci, concessione credito, operazione chirurgica, intervento polizia, correzione rotta..)
 
 
 ### Funzioni di mining
-Le attività di mining possono essere ripartitie in due macro classi
+Le attività di mining possono essere ripartite in due macro classi
 - mining **descrittivo**: estrae informazioni che descrivono le proprietà generali dei dati
-- mining **predittivo**: determina regole generali e crea modelli per predire le tendeze nel futuro
+- mining **predittivo**: determina regole generali e crea modelli per predire le tendenze nel futuro
 
-I sistemi sul mercato propongno diversi insiemi di funzioni di mining, per cercare un certo tipo di informazione o costruire un particolare modello di predizione. La stessa funzione può essere elaborata tramite algoritmi diversi. Le funzioni sono riconducibili a cinque tipologie
+I sistemi sul mercato propongono diversi insiemi di funzioni di mining, per cercare un certo tipo di informazione o costruire un particolare modello di predizione. La stessa funzione può essere elaborata tramite algoritmi diversi. Le funzioni sono riconducibili a cinque tipologie
 - generalizzazione, caratterizzazione e discriminazione
 - analisi associativa
 - classificazione e predizione
@@ -1319,10 +1319,10 @@ I sistemi sul mercato propongno diversi insiemi di funzioni di mining, per cerca
 **Generalizzazione, caratterizzazione e discriminazione**
 Sono strumenti che permettono di descrivere in modo sintetico ma preciso i dati contenuti nel database e operano tramite generalizzazione (classificazione dei dati elementari in gruppi caratterizzati da attributi comuni o tecniche OLAP) o tramite funzioni di descrizione delle classi (caratterizzazione: descrizione delle particolarità della classe, discriminazione: marcamento delle differenze tra classe e classe)
 
-Si possono usare le funzioni offerte dal DM come le misure aggregate OLAP (conteggio, media, min, max, somma...) o le funzioni di caratteriziazzione e di discriminazione
+Si possono usare le funzioni offerte dal DM come le misure aggregate OLAP (conteggio, media, min, max, somma...) o le funzioni di caratterizzazione e di discriminazione
 
 **Analisi associativa**
-Permette di identificare condizioni che si verificano contemporaneamente con elevata frequenza. Rilevare quindi pattern che si ripetono su terminati attributi e ne deriva regole di implicazione del tipo (A -> B).
+Permette di identificare condizioni che si verificano contemporaneamente con elevata frequenza. Rilevare quindi pattern che si ripetono su determinati attributi e ne deriva regole di implicazione del tipo (A -> B).
 Alcune applicazioni d'esempio possono essere market basket analysis, profili clienti (abitudini di acquisto), ottimizzazione delle manutenzioni, condizioni mediche / epidemiologiche.
 
 Viene valutata in base a:
@@ -1354,10 +1354,10 @@ Per la costruzione dei classificatori si possono usare diverse tecniche
 - Alberi di decisione: strutture di classificazione basate su valutazioni di condizioni del tipo if-then-else. Richiedono 2 fasi
     + fase di build: si costruisce l'albero iniziale, partizionando ripetutamente il training set sul valore di un attributo, fino a quando tutti gli esempi in ogni partizione appartengono ad una sola classe
     + fase di pruning: si pota l'albero, eliminando rami dovuti a rumore o fluttuazioni statistiche
-- Reti della verità bayesiane: si creano dei modelli grafici aciclici orientati per la rappresentazione della conoscenza in un dominio incerto e si applica la regola di Bayes per creare una struttura dati chamata "rete di credenze" che rappresenta la dipendaza fra le variabli e per dare una specifica concisa della distribuzione di probabilità congiunta. La regola di bayes dice: Calcolare la probabilità di una causa che ha scatenato l'evento = valutare una probabilità avendo già delle informazioni su quanto è già accaduto in precedenza.
-    + Dati due eventi A e B, se questi sono in qualche modo correlati, è ragionevole pensare che il sapere che uno dei due è già avvenuto possa migliorare la conoscenza della probabilità dell'altro (Probabilità codizionata)
+- Reti della verità bayesiane: si creano dei modelli grafici aciclici orientati per la rappresentazione della conoscenza in un dominio incerto e si applica la regola di Bayes per creare una struttura dati chiamata "rete di credenze" che rappresenta la dipendenza fra le variabili e per dare una specifica concisa della distribuzione di probabilità congiunta. La regola di bayes dice: Calcolare la probabilità di una causa che ha scatenato l'evento = valutare una probabilità avendo già delle informazioni su quanto è già accaduto in precedenza.
+    + Dati due eventi A e B, se questi sono in qualche modo correlati, è ragionevole pensare che il sapere che uno dei due è già avvenuto possa migliorare la conoscenza della probabilità dell'altro (Probabilità condizionata)
     + la probabilità che si verifichi A sapendo che si è già verificato B, cioè la probabilità di A condizionata a B
-- Reti neurali: reti che cercano di simulare il funzionamento dei neuroni all'iterno di un sistema informatico. E' un modello computazionale parallelo, costituito da numerose unità eleaborative omogenee fortemente interconnesse mediante collegamenti di varia intensità.
+- Reti neurali: reti che cercano di simulare il funzionamento dei neuroni all'interno di un sistema informatico. E' un modello computazionale parallelo, costituito da numerose unità elaborative omogenee fortemente interconnesse mediante collegamenti di varia intensità.
 
 *Reti neurali*
 Nelle reti neurali i nodi che compongono la rete sono divisi in 3 macro-categorie:
@@ -1367,9 +1367,9 @@ Nelle reti neurali i nodi che compongono la rete sono divisi in 3 macro-categori
 
 Quando un nodo riceve un input sopra una certa soglia di attivazione, emette a sua volta un segnale alle altre unità a cui è connesso. 
 L'apprendimento è basato su dati empirici e può essere:
-- **supervisionato**: insieme di dati di addrestamento grazie ai quali riesce a inferire i legami che legano queri dati e sviluppare un modello "generale"
-- **non supervisionato**: il isitema fa riferimetno ad algoritmi che tentano di raggruppare i dati di ingresso per tipologia, individuando Cluster rappresentativi dei dati stessi facendo uso tipicamente di metodi tipoologici e probabilistici
-- **per rinforzo**: un algoritmo si prefigge di individuare un modus oprandi a partire da un processo di osservazione dall'ambiente esterno
+- **supervisionato**: insieme di dati di addestramento grazie ai quali riesce a inferire i legami che legano quei dati e sviluppare un modello "generale"
+- **non supervisionato**: il sistema fa riferimento ad algoritmi che tentano di raggruppare i dati di ingresso per tipologia, individuando Cluster rappresentativi dei dati stessi facendo uso tipicamente di metodi tipologici e probabilistici
+- **per rinforzo**: un algoritmo si prefigge di individuare un modus operandi a partire da un processo di osservazione dall'ambiente esterno
 
 Le proprietà di una rete neurale sono quindi:
 - **capacità di apprendere da esempi**
@@ -1379,11 +1379,11 @@ Le proprietà di una rete neurale sono quindi:
 - **decadimento graduale prestazioni**: il comportamento si altera gradualmente se si eliminano connessioni o si alterano i pesi
 
 Alcuni esempi di applicazioni delle reti neurali possono essere:
-- riconosciemnto di segnali percettivi (immagini, voce, sonar)
+- riconoscimento di segnali percettivi (immagini, voce, sonar)
 - diagnosi e gestione di apparati complessi in tempo reale
 - controllo dei movimenti di robot e veicoli autonomi
-- classificaizone ed interpretazione di dati rumorosi
-- memoria associativa: accesso in tempo reale a grandi quanitità di dati
+- classificazione ed interpretazione di dati rumorosi
+- memoria associativa: accesso in tempo reale a grandi quantità di dati
 - ricostruzione di informazioni parziali o corrotte da rumore
 - soluzioni approssimate in tempo reale di problemi computazionalmente intrattabili
 
@@ -1391,11 +1391,11 @@ Alcuni esempi di applicazioni delle reti neurali possono essere:
 E' una tecnica analoga alla classificazione, ma permette di identificare valori non noti di elementi il cui dominio è continuo.
 Si basa sulla costruzione di funzioni di tendenza tramite interpolazione sui punti noti (regressione). Ci sono vari modelli:
 - lineare semplice: distribuzioni bivariate
-- multilineare: distribuzini multivariate
-- non-lineare: polinomiale, esponenziale, logaritminca, ...
+- multilineare: distribuzoni multivariate
+- non-lineare: polinomiale, esponenziale, logaritmica, ...
 
 **Clustering**
-Tencnica analoga alla classificazione, ma ripartisce gli elementi in classi anonime sulla base delle affinità rilevate tramite l'osservazione dei dati. Le classi quindi non sono definite a priori ma sono proposte all'utente come "agglomerati spontanei" di dati sui quali poi l'utente può derivare informazioni e nuovi criteri su cui costruire modelli di classificazione.
+Tecnica analoga alla classificazione, ma ripartisce gli elementi in classi anonime sulla base delle affinità rilevate tramite l'osservazione dei dati. Le classi quindi non sono definite a priori ma sono proposte all'utente come "agglomerati spontanei" di dati sui quali poi l'utente può derivare informazioni e nuovi criteri su cui costruire modelli di classificazione.
 
 Caratteristiche dei cluster:
 - **massima similarità tra gli elementi appartenenti ad una classe**
@@ -1409,9 +1409,9 @@ Le due filosofie principali su cui si basano:
 - **metodi divisivi o top-down**: all'inizio tutti gli elementi sono un unico cluster, e poi l'algoritmo inizia a dividere il cluster in tanti cluster di dimensioni inferiori cercando di ottenere gruppi sempre più omogenei. L'algoritmo procede fino a che non viene soddisfatta una regola di arresto generale legata al raggiugimento di un numero prefissato di cluster.
 
 I metodi di clustering si fondano su diverse tecniche:
-- **partizionamento**: l'utente indica in quante classi ripartire i dati e l'algorimo ripartisce gli elementi nel numero di classi indicato sulla base delle reciproche distanze
-- **classificaizone gerarchica**:
-    + basata sull'aggregazione: costruisce le classi aggregando interativamente gli elementi sulla base delle similitudini
+- **partizionamento**: l'utente indica in quante classi ripartire i dati e l'algoritmo ripartisce gli elementi nel numero di classi indicato sulla base delle reciproche distanze
+- **classificazione gerarchica**:
+    + basata sull'aggregazione: costruisce le classi aggregando iterativamente gli elementi sulla base delle similitudini
     + basata su divisione: ripartisce iterativamente l'insieme dei dati in sottoinsieme di elementi simili
 - **valutazione della densità**: i cluster sono identificati dalle zone topologicamente dense
 
@@ -1419,16 +1419,16 @@ Gli argoritmi di clustering sono caratterizzati da:
 - **scalabilità**: tempo di elaborazione e loop sono elementi critici
 - **robustezza**: classificare anche con errori, dati mancanti o dati out-of-range
 - **alta dimensionalità**: utilizzare più attributi contemporanei
-- **capacità di operare condiversi tipi di attributi**: non solo numerici, ma anche categorici o misti
+- **capacità di operare con diversi tipi di attributi**: non solo numerici, ma anche categorici o misti
 - **capacità di reperire cluster di qualsiasi forma**: non solo cluster sferici regolari (distanza euclidea)
 - **insensibilità all'ordinamento**: cluster indifferente all'ordinamento dei dati di partenza
 
 **Ricerca degli outliner**
-E' un possibile risultato dei metodi di clustering, un'eccezzione, un elemento fuori range. La ricerca infatti si basa sugli stessi principi del clustering e concentra gli sforzi sull'identificazione degli elementi che si discostano maggiormente dagli altri.
+E' un possibile risultato dei metodi di clustering, un'eccezione, un elemento fuori range. La ricerca infatti si basa sugli stessi principi del clustering e concentra gli sforzi sull'identificazione degli elementi che si discostano maggiormente dagli altri.
 I metodi per la ricerca sono:
 - statistici: applicabili se sui dati è identificabile una distribuzione
-- basati sulla distanza: ricercano gli elemento che massimizzano la distanza dai rastanti elementi del set di analisi
-- basati sulla deviazione: identificano gli ouliner come elementi che deviano dalle caratteristiche tendenziali del gruppo.
+- basati sulla distanza: ricercano gli elemento che massimizzano la distanza dai restanti elementi del set di analisi
+- basati sulla deviazione: identificano gli outliner come elementi che deviano dalle caratteristiche tendenziali del gruppo.
 
 ### Data Mining: aree applicative
 - **Analisi finanziaria**6
@@ -1444,11 +1444,11 @@ I metodi per la ricerca sono:
         * per la rilevazione di frodi o di movimenti finanziari anomali
 - **Marketing**
     + **analisi descrittive** su clienti e prospect, per approfondire la conoscenza delle caratteristiche potenziali del mercato e di quelle dei clienti già acquisiti, con lo scopo di identificare, ad esempio, settori non coperti, aree di possibile sviluppo, possibili differenziazioni
-    + **clustering** dei clienti, per caratterizzare i raggruppamenti spontanei ed usare questa conoscenza per definire programmi e azioni marketin puntuali
+    + **clustering** dei clienti, per caratterizzare i raggruppamenti spontanei ed usare questa conoscenza per definire programmi e azioni marketing puntuali
     + **classificazione** di clienti e prospect, per l'attivazione di azioni di marketing mirato
 - **Vendite**
     + analisi descrittive
-        * su clienti, per approfondirne il profilo e definirne segmentazioni, ad esmpio in classi di fatturato
+        * su clienti, per approfondirne il profilo e definirne segmentazioni, ad esempio in classi di fatturato
         * sulle vendite, per analizzarne l'andamento, valutare l'efficacia di campagne promozionali, valutare aggiustamenti nelle politiche di prezzo o nella varietà degli articoli
         * sui reclami e sulle chiamate di assistenza per comprenderne le linee di tendenza e migliorare la qualità del servizio al cliente
         * sulle zone servite, per progettare migliori politiche di trasporto e distribuzione
@@ -1465,7 +1465,7 @@ I metodi per la ricerca sono:
     + dalle liste di prelievo si possono lanciare analisi associative per identificare i materiali che vengono prelevati insieme e disporre quindi la merce in magazzino in modo ottimizzato
 - **Acquisiti**
     + tramite metodi di caratterizzazione e di associazione, il grado di puntualità dei fornitori sui diversi prodotti forniti, o di confrontare le prestazioni di fornitori che operano nel medesimo settore
-- **Constrollo qualità**
+- **Controllo qualità**
     + l'analisi dei cluster e quella degli outliner possono permettere di identificare elementi critici, o di definire criteri per la classificazione dei prodotti sulla base della loro tendenza alla difettosità
 - **Manutenzione**
     + analisi associative possono rilevare relazioni tra condizioni diverse; conoscendo queste, al verificarsi di una possono essere attuate azioni di manutenzione preventiva sulle altre
@@ -1479,7 +1479,7 @@ I metodi per la ricerca sono:
 ### Data deluge
 Siamo sommersi di dati, essi ci possono aiutare a prendere decisioni migliori, questi dati stanno giocando un ruolo rempre più centrale nelle nostre vite e stanno guidando l'emergente data economy.
 Sempre più soggetti stanno "consumando" questi dati per costruire nuovi business.
-- Amazon rende i dati dei suoi prodotti dispobili a terze parti attraverso web api migliorando così le sue possibilità di business
+- Amazon rende i dati dei suoi prodotti disponibili a terze parti attraverso web api migliorando così le sue possibilità di business
 - Google sfrutta dati strutturati di siti web e di e-commerce per creare delle liste di prodotti
 - Società scientifiche richiedono lo scambio di dati a livello globale per la ricerca. es Human Genome Project
 - La politica stessa è pilotata da questa enorme quantità di dati
@@ -1491,70 +1491,70 @@ Il valore e la diversità di questi ecosistemi dimostrano la forte domanda all'a
 
 Proprio come il World Wide Web ha rivoluzionato il modo di connettere e consumare i documenti, così può anche rivoluzionare il modo di scoprire, accedere e integrare l'uso dei dati.
 
-Si vuole quindi analizzare come l'insieme di principi e tecnlogie, conosciute come Linked Data, può guidare l'etica e le infrastrutture del web in modo da permettere la condivisione ed il riuso dei dati in scala massiccia.
+Si vuole quindi analizzare come l'insieme di principi e tecnologie, conosciute come Linked Data, può guidare l'etica e le infrastrutture del web in modo da permettere la condivisione ed il riuso dei dati in scala massiccia.
 
 ### Links across distributed data
 Per capire i concetti ed i valori dei Linked Data è importante considerare gli attuali meccanismi per la condivisione ed il riuso dei dati nel Web.
 
-- **HTML**: orientato alla stutturazione di testi e documenti piuttosto che di dati. Questo rende difficile creare applicazioni software che estraggano dati dalle pagine HTML
+- **HTML**: orientato alla strutturazione di testi e documenti piuttosto che di dati. Questo rende difficile creare applicazioni software che estraggano dati dalle pagine HTML
     + le relazioni vengono gestite con gli href che si riferiscono ad altre pagine Web
-- **Microformats**: tentativo di risolvere il problema. Possono essere usati per pubblicare dati strutturati che descrivono tipi di entità come persone, organizzazioni, eventi o recensioni. Hanno lo svantaggio che sono ristretti alla rappresentazione di piccoli insieme di tipi diversi di dati, quindi non sono candidabili per la condivisione di dati arbirtari sul Web.
-- **Web API**: forniscono un accesso a dati strutturati attraverso il protocollo HTTP. Esempi sono Amazon Product Advertising API, Flickr API ecc... Anche qui abbiamo lo svantaggio che un pogrammatore che vuole utilizzare questi dati deve scrivere del codice ad hoc per accederci.
+- **Microformats**: tentativo di risolvere il problema. Possono essere usati per pubblicare dati strutturati che descrivono tipi di entità come persone, organizzazioni, eventi o recensioni. Hanno lo svantaggio che sono ristretti alla rappresentazione di piccoli insieme di tipi diversi di dati, quindi non sono candidabili per la condivisione di dati arbitrari sul Web.
+- **Web API**: forniscono un accesso a dati strutturati attraverso il protocollo HTTP. Esempi sono Amazon Product Advertising API, Flickr API ecc... Anche qui abbiamo lo svantaggio che un programmatore che vuole utilizzare questi dati deve scrivere del codice ad hoc per accedervi.
     + solitamente non hanno un sistema per "seguire i dati", ossia trovare dati correlati a quelli cercati
     + usano identificatori con scope locale. es. product_id: 123456. Non c'è quindi un meccanismo per riferirsi ad un item comune tra 2 diverse API
 
 ### The global space of data
 Linking data distribuiti in giro per il Web richiedono meccanismi standard per specificare l'esistenza e il significato delle connessioni tra gli items descritti in questi dati. 
-Questo meccasimo è fornito da **RDF** Resource Description Framework. Esso fornisce un modo flessibile per descrivere cose nel mondo, come persone, luoghi, concetti astratti, e come questi sono **relazionati** fra loro.
+Questo meccanismo è fornito da **RDF** Resource Description Framework. Esso fornisce un modo flessibile per descrivere cose nel mondo, come persone, luoghi, concetti astratti, e come questi sono **relazionati** fra loro.
 
 - **RDF connette cose, non documenti**: esso non connette semplicemente i dati ma asserisce connessioni tra entità descritte nei dati.
 - **RDF descrive le connessioni**: esso permette di chi pubblica i dati di definire esplicitamente la natura della connessione. es: "mio libro" *inVenditaIn* "Libreria del nonno", "Libreria del nonno" *siTrovaA* "Trento"
 
 RDF rende i links espliciti in modo che le  applicazioni che lo sfruttano possano seguire i dati e trovarne di altri. Questo rende il Web, dove questi dati sono pubblicati, un posto più navigabile e che facilita l'usabilità dei dati.
 
-Linked Data permette di relazionare dati di diverse sorgenti creando così un unico **Global Data Space**. L'uso di standards Web e modelli di dati comuni rende possible implementare applicazioni generiche che operano su tutto il Data Space. Questa è l'essenza dei Linked Data.
+Linked Data permette di relazionare dati di diverse sorgenti creando così un unico **Global Data Space**. L'uso di standards Web e modelli di dati comuni rende possibile implementare applicazioni generiche che operano su tutto il Data Space. Questa è l'essenza dei Linked Data.
 L'aumentare dell'adozione dei Linked Data ha creato cosi quello che viene chiamato Web of Data, anche chiamato Semantic Web.
 
 ### Principles of Linked Data
-Il termime Linked Data si riferisce all'insieme di best practices per la pubblicazione e la relazione di dati strutturati sul web. Questi concetti sono stati introdotti da Tim Berners-Lee.
+Il termine Linked Data si riferisce all'insieme di best practices per la pubblicazione e la relazione di dati strutturati sul web. Questi concetti sono stati introdotti da Tim Berners-Lee.
 
 1. **Usare gli URIs come nome delle cose**
 2. **Usare HTTP URIs, così che le persone possano cercare questi nomi**
 3. **Quando qualcuno cerca un URI, fornire informazioni utili, usando gli standards come RDF, JSON-LD, SPARQL**
 4. **Includere links di altri URIs, cosi che si possano trovare più cose**
 
-L'idea di base è quella di applicare questi principi di stutturazione dei dati all'archittettura già esistente del World Wide Web.
+L'idea di base è quella di applicare questi principi di strutturazione dei dati all'architettura già esistente del World Wide Web.
 
 - URIs: Uniform Resource Identifiers
-- HTTP: HyperText Trasfer Protocol
+- HTTP: HyperText Transfer Protocol
 - HTML: HyperText Markup Language
 
 Gli hyperlinks sono la parte cruciale per la connessione di contenuti di diversi sorgenti cosi da creare un unico *global information space*.
 
-Come conseguenza al Web of Data basato su standard e modelli di dati comuni, diventano possibili implementazioni di applicazioni generiche che operano sul data space completo. Elcuni esempi possono essere Linked Data Browser o Linked Data Search Engines.
+Come conseguenza al Web of Data basato su standard e modelli di dati comuni, diventano possibili implementazioni di applicazioni generiche che operano sul data space completo. Alcuni esempi possono essere Linked Data Browser o Linked Data Search Engines.
 
 #### Naming things with URIs
 Per pubblicare dei dati sul web, prima è necessario identificare il dominio di interesse dell'item.  
 Per identificare le entità e le relazioni si usano gli URIs e questo è fatto principalmente per due motivi:
 - forniscono un modo semplice per creare un nomi univoci a livello globale in modo decentralizzato dato che ogni proprietario di un nome di dominio può creare un nuovo riferimento URI
-- non servono solo come nome ma anche come significato di accesso alle infomazioni descrivendo l'entità identificata
+- non servono solo come nome ma anche come significato di accesso alle informazioni descrivendo l'entità identificata
 
 #### Making URIs Deferenceable 
 Qualsiasi HTTP URI dovrebbe essere deferenziabile, questo significa che il client HTTP può usare l'URI attraverso il protocollo HTTP e recuperare la descrizione della risorsa che è identificata dall'URI.
 
-Descrizioni delle risorse sono incorporate nel formato di documento Web. Le descrizioni che sono costruite per essere lette da esseri umani sono rappresentate come HTML, mentre le descrizioni destinate alle macchine sono rappresentate come dati RDF. Questo può essere fatto attravverso un meccanismo HTTP chiamato content negotiation. L'idea di base è che il client invia un header HTTP che indica il tipo di documento che preferisce e quindi il server analizzando l'header può costruire una risposta appropriata.
+Descrizioni delle risorse sono incorporate nel formato di documento Web. Le descrizioni che sono costruite per essere lette da esseri umani sono rappresentate come HTML, mentre le descrizioni destinate alle macchine sono rappresentate come dati RDF. Questo può essere fatto attraverso un meccanismo HTTP chiamato content negotiation. L'idea di base è che il client invia un header HTTP che indica il tipo di documento che preferisce e quindi il server analizzando l'header può costruire una risposta appropriata.
 Ci sono 2 diverse strategie per rendere un URI che rappresenta un oggetto reale deferenziabile
 
 - **303 URIs** (303 redirect): il server invece di rispondere con l'oggetto stesso risponde con un codice `303 See Other` e l'URI del documento Web che descrive l'oggetto. Quindi il client deferenzia questo nuovo URI e recupera il documento Web.
-- **Hash URIs**: sfrutta la caratteristica degli URI che possono contenere una parte speciale (fragment identifier) che è separata dall'URI con il simobolo hash. Quando un client vuole recuperare un hash URI, il protocollo HTTP recuperare normalmente la risorsa senza guardare il fragment identifier e lo usa successivamente. Questo permette di creare URIs che identificano oggetti reali o concetti astratti senza creare ambiguità.
+- **Hash URIs**: sfrutta la caratteristica degli URI che possono contenere una parte speciale (fragment identifier) che è separata dall'URI con il simbolo hash. Quando un client vuole recuperare un hash URI, il protocollo HTTP recuperare normalmente la risorsa senza guardare il fragment identifier e lo usa successivamente. Questo permette di creare URIs che identificano oggetti reali o concetti astratti senza creare ambiguità.
 
 **Hash vs 303**
 L'hash URI ha il vantaggio che riduce il numero di richieste HTTP, e quindi la latenza. Come contro ha il fatto che descrizioni di tutte le risorse che condividono la stessa parte non-fragment URI sono ritornate assieme, indistintamente che il client le voglia o no. Questo porta a risposte di dimensioni maggiori con informazioni inutili.
-303 URIs sono flessibili perchè il target può essere diverso per ogni risorsa ma richiedono un maggior numero di richieste HTTP. Questi sono spesso usati per servire descrizioni di risorse che apprtangono a dei grandi data set.
-Gli hash URI invece sono usati spesso per idenetificare termini appartenti a vocabolari che solitamente sono piuttosto piccoli. Sono usati anche quando sono embeddati a pagine HTML usando RDFa.
+303 URIs sono flessibili perchè il target può essere diverso per ogni risorsa ma richiedono un maggior numero di richieste HTTP. Questi sono spesso usati per servire descrizioni di risorse che appartengono a dei grandi data set.
+Gli hash URI invece sono usati spesso per identificare termini appartenenti a vocabolari che solitamente sono piuttosto piccoli. Sono usati anche quando sono embeddati a pagine HTML usando RDFa.
 
 #### Providing Useful RDF Information
-Per fare in modo di creare una vasta quantità di differenti applicazioni che processino i contenuti Web è importate standardizzare i formati dei contenuti. RDF fornisce un modello di dati estremamente semplice e su misura per le architetture web. Per essere pubblicato sul web i dati RDF possono essere serializzati in differenti formati, i due più comuni sono RDF/XML e RDFa.
+Per fare in modo di creare una vasta quantità di differenti applicazioni che processino i contenuti Web è importante standardizzare i formati dei contenuti. RDF fornisce un modello di dati estremamente semplice e su misura per le architetture web. Per essere pubblicato sul web i dati RDF possono essere serializzati in differenti formati, i due più comuni sono RDF/XML e RDFa.
 
 I modelli RDF rappresentano informazioni come nodi e archi etichettati di un grafo orientato e sono disegnati per integrare rappresentazioni di informazioni originate da diverse sorgenti.
 RDF punta a essere una lingua franca capace di moderare altri modelli di dati presenti sul web.
@@ -1562,7 +1562,7 @@ RDF punta a essere una lingua franca capace di moderare altri modelli di dati pr
 In RDF la descrizione di una risorsa è rappresentata come una tripletta.
 - **Soggetto**: URI che identifica la risorsa descritta
 - **Predicato**: URI che indica il tipo di relazione tra soggetto e oggetto
-    + viene preso da un vocabolario: insieme di URIs che vengono usati per rappresentare un informazione a proposito di un certo dominio
+    + viene preso da un vocabolario: insieme di URIs che vengono usati per rappresentare un'informazione a proposito di un certo dominio
 - **Oggetto**: valore letterale (stringa, numero) o data
 
 ```
@@ -1587,14 +1587,14 @@ Esempi:
 Ci sono tre importanti tipi di RDF Links:
 - **Relationship Link**: puntano a entità presenti in altri data sources. Questo permette di collegare maggiormente l'entità. Esempio collegare Paolo al posto dove vive, se anche la biblioteca del suo paese è collegata allo stesso luogo si può risalire ai libri facilmente accessibili da lui
 - **Identity Link** (`owl:sameAs`): puntano ad URI alias usati da altri data sources per identificare lo stesso oggetto reale o astratto. Questo permetto di rendere il Web of Data un sistema sociale:
-    + Diverse opinioni: URI alisas hanno un importante funzione sociale dato che porta ad avere deferenziazioni della stessa risorsa da differenti publisher che cosi possono offrire diverse opinioni
-    + Tracciablità: L'uso di avere diversi URI permette di risalire a chi ha espresso una certa opinione
+    + Diverse opinioni: URI alisas hanno un'importante funzione sociale dato che porta ad avere deferenziazioni della stessa risorsa da differenti publisher che cosi possono offrire diverse opinioni
+    + Tracciabilità: L'uso di avere diversi URI permette di risalire a chi ha espresso una certa opinione
     + Nessun punto di fallimento: si decentralizza l'informazione.
 - **Vocabulary Links**: un vocabolario può avere definizioni che sono già presenti in altri vocabolari quindi è importante linkarli fra loro
 
 ### 5 stars model for open data
 Tim Berners-Lee ha creato un sistema dove i publisher possono dare un premio ai loro data set in base ai seguenti criteri:
-- **1 Stella**: dati è disponibile sul web (qualisasi formato), ma con una licenza open
+- **1 Stella**: dati è disponibile sul web (qualsiasi formato), ma con una licenza open
 - **2 Stelle**: dati sono disponibili e strutturati in modo che una macchina possa leggerli (Excel invece di una scannerizzazione)
 - **3 Stelle**: dati disponibili come 2 ma non in un formato proprietario (CSV invece di Excel)
 - **4 Stelle**: dati disponibili come sopra con in più l'uso di standard aperti del W3C (RDF e SPARQL) per identificare le cose, così che le persone possano linkarle
