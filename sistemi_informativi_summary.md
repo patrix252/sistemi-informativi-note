@@ -1,5 +1,7 @@
 # Sommario Sistemi Informativi
 
+[Acronimi](../acronyms)
+
 ### Capitolo 0
 - **ICT e società della conoscenza**
 - **ICT: trends, convergenza e conseguenze**
@@ -25,7 +27,7 @@
     + `Sistema informativo`: l'insieme delle procedure e delle infrastrutture che definiscono e supportano il fluire delle informazioni all'interno di una struttura organizzativa
     + `Informatica aziendale`: disciplina che studia l'applicazione dell'informatica alle aziende e l'influenza dell'informatica sulle diverse categorie di elementi costituenti il sistema aziendale.
     + `Sistemi informativi aziendali`: hanno come obiettivo finale la distribuzione di informazioni alle persone che operano all'interno dell'azienda nel momento in cui l'informazione è necessaria.
-- **L'impatto dell'informatica nelle aziende**: `BRP`
+- **L'impatto dell'informatica nelle aziende**: `BPR`
     + `Ridurre costi`
     + `Migliorare processi`
     + `Aumentare qualità dei dati`
@@ -103,19 +105,19 @@
         * `approvigionamenti` `gestione risorse umane` `sviluppo delle tecnologie` `infrastrutture`
 - **Portafoglio istituzionale e operativo**
     + L'insieme delle applicazioni dei sistemi informativi operazionali dell'azienda può essere ripartito sulla base dello schema di Porter
+    + `Portafoglio operativo`: `attività primarie` `specializzazione` `dipende da attrattiva informatica`
+        * `logistica in entrata` `attività operative` `logistica in uscita` `marketing e vendite` `servizi postvendita`
     + `Portafoglio istituzionale`: `attività secondarie` `forte attrattiva informatica` `soluzioni standardizzate`
         * `contabilità` `finanziaria` `previsioni e controllo` `personale`
-    + `Portafoglio operativo`: `attività primarie` `specializzazione` `dipende da attrattiva informatica`
-        * `logica in entrata` `attività operative` `logistica in uscita` `marketing e vendite` `servizi postvendita`
 
 ### Il sistema ERP e le sue scomposizioni per sistemi
 - `isole informatiche`: `anni 90` `autonome` `rigide` `specializzate` `eterogeneità dei sistemi` `autonomia dei sottosistemi`
-- `ERP`: composti da sottosistemi nativamente integrati sviluppati da un'unica sw house, condividono `dati comune` e le procedure sono progettate per interagire e cooperare. `configuragili` `svincolati dell'organizzazione dell'azienda` `moduli indipendenti` `soluzioni standardizzate`
+- `ERP`: composti da sottosistemi nativamente integrati sviluppati da un'unica sw house, condividono `dati comune` e le procedure sono progettate per interagire e cooperare. `configurabili` `svincolati dell'organizzazione dell'azienda` `moduli indipendenti` `soluzioni standardizzate`
     + Sistemi di base: `amministrazione` `logistica` `vendite` `acquisti` `produzione`
 
 ### Sistemi informazionali
 - **Presupposti per l'analisi**
-    + `Sistemi di business intelligence`: `DDS`
+    + `Sistemi di business intelligence`: `DSS`
         * supporta la dirigenza aziendale nel prendere decisioni `operative` `tattiche` e `strategiche` in modo efficace e veloce mediante particolari tipologie di elaborazione dette `analitiche` che usano in maniera integrata i dati dell'organizzazione combinati con eventuali dati esterni
     + Tipi di dati aziendali:
         * dati critici: `vitali per il successo` `gestire` `proteggere` `CIO`
@@ -136,8 +138,8 @@
         * Utenza: `decisori` `manager`
     + ER in RDBMS non è adatto
         * Soluzioni: `BLOBs` `OODBMS` `Column-oriented DB` `NOSQL` `Machine Learning` `Data Mining`
-- **RDMB, mondo analitico e performance**
-    + `TCP`: organismo internazionale che diegna benchmark standard e ne omologa i risultati. Ritenuti i più importanti e significativi per la valutazione delle prestazioni dei sistemi che ospitano DBMS
+- **RDBMS, mondo analitico e performance**
+    + `TCP`: organismo internazionale che disegna benchmark standard e ne omologa i risultati. Ritenuti i più importanti e significativi per la valutazione delle prestazioni dei sistemi che ospitano DBMS
     + Limitazioni DBMS:`gestione inefficiente delle relazioni multi-dimensionali` `problema delle normalizzazioni` `operazioni analitiche molto limitate` `consolidamento dei dati poco efficiente` `l'uso di join multiple causa perfomance pessime`
     + DB denormalizzati: `calo di performance` `aumentano latenze`
     + DB normalizzati: `+ integrità dati` `- data legibility` `troppe relazioni` `schema complesso` `percorsi tra tabelle non diretti` `naming conventions criptiche`

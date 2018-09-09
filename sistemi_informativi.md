@@ -106,7 +106,7 @@ dati nell'intento di:
 - trasformarli in informazioni utili
 - supportare le attività decisionali e di controllo di un'azienda
 
-ITC: Information and Communication Technology
+ICT: Information and Communication Technology
     + IT Information Technology
     + TLC Telecommunication
 
@@ -773,7 +773,7 @@ La soluzione più ovvia passa per il mondo relazionale ER e al sua implementazio
 - reasoning, machine learning, rappresentazione a grafo, semantica...
 - applicazioni riguardanti l'analisi dei dati on-line 
 
-### RDMB, mondo analitico e performance
+### RDBMS, mondo analitico e performance
 **TCP** Transaction Processing Preformance Council: organismo internazionale che disegna benchmark standard e ne omologa i risultati. O benchmark del TPC sono ritenuti i più importanti e significativi per la valutazione delle prestazioni dei sistemi che ospitano DBMS.
 
 I DBMS relazioni e i tools di front-end relativi presentano molte limitazioni quando vengono usati in attività di analisi on-line:
