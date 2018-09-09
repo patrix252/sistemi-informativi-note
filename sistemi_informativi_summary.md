@@ -1,6 +1,6 @@
 # Sommario Sistemi Informativi
 
-[Acronimi](../acronyms)
+[Acronimi](./acronyms)
 
 ### Capitolo 0
 - **ICT e società della conoscenza**
@@ -139,7 +139,7 @@
     + ER in RDBMS non è adatto
         * Soluzioni: `BLOBs` `OODBMS` `Column-oriented DB` `NOSQL` `Machine Learning` `Data Mining`
 - **RDBMS, mondo analitico e performance**
-    + `TCP`: organismo internazionale che disegna benchmark standard e ne omologa i risultati. Ritenuti i più importanti e significativi per la valutazione delle prestazioni dei sistemi che ospitano DBMS
+    + `TPC`: organismo internazionale che disegna benchmark standard e ne omologa i risultati. Ritenuti i più importanti e significativi per la valutazione delle prestazioni dei sistemi che ospitano DBMS
     + Limitazioni DBMS:`gestione inefficiente delle relazioni multi-dimensionali` `problema delle normalizzazioni` `operazioni analitiche molto limitate` `consolidamento dei dati poco efficiente` `l'uso di join multiple causa perfomance pessime`
     + DB denormalizzati: `calo di performance` `aumentano latenze`
     + DB normalizzati: `+ integrità dati` `- data legibility` `troppe relazioni` `schema complesso` `percorsi tra tabelle non diretti` `naming conventions criptiche`
