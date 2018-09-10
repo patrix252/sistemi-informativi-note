@@ -1,9 +1,10 @@
 # Acronimi
 
 - `EDP`: Electronic Data Processing
+- `ICT`: Information and Communication Tehnology
 - `MTBF`: Medium Time Between Failure
 - `ERP`: Enterprise Resource Planning
-- `BPR`: Business Process Rengineering
+- `BPR`: Business Process Reengineering
 - `DSS`: Decision Support System
 - `ROT` Data: Redundant Outdated Trivial 
 - `CIO`: Chief Information Officer
@@ -23,7 +24,7 @@
 - `TPC`: Transaction Processing perfromance Council
 - `ETL`: Extract Transform Load
 - `SMP`: Symmetric Multi Processing
-- `MMP`: Massively Parallel Processing
+- `MPP`: Massively Parallel Processing
 - `RDF`: Resource Description Framework
 - `URI`: Uniform Resource Identifier
 - `HTTP`: HyperText Transfer Protocol

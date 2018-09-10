@@ -152,7 +152,7 @@
         * lo stesso evento può essere analizzato in relazione a diversi soggetti
         * la misura di ogni evento è descritta da un insieme di coordinate ognuna delle quali rappresenta un soggetto di interesse per le analisi da condurre su quell'evento
         * rappresentato con l'ipercubo (matrice multidimensionale)
-            - `Fatto elementare`: l'elemento otenuto specificando un valore per ogni possibile coordinata
+            - `Fatto elementare`: l'elemento ottenuto specificando un valore per ogni possibile coordinata
             - `Misure`: valori numerici che quantificano il fatto elementare
             - `Dimensioni`: coordinate di ciascun elemento che costituiscono l'analisi dei fatti
         * esempio:
@@ -209,7 +209,7 @@
 ### Data Warehouse e Data Mart
 - **Data Warehouse e Data Mart**
     + `Data Warehouse`: Insieme di strutture dati e dei tool necessari per ottenere, a partire dai dati operazionali utilizzati e creati dal sistema informativo aziendale, informazioni che aiutino i manager nella valutazione tecnico-economica dell'andamento aziendale
-        * `processo` `dati operazionali` `dati esterni` `accessibilità` `integrazione` `fressiblità` `sintesi` `rapresentzione multidimensionale` `correttezza` `compatezza` `lettura giorno` `aggiornamento notte`
+        * `processo` `dati operazionali` `dati esterni` `accessibilità` `integrazione` `fressiblità` `sintesi` `rappresentzione multidimensionale` `correttezza` `compatezza` `lettura giorno` `aggiornamento notte`
         * Dati: `subject oriented` `aziendali e non dipartamentali` `aggregati` `asse temporale`
     + `Data Mart`: sottoinsieme del data warehouse contente l'insieme di informazioni rilevanti per un particolare problema
         * `contestuale` `limitato` `estensione temporale ridotta` `veloce e semplice` `costo inferiore` `risposte veloci` `limitato all'utente`
@@ -237,8 +237,8 @@
         * Data Warehouse + Data Marts: dati estratti da DW centrale e caricati su sistemi più piccoli DM
         * Single Warehouse or Data Mart: singola fonte di dati operazionali orientati a servire pochi utenti (di dipartimento)
 - **Vantaggi e svantaggi di un DW**
-    + Vantaggi: `semplicità` `migliore qualità dei dati` `accesso rapido` `separazione ambiente operativo dall'ambiente DSS` `vantaggio competitivo` `costo operativo` `cgestion del flusso informativo` `bechmarking realistico` `sicurezza`
-    + Svantaggi: `complessità nello sviluppo` `lunghi tempi di creazione` `dispendioso` `end-user traning` `complessità nell sfruttare SMP/MPP di DW` `difficoltà nel creare un ambiente DBMS distribuito` `time-lag tra DW e operazionale`
+    + Vantaggi: `semplicità` `migliore qualità dei dati` `accesso rapido` `separazione ambiente operativo dall'ambiente DSS` `vantaggio competitivo` `costo operativo` `congestione del flusso informativo` `bechmarking realistico` `sicurezza`
+    + Svantaggi: `complessità nello sviluppo` `lunghi tempi di creazione` `dispendioso` `end-user traning` `complessità nello sfruttare SMP/MPP di DW` `difficoltà nel creare un ambiente DBMS distribuito` `time-lag tra DW e operazionale`
 
 ## Knowledge discovery, architettura e processi di data mining
 - **Knowledge discovery, architettura e processi di data mining**
